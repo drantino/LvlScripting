@@ -10,7 +10,7 @@ public class VehicleController : MonoBehaviour
     public float accelerationValue, brakeValue, steerValue, decelerationValue;
     const float ACCELERATION_FACTOR = 5.0f, BRAKE_FACTOR = 5.0f, STEER_FACTOR = 10.0f;
 
-    public float currentSpeed, maxSpeed;
+    public float currentSpeed, maxSpeed, accelerationMulti, steerMulti;
 
     Rigidbody myRigidBody;
 
@@ -57,15 +57,16 @@ public class VehicleController : MonoBehaviour
          
         if(currentSpeed < maxSpeed)
         {
-            myRigidBody.AddForce( transform.forward * (accelerationValue - brakeValue) * Time.deltaTime, ForceMode.Force);
-            Debug.Log(myRigidBody.linearVelocity);
+            myRigidBody.AddForce( transform.forward * (accelerationValue - brakeValue) * Time.deltaTime * accelerationMulti, ForceMode.Force);
+            //Debug.Log(transform.forward * (accelerationValue - brakeValue) * Time.deltaTime * accelerationMulti);
         }
 
 
         if(Mathf.Abs(currentSpeed) > 0.01f)
         {
-            float steer = steerValue * Mathf.Sin(currentSpeed);
-            transform.Rotate(0,steer * Time.deltaTime, 0);
+            float steer = steerValue * (currentSpeed / maxSpeed);
+            //Debug.Log(steer);
+            transform.Rotate(0,steer * Time.deltaTime * steerMulti, 0);
         }
 
 
