@@ -54,7 +54,7 @@ public class VehicleController : MonoBehaviour
         currentSpeed = Mathf.Sqrt(Mathf.Pow(myRigidBody.linearVelocity.x, 2) + Mathf.Pow(myRigidBody.linearVelocity.z, 2));
 
         if (currentSpeed < maxSpeed)
-        {
+        {   
             myRigidBody.AddForce(transform.forward * (accelerationValue - brakeValue) * Time.deltaTime * accelerationMulti, ForceMode.Force);
 
         }
@@ -70,5 +70,17 @@ public class VehicleController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
+    }
+    private void OnEnable()
+    {
+        move.Enable();
+        accelerate.Enable();
+        brake.Enable();
+    }
+    private void OnDisable()
+    {
+        move.Disable();
+        accelerate.Disable();
+        brake.Disable();
     }
 }

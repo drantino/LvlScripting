@@ -12,28 +12,20 @@ public class SaveSystem : MonoBehaviour
     public List<SaveData> saveDataList = new List<SaveData>();
     private void Start()
     {
-        //string[] lines =
-        //{
-        //    "Profile Name, Time",
-        //    "Sujan, 2000",
-        //    "Naruto, 3034"
-        //};
-        //File.WriteAllLines(filePath, lines);
-        //Debug.Log("Saved");
-        LoadData("Sujan");
+        
     }
-    public void CreateSave(string _profileName, int _highScore)
+    public void CreateSave(string _profileName, int _timeRecord)
     { 
-        SaveData saveData = new SaveData(_profileName, _highScore);
+        SaveData saveData = new SaveData(_profileName, _timeRecord);
         bool fileExists = File.Exists(filePath);
 
         using (StreamWriter writer = new StreamWriter(filePath, true))
         {
             if(!fileExists)
             {
-                writer.WriteLine("ProfileName, Score");
+                writer.WriteLine("ProfileName, Time");
             }
-            writer.WriteLine($"{saveData.profileName}, {saveData.highScore}");
+            writer.WriteLine($"{saveData.profileName}, {saveData.timeRecord}");
 
         }
     }
@@ -65,12 +57,12 @@ public class SaveSystem : MonoBehaviour
 public class SaveData
 {
     public string profileName;
-    public int highScore;
+    public int timeRecord;
 
-    public SaveData(string _profileName, int _highScore)
+    public SaveData(string _profileName, int _timeRecord)
     {
         profileName = _profileName;
-        highScore = _highScore;
+        timeRecord = _timeRecord;
     }
 }
 
