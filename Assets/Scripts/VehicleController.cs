@@ -50,29 +50,25 @@ public class VehicleController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //currentSpeed += (accelerationValue - decelerationValue - brakeValue) * Time.deltaTime;
-        //currentSpeed = Mathf.Clamp(currentSpeed,0,maxSpeed);
 
-        currentSpeed = Mathf.Sqrt(Mathf.Pow( myRigidBody.linearVelocity.x, 2) + Mathf.Pow(myRigidBody.linearVelocity.z, 2));
-         
-        if(currentSpeed < maxSpeed)
+        currentSpeed = Mathf.Sqrt(Mathf.Pow(myRigidBody.linearVelocity.x, 2) + Mathf.Pow(myRigidBody.linearVelocity.z, 2));
+
+        if (currentSpeed < maxSpeed)
         {
-            myRigidBody.AddForce( transform.forward * (accelerationValue - brakeValue) * Time.deltaTime * accelerationMulti, ForceMode.Force);
-            //Debug.Log(transform.forward * (accelerationValue - brakeValue) * Time.deltaTime * accelerationMulti);
+            myRigidBody.AddForce(transform.forward * (accelerationValue - brakeValue) * Time.deltaTime * accelerationMulti, ForceMode.Force);
+
         }
 
 
-        if(Mathf.Abs(currentSpeed) > 0.01f)
+        if (Mathf.Abs(currentSpeed) > 0.01f)
         {
             float steer = steerValue * (currentSpeed / maxSpeed);
-            //Debug.Log(steer);
-            transform.Rotate(0,steer * Time.deltaTime * steerMulti, 0);
+
+            transform.Rotate(0, steer * Time.deltaTime * steerMulti, 0);
         }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
 
-
-
-        //Vector3 tmp = transform.forward * currentSpeed;
-        //tmp.y = myRigidBody.linearVelocity.y;
-        //myRigidBody.linearVelocity = tmp;
     }
 }
