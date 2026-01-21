@@ -70,7 +70,17 @@ public class GameState : MonoBehaviour
     }
     public void SaveProfile()
     {
-        
+        LoadExistingProfiles();
+        if(profileList.Count == 0)
+        {
+            //if no existing data write new
+        }
+        else
+        {
+            //find existing profile name and adjust that profile, write it
+
+            //if no duplicate profile, add new profile and write it
+        }
     }
 
 }
