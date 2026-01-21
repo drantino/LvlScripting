@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 public class SaveSystem : MonoBehaviour
 {
     
-    public string filePath;
+    public string filePath;//Path = Assets/Resources/ProfilesData.csv 
     public List<SaveData> saveDataList = new List<SaveData>();
     private void Start()
     {
@@ -39,18 +39,22 @@ public class SaveSystem : MonoBehaviour
     }
     public void LoadData(string profileName)
     {
-        string[] lines = File.ReadAllLines(filePath);
-        for (int i = 0; i < lines.Length; i++)
+        if(File.Exists(filePath))
         {
-            string[] columns = Regex.Split(lines[i], ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
-            if (columns[0] == profileName)
+            string[] lines = File.ReadAllLines(filePath);
+            for (int i = 0; i < lines.Length; i++)
             {
-                SaveData saveData = new SaveData(profileName, int.Parse(columns[1]));
-                saveDataList.Add(saveData);
-                i = lines.Length;
+                string[] columns = Regex.Split(lines[i], ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+                if (columns[0] == profileName)
+                {
+                    SaveData saveData = new SaveData(profileName, int.Parse(columns[1]));
+                    saveDataList.Add(saveData);
+                    i = lines.Length;
+                }
+
             }
-            
         }
+        
     }
 }
 [Serializable]
