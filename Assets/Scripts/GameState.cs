@@ -44,8 +44,9 @@ public class GameState : MonoBehaviour
             }
             else
             {
-                currentProfile = new Profile(0,"Default",1,2,255,0,255);
+                currentProfile = new Profile(0,"Default",1,2,1,0,1);
             }
+            
         }
     }
     public void LoadExistingProfiles()
@@ -54,7 +55,7 @@ public class GameState : MonoBehaviour
         if (File.Exists(filePath))
         {
             string[] lines = File.ReadAllLines(filePath);
-            for (int i = 0; i < lines.Length; i++)
+            for (int i = 1; i < lines.Length; i++)
             {
                 string[] columns = Regex.Split(lines[i], ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
                 try
@@ -74,12 +75,52 @@ public class GameState : MonoBehaviour
         if(profileList.Count == 0)
         {
             //if no existing data write new
+            bool fileExists = File.Exists(filePath);
+            using(StreamWriter writer = new StreamWriter(filePath, true))
+            {
+                writer.WriteLine("ProfileID,ProfileName,VehicleType,VehicleColorR,VehicleColorG,VheicleColorB,RecordTime");
+                writer.WriteLine($"0,{currentProfile.profileName},{currentProfile.vehicleType},{currentProfile.vehicleColorR},{currentProfile.vehicleColorG},{currentProfile.vehicleColorB},{currentProfile.recordTime}");
+            }
+            Debug.Log("Created file and profile");
         }
         else
         {
             //find existing profile name and adjust that profile, write it
+            bool existingProfile = false;
+            for (int index = 0; index < profileList.Count; index++)
+            {
+                if (profileList[index].profileName == currentProfile.profileName)
+                {
+                    existingProfile = true;
+                    profileList[index].profileName = currentProfile.profileName;
+                    profileList[index].vehicleType = currentProfile.vehicleType;
+                    profileList[index].vehicleColorR = currentProfile.vehicleColorR;
+                    profileList[index].vehicleColorG = currentProfile.vehicleColorG;
+                    profileList[index].vehicleColorB = currentProfile.vehicleColorB;
 
+                    index = profileList.Count;
+                    bool fileExists = File.Exists(filePath);
+                    using (StreamWriter writer = new StreamWriter(filePath, false))
+                    {
+                        writer.WriteLine("ProfileID,ProfileName,VehicleType,VehicleColorR,VehicleColorG,VheicleColorB,RecordTime");
+                        for(int reindex = 0; index < profileList.Count; reindex++)
+                        {
+                            writer.WriteLine($"{reindex},{currentProfile.profileName},{currentProfile.vehicleType},{currentProfile.vehicleColorR},{currentProfile.vehicleColorG},{currentProfile.vehicleColorB},{currentProfile.recordTime}");
+                        }
+                    }
+                    Debug.Log("Updated Profile");
+                }
+            }
             //if no duplicate profile, add new profile and write it
+            if(!existingProfile)
+            {
+                bool fileExists = File.Exists(filePath);
+                using (StreamWriter writer = new StreamWriter(filePath, true))
+                {
+                    writer.WriteLine($"{currentProfile.profileID},{currentProfile.profileName},{currentProfile.vehicleType},{currentProfile.vehicleColorR},{currentProfile.vehicleColorG},{currentProfile.vehicleColorB},{currentProfile.recordTime}");
+                }
+                Debug.Log("New Profile created");
+            }
         }
     }
 
