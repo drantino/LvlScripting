@@ -40,7 +40,7 @@ public class GameState : MonoBehaviour
             LoadExistingProfiles();
             if(profileList.Count > 0)
             {
-                currentProfile = profileList[0];
+                SetToProfile(0);
             }
             else
             {
@@ -76,7 +76,7 @@ public class GameState : MonoBehaviour
         {
             //if no existing data write new
             bool fileExists = File.Exists(filePath);
-            using(StreamWriter writer = new StreamWriter(filePath, true))
+            using(StreamWriter writer = new StreamWriter(filePath, false))
             {
                 writer.WriteLine("ProfileID,ProfileName,VehicleType,VehicleColorR,VehicleColorG,VheicleColorB,RecordTime");
                 writer.WriteLine($"0,{currentProfile.profileName},{currentProfile.vehicleType},{currentProfile.vehicleColorR},{currentProfile.vehicleColorG},{currentProfile.vehicleColorB},{currentProfile.recordTime}");
@@ -97,15 +97,16 @@ public class GameState : MonoBehaviour
                     profileList[index].vehicleColorR = currentProfile.vehicleColorR;
                     profileList[index].vehicleColorG = currentProfile.vehicleColorG;
                     profileList[index].vehicleColorB = currentProfile.vehicleColorB;
+                    profileList[index].recordTime = currentProfile.recordTime;
 
                     index = profileList.Count;
                     bool fileExists = File.Exists(filePath);
                     using (StreamWriter writer = new StreamWriter(filePath, false))
                     {
                         writer.WriteLine("ProfileID,ProfileName,VehicleType,VehicleColorR,VehicleColorG,VheicleColorB,RecordTime");
-                        for(int reindex = 0; index < profileList.Count; reindex++)
+                        for(int reindex = 0; reindex < profileList.Count; reindex++)
                         {
-                            writer.WriteLine($"{reindex},{currentProfile.profileName},{currentProfile.vehicleType},{currentProfile.vehicleColorR},{currentProfile.vehicleColorG},{currentProfile.vehicleColorB},{currentProfile.recordTime}");
+                            writer.WriteLine($"{reindex},{profileList[reindex].profileName},{profileList[reindex].vehicleType},{profileList[reindex].vehicleColorR},{profileList[reindex].vehicleColorG},{profileList[reindex].vehicleColorB},{profileList[reindex].recordTime}");
                         }
                     }
                     Debug.Log("Updated Profile");
@@ -117,13 +118,22 @@ public class GameState : MonoBehaviour
                 bool fileExists = File.Exists(filePath);
                 using (StreamWriter writer = new StreamWriter(filePath, true))
                 {
-                    writer.WriteLine($"{currentProfile.profileID},{currentProfile.profileName},{currentProfile.vehicleType},{currentProfile.vehicleColorR},{currentProfile.vehicleColorG},{currentProfile.vehicleColorB},{currentProfile.recordTime}");
+                    writer.WriteLine($"{profileList.Count},{currentProfile.profileName},{currentProfile.vehicleType},{currentProfile.vehicleColorR},{currentProfile.vehicleColorG},{currentProfile.vehicleColorB},{currentProfile.recordTime}");
                 }
                 Debug.Log("New Profile created");
             }
         }
     }
-
+    public void SetToProfile(int profileID)
+    {
+        currentProfile.profileID = profileList[profileID].profileID;
+        currentProfile.profileName = profileList[profileID].profileName;
+        currentProfile.vehicleType = profileList[profileID].vehicleType;
+        currentProfile.vehicleColorR = profileList[profileID].vehicleColorR;
+        currentProfile.vehicleColorG = profileList[profileID].vehicleColorG;
+        currentProfile.vehicleColorB = profileList[profileID].vehicleColorB;
+        currentProfile.recordTime = profileList[profileID].recordTime;
+    }
 }
 [Serializable]
 public class Profile
