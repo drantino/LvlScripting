@@ -27,7 +27,9 @@ public class RacingMainMenuScript : MonoBehaviour
     }
     public void StartRace()
     {
+        gameState.currentGameState = GameState.RacingGameState.PreRace;
         SceneManager.LoadScene("SampleScene");
+        
     }
     public void ExitGame()
     {

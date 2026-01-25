@@ -14,7 +14,9 @@ public class VehicleController : MonoBehaviour
 
     Rigidbody myRigidBody;
 
+    public GameState gameState;
 
+    public GameObject sphere, cube, cone;
 
     private void Start()
     {
@@ -33,6 +35,31 @@ public class VehicleController : MonoBehaviour
         brake.canceled += BrakeInput;
 
         myRigidBody = GetComponent<Rigidbody>();
+        if(gameState == null)
+        {
+            gameState = GameObject.FindGameObjectWithTag("GameState").GetComponent<GameState>();
+        }
+        switch (gameState.currentProfile.vehicleType)
+        {
+            case 0:
+                {
+                    sphere.SetActive(true);
+                    sphere.GetComponent<MeshRenderer>().material.color = new Color(gameState.currentProfile.vehicleColorR/255f, gameState.currentProfile.vehicleColorG / 255f, gameState.currentProfile.vehicleColorB / 255f);
+                    break;
+                }
+            case 1:
+                {
+                    cube.SetActive(true);
+                    cube.GetComponent<MeshRenderer>().material.color = new Color(gameState.currentProfile.vehicleColorR / 255f, gameState.currentProfile.vehicleColorG / 255f, gameState.currentProfile.vehicleColorB / 255f);
+                    break;
+                }
+            case 2:
+                {
+                    cone.SetActive(true);
+                    cone.GetComponent<MeshRenderer>().material.color = new Color(gameState.currentProfile.vehicleColorR / 255f, gameState.currentProfile.vehicleColorG / 255f, gameState.currentProfile.vehicleColorB / 255f);
+                    break;
+                }
+        }
     }
 
     public void AccelrateInput(InputAction.CallbackContext c)

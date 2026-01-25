@@ -35,7 +35,7 @@ public class GameState : MonoBehaviour
     }
     private void Start()
     {
-            currentProfile = new Profile(0, "Default", 1, 1, 1, 0, 1);
+            //currentProfile = new Profile(0, "Default", 1, 1, 1, 0, 1);
     }
     public void LoadExistingProfiles()
     {
