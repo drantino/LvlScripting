@@ -35,19 +35,7 @@ public class GameState : MonoBehaviour
     }
     private void Start()
     {
-        if(currentProfile.profileName == "")
-        {
-            LoadExistingProfiles();
-            if(profileList.Count > 0)
-            {
-                SetToProfile(0);
-            }
-            else
-            {
-                currentProfile = new Profile(0,"Default",1,2,1,0,1);
-            }
-            
-        }
+            currentProfile = new Profile(0, "Default", 1, 1, 1, 0, 1);
     }
     public void LoadExistingProfiles()
     {
@@ -121,6 +109,17 @@ public class GameState : MonoBehaviour
                     writer.WriteLine($"{profileList.Count},{currentProfile.profileName},{currentProfile.vehicleType},{currentProfile.vehicleColorR},{currentProfile.vehicleColorG},{currentProfile.vehicleColorB},{currentProfile.recordTime}");
                 }
                 Debug.Log("New Profile created");
+            }
+        }
+    }
+    public void UpdateProfileSaveFile()
+    {
+        using (StreamWriter writer = new StreamWriter(filePath, false))
+        {
+            writer.WriteLine("ProfileID,ProfileName,VehicleType,VehicleColorR,VehicleColorG,VheicleColorB,RecordTime");
+            for (int reindex = 0; reindex < profileList.Count; reindex++)
+            {
+                writer.WriteLine($"{reindex},{profileList[reindex].profileName},{profileList[reindex].vehicleType},{profileList[reindex].vehicleColorR},{profileList[reindex].vehicleColorG},{profileList[reindex].vehicleColorB},{profileList[reindex].recordTime}");
             }
         }
     }

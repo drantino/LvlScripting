@@ -1,5 +1,4 @@
 ProfileID,ProfileName,VehicleType,VehicleColorR,VehicleColorG,VheicleColorB,RecordTime
-0,Default,1,0,1,0,1
+0,Default,1,0,1,0,70.1
 1,Default1,1,1,1,1,1
 2,Default2,1,2,1,0,1
-3,Default0,1,0,0,0,1
