@@ -48,6 +48,7 @@ public class RacingUIScript : MonoBehaviour
     }
     public void GoToMainmenu()
     {
+        gameState.currentGameState = GameState.RacingGameState.MainMenu;
         SceneManager.LoadScene("RacingGameMainMenu");
     }
     public void StartTimeCountDown(float count)
