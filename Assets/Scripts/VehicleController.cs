@@ -39,27 +39,8 @@ public class VehicleController : MonoBehaviour
         {
             gameState = GameObject.FindGameObjectWithTag("GameState").GetComponent<GameState>();
         }
-        switch (gameState.currentProfile.vehicleType)
-        {
-            case 0:
-                {
-                    sphere.SetActive(true);
-                    sphere.GetComponent<MeshRenderer>().material.color = new Color(gameState.currentProfile.vehicleColorR/255f, gameState.currentProfile.vehicleColorG / 255f, gameState.currentProfile.vehicleColorB / 255f);
-                    break;
-                }
-            case 1:
-                {
-                    cube.SetActive(true);
-                    cube.GetComponent<MeshRenderer>().material.color = new Color(gameState.currentProfile.vehicleColorR / 255f, gameState.currentProfile.vehicleColorG / 255f, gameState.currentProfile.vehicleColorB / 255f);
-                    break;
-                }
-            case 2:
-                {
-                    cone.SetActive(true);
-                    cone.GetComponent<MeshRenderer>().material.color = new Color(gameState.currentProfile.vehicleColorR / 255f, gameState.currentProfile.vehicleColorG / 255f, gameState.currentProfile.vehicleColorB / 255f);
-                    break;
-                }
-        }
+        UpdateVehicleLooks();
+        
     }
 
     public void AccelrateInput(InputAction.CallbackContext c)
@@ -109,5 +90,32 @@ public class VehicleController : MonoBehaviour
         move.Disable();
         accelerate.Disable();
         brake.Disable();
+    }
+    public void UpdateVehicleLooks()
+    {
+        sphere.SetActive(false);
+        cube.SetActive(false);
+        cone.SetActive(false);
+        switch (gameState.currentProfile.vehicleType)
+        {
+            case 0:
+                {
+                    sphere.SetActive(true);
+                    sphere.GetComponent<MeshRenderer>().material.color = new Color(gameState.currentProfile.vehicleColorR / 255f, gameState.currentProfile.vehicleColorG / 255f, gameState.currentProfile.vehicleColorB / 255f);
+                    break;
+                }
+            case 1:
+                {
+                    cube.SetActive(true);
+                    cube.GetComponent<MeshRenderer>().material.color = new Color(gameState.currentProfile.vehicleColorR / 255f, gameState.currentProfile.vehicleColorG / 255f, gameState.currentProfile.vehicleColorB / 255f);
+                    break;
+                }
+            case 2:
+                {
+                    cone.SetActive(true);
+                    cone.GetComponent<MeshRenderer>().material.color = new Color(gameState.currentProfile.vehicleColorR / 255f, gameState.currentProfile.vehicleColorG / 255f, gameState.currentProfile.vehicleColorB / 255f);
+                    break;
+                }
+        }
     }
 }

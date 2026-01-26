@@ -13,6 +13,7 @@ public class RacingMainMenuScript : MonoBehaviour
     public GameObject loadProfilePanel, deleteProfilePanel, deleteProfileConfirmPanel, vehicleSelectPanel;
     public TMP_Dropdown profileDropDown, profileDeleteDropDown;
     public TMP_InputField profileNameInputField;
+    public VehicleController vehicleScript;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,6 +40,7 @@ public class RacingMainMenuScript : MonoBehaviour
     {
         gameState.currentProfile.vehicleType = typeID;
         //update preview
+        vehicleScript.UpdateVehicleLooks();
     }
     public void RGBSelectUpdate(int RGBID)
     {
@@ -69,6 +71,7 @@ public class RacingMainMenuScript : MonoBehaviour
                     break;
                 }
         }
+        vehicleScript.UpdateVehicleLooks();
     }
     public void LoadProfilePanel()
     {
