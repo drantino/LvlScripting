@@ -13,6 +13,7 @@ public class RaceControllerScript : MonoBehaviour
     public RacingUIScript raceUIScript;
     public float timeTillStart;
     InputAction startButton;
+    public GameObject ghostVehicle;
 
     private void Awake()
     {
@@ -22,9 +23,11 @@ public class RaceControllerScript : MonoBehaviour
     void Start()
     {
         gameState = GameObject.FindGameObjectWithTag("GameState").GetComponent<GameState>();
-        if (loadedGhostData == null && File.Exists(ghostDataFilePath))
+        if (File.Exists(ghostDataFilePath))
         {
-            //load ghost data
+            //load ghost data Assets/Resources/GhostData.csv
+            //string[] lines = File.ReadAllLines(ghostDataFilePath);
+            ghostVehicle.SetActive(true);
         }
         startButton = InputSystem.actions.FindAction("Pause");
         startButton.Enable();
@@ -67,6 +70,7 @@ public class RaceControllerScript : MonoBehaviour
                     if (timeTillStart <= 0)
                     {
                         gameState.currentGameState = GameState.RacingGameState.Racing;
+                        playerVehicleControllerScript.OnEnable();
                     }
                     break;
                 }

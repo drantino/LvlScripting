@@ -79,13 +79,13 @@ public class VehicleController : MonoBehaviour
     {
 
     }
-    private void OnEnable()
+    public void OnEnable()
     {
         move.Enable();
         accelerate.Enable();
         brake.Enable();
     }
-    private void OnDisable()
+    public void OnDisable()
     {
         move.Disable();
         accelerate.Disable();

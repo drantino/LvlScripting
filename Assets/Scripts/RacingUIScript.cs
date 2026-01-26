@@ -3,6 +3,7 @@ using System.Runtime.CompilerServices;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RacingUIScript : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class RacingUIScript : MonoBehaviour
     public void FinishRaceUIUpdate()
     {
         finishPanel.SetActive(true);
+        //update finish UI stuff
     }
     public void OpenPauseMenu()
     {
@@ -37,6 +39,10 @@ public class RacingUIScript : MonoBehaviour
     public void ClosePauseMenu()
     {
         pausePanel.SetActive(false);
+    }
+    public void GoToMainmenu()
+    {
+        SceneManager.LoadScene("RacingGameMainMenu");
     }
     public void StartTimeCountDown(float count)
     {
