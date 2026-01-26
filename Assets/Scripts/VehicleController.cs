@@ -10,13 +10,15 @@ public class VehicleController : MonoBehaviour
     public float accelerationValue, brakeValue, steerValue, decelerationValue;
     const float ACCELERATION_FACTOR = 5.0f, BRAKE_FACTOR = 5.0f, STEER_FACTOR = 10.0f;
 
-    public float currentSpeed, maxSpeed, accelerationMulti, steerMulti;
+    public float currentSpeed, maxSpeed, baseMaxSpeed, accelerationMulti, steerMulti, boostMulti,debuffMulti, buffTimeStamp, debuffTimeStamp, buffDuration, debuffDuration;
 
     Rigidbody myRigidBody;
 
     public GameState gameState;
 
     public GameObject sphere, cube, cone;
+
+    public bool isBoosted, isDebuffed;
 
     private void Start()
     {
@@ -40,7 +42,9 @@ public class VehicleController : MonoBehaviour
             gameState = GameObject.FindGameObjectWithTag("GameState").GetComponent<GameState>();
         }
         UpdateVehicleLooks();
-        
+        baseMaxSpeed = maxSpeed;
+        isBoosted = false;
+        isDebuffed = false;
     }
 
     public void AccelrateInput(InputAction.CallbackContext c)
@@ -63,7 +67,7 @@ public class VehicleController : MonoBehaviour
 
         if (currentSpeed < maxSpeed)
         {   
-            myRigidBody.AddForce(transform.forward * (accelerationValue - brakeValue) * Time.deltaTime * accelerationMulti, ForceMode.Force);
+            myRigidBody.AddForce(transform.forward * (accelerationValue - brakeValue) * Time.deltaTime * accelerationMulti * boostMulti * debuffMulti, ForceMode.Force);
 
         }
 
@@ -74,10 +78,35 @@ public class VehicleController : MonoBehaviour
 
             transform.Rotate(0, steer * Time.deltaTime * steerMulti, 0);
         }
+        //reset buff
+        if(isBoosted && buffTimeStamp+buffDuration < Time.fixedTime)
+        {
+            maxSpeed = baseMaxSpeed;
+            boostMulti = 1;
+        }
+        //reset debuff
+        if(isDebuffed && debuffTimeStamp+debuffDuration < Time.fixedTime)
+        {
+            maxSpeed = baseMaxSpeed;
+            debuffMulti = 1;
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
-
+        if(other.CompareTag("SpeedBoost"))
+        {
+            maxSpeed = maxSpeed * 1.2f;
+            boostMulti = 1.2f;
+            buffTimeStamp = Time.fixedTime;
+            isBoosted = true;
+        }
+        if (other.CompareTag("SpeedDebuff"))
+        {
+            maxSpeed = maxSpeed / 1.2f;
+            debuffMulti = 0.8f;
+            debuffTimeStamp = Time.fixedTime;
+            isDebuffed = true;
+        }
     }
     public void OnEnable()
     {

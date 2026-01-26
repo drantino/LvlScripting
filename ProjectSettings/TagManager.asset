@@ -7,6 +7,8 @@ TagManager:
   - CheckPoint
   - FinishLine
   - GameState
+  - SpeedBoost
+  - SpeedDebuff
   layers:
   - Default
   - TransparentFX
