@@ -6,6 +6,7 @@ public class RacingUIScript : MonoBehaviour
     public GameState gameState;
     public float timeLaps;
     public TMP_Text timeTxtValue;
+    public GameObject pausePanel;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
