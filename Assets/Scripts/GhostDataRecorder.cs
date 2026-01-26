@@ -1,4 +1,5 @@
 using System.IO;
+using TMPro;
 using UnityEngine;
 
 public class GhostDataRecorder : MonoBehaviour
@@ -7,7 +8,7 @@ public class GhostDataRecorder : MonoBehaviour
     public bool recording;
     public GameState gameState;
     public string ghostDataFilePath;
-
+    public TMP_Text savedGhostDataTxt;
     private void Start()
     {
         if (gameState == null)
@@ -38,5 +39,6 @@ public class GhostDataRecorder : MonoBehaviour
                 writer.WriteLine($"{ghostData.ghostDataFrames[index].Position.x.ToString("F2")},{ghostData.ghostDataFrames[index].Position.y.ToString("F2")},{ghostData.ghostDataFrames[index].Position.z.ToString("F2")},{ghostData.ghostDataFrames[index].Rotation.x.ToString("F2")},{ghostData.ghostDataFrames[index].Rotation.y.ToString("F2")},{ghostData.ghostDataFrames[index].Rotation.z.ToString("F2")}");
             }
         }
+        savedGhostDataTxt.gameObject.SetActive(true);
     }
 }

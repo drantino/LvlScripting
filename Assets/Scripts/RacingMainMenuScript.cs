@@ -102,6 +102,7 @@ public class RacingMainMenuScript : MonoBehaviour
         {
             gameState.SetToProfile(profileDropDown.value);
             UpdateUI();
+            loadProfilePanel.SetActive(false);
             Debug.Log("Profile Set");
         }
 
