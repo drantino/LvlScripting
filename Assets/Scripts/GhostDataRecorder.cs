@@ -13,10 +13,6 @@ public class GhostDataRecorder : MonoBehaviour
             gameState = GameObject.FindGameObjectWithTag("GameState").GetComponent<GameState>();
         }
     }
-    public void StartRecording()
-    {
-        recording = true;
-    }
     private void FixedUpdate()
     {
         if (!recording && gameState.currentGameState != GameState.RacingGameState.Racing)
@@ -24,5 +20,13 @@ public class GhostDataRecorder : MonoBehaviour
             return;
         }
         ghostData.AddFrame(transform.position, transform.rotation.eulerAngles);
+    }
+    public void StartRecording()
+    {
+        recording = true;
+    }
+    public void SaveGhostData()
+    {
+
     }
 }
