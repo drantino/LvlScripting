@@ -13,6 +13,11 @@ public class RaceControllerScript : MonoBehaviour
     public RacingUIScript raceUIScript;
     public float timeTillStart;
     InputAction startButton;
+
+    private void Awake()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,6 +28,7 @@ public class RaceControllerScript : MonoBehaviour
         }
         startButton = InputSystem.actions.FindAction("Pause");
         startButton.Enable();
+        
     }
     private void Update()
     {
@@ -49,7 +55,7 @@ public class RaceControllerScript : MonoBehaviour
         {
             case GameState.RacingGameState.MainMenu:
                 {
-                    SceneManager.sceneLoaded += SceneLoaded;
+                    gameState.currentGameState = GameState.RacingGameState.PreRace;
 
                     break;
                 }
@@ -87,9 +93,8 @@ public class RaceControllerScript : MonoBehaviour
         gameState.currentGameState = GameState.RacingGameState.PostRace;
         raceUIScript.FinishRaceUIUpdate();
     }
-    public void SceneLoaded(Scene scene, LoadSceneMode Mode)
+    public void OnSceneLoaded(Scene scene, LoadSceneMode Mode)
     {
-        gameState.currentGameState = GameState.RacingGameState.PreRace;
         timeTillStart = 3;
     }
 
