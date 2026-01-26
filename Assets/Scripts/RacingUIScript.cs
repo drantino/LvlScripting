@@ -9,7 +9,7 @@ public class RacingUIScript : MonoBehaviour
 {
     public GameState gameState;
     public float timeLaps;
-    public TMP_Text timeTxtValue, countDownTxt;
+    public TMP_Text timeTxtValue, countDownTxt, finishTimeTxt,newRecordTxt;
     public GameObject pausePanel, finishPanel;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -31,6 +31,12 @@ public class RacingUIScript : MonoBehaviour
     {
         finishPanel.SetActive(true);
         //update finish UI stuff
+        finishTimeTxt.text = (timeLaps / 60 - (timeLaps / 60 % 1)).ToString() + ":" + (timeLaps % 60 - (timeLaps % 60 % 0.01)).ToString();
+        if(timeLaps < gameState.currentProfile.recordTime || gameState.currentProfile.recordTime == 0)
+        {
+            newRecordTxt.gameObject.SetActive(true);
+            gameState.currentProfile.recordTime = timeLaps;
+        }
     }
     public void OpenPauseMenu()
     {

@@ -96,6 +96,7 @@ public class RaceControllerScript : MonoBehaviour
     {
         gameState.currentGameState = GameState.RacingGameState.PostRace;
         raceUIScript.FinishRaceUIUpdate();
+        gameState.SaveProfile();
     }
     public void OnSceneLoaded(Scene scene, LoadSceneMode Mode)
     {

@@ -167,6 +167,6 @@ public class RacingMainMenuScript : MonoBehaviour
         sliderB.GetComponent<Slider>().value = gameState.currentProfile.vehicleColorB;
         txtB.text = "B:" + sliderB.GetComponent<Slider>().value.ToString();
         //Update record time
-        recordTimeTxtValue.text = (gameState.currentProfile.recordTime/60 - (gameState.currentProfile.recordTime / 60 % 1)).ToString()+":"+(gameState.currentProfile.recordTime%60).ToString();
+        recordTimeTxtValue.text = (gameState.currentProfile.recordTime/60 - (gameState.currentProfile.recordTime / 60 % 1)).ToString()+":"+(gameState.currentProfile.recordTime%60 - (gameState.currentProfile.recordTime % 60 % 0.01)).ToString();
     }
 }
