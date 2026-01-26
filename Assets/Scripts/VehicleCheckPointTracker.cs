@@ -4,6 +4,7 @@ public class VehicleCheckPointTracker : MonoBehaviour
 {
     public CheckPointControllerScript CheckPointController;
     public int currentCheckPoint;
+    public RaceControllerScript raceController;
 
 
     private void OnTriggerEnter(Collider other)
@@ -15,7 +16,7 @@ public class VehicleCheckPointTracker : MonoBehaviour
         }
         if(other.CompareTag("FinishLine") && currentCheckPoint >= CheckPointController.checkPoints.Count)
         {
-            Debug.Log("FinishLine");
+            raceController.RaceFinish();
         }
     }
 }

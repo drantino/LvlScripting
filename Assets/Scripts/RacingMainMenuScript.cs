@@ -158,7 +158,7 @@ public class RacingMainMenuScript : MonoBehaviour
         //update profile name
         profileNameInputField.text = gameState.currentProfile.profileName;
         //update vehicle type
-
+        vehicleScript.UpdateVehicleLooks();
         //update RGB select
         sliderR.GetComponent<Slider>().value = gameState.currentProfile.vehicleColorR;
         txtR.text = "R:" + sliderR.GetComponent<Slider>().value.ToString();
