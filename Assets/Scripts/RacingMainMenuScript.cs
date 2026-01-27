@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,17 +10,18 @@ public class RacingMainMenuScript : MonoBehaviour
     GameState gameState;
 
     public GameObject sliderR, sliderG, sliderB;
-    public TextMeshProUGUI txtR, txtG, txtB, profileDeleteTxt, recordTimeTxtValue;
+    public TextMeshProUGUI txtR, txtG, txtB, profileDeleteTxt, recordTimeTxtValue, firstPlaceTxt, secondPlaceTxt, thirdPlaceTxt, fourthPlaceTxt, fifthPlaceTxt;
     public GameObject loadProfilePanel, deleteProfilePanel, deleteProfileConfirmPanel, vehicleSelectPanel;
     public TMP_Dropdown profileDropDown, profileDeleteDropDown;
     public TMP_InputField profileNameInputField;
     public VehicleController vehicleScript;
-
+    public List<Profile> leaderBoardList;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         gameState = GameObject.FindGameObjectWithTag("GameState").GetComponent<GameState>();
         UpdateUI();
+        UpdateLeaderBoard();
     }
 
     public void StartGame()
@@ -169,5 +171,50 @@ public class RacingMainMenuScript : MonoBehaviour
         txtB.text = "B:" + sliderB.GetComponent<Slider>().value.ToString();
         //Update record time
         recordTimeTxtValue.text = (gameState.currentProfile.recordTime/60 - (gameState.currentProfile.recordTime / 60 % 1)).ToString()+":"+(gameState.currentProfile.recordTime%60 - (gameState.currentProfile.recordTime % 60 % 0.01)).ToString();
+    }
+    public void UpdateLeaderBoard()
+    {
+        gameState.LoadExistingProfiles();
+        if(gameState.profileList.Count > 0)
+        {
+            leaderBoardList = gameState.profileList.OrderBy(r=>r.recordTime).ToList<Profile>();
+            int placement=0;
+            for(int index = 0; index<leaderBoardList.Count; index++)
+            {
+                if (leaderBoardList[index].recordTime !=0)
+                {
+                    switch (placement)
+                    {
+                        case 0:
+                            {
+                                firstPlaceTxt.text = $"{leaderBoardList[index].profileName} {leaderBoardList[index].recordTime / 60 - (leaderBoardList[index].recordTime / 60 % 1)}:{(leaderBoardList[index].recordTime%60) - (leaderBoardList[index].recordTime % 60 % 0.01)}";
+                                break;
+                            }
+                        case 1:
+                            {
+                                secondPlaceTxt.text = $"{leaderBoardList[index].profileName} {leaderBoardList[index].recordTime / 60 - (leaderBoardList[index].recordTime / 60 % 1)}:{(leaderBoardList[index].recordTime % 60) - (leaderBoardList[index].recordTime % 60 % 0.01)}";
+                                break;
+                            }
+                        case 2:
+                            {
+                                thirdPlaceTxt.text = $"{leaderBoardList[index].profileName} {leaderBoardList[index].recordTime / 60 - (leaderBoardList[index].recordTime / 60 % 1)}:{(leaderBoardList[index].recordTime % 60) - (leaderBoardList[index].recordTime % 60 % 0.01)}";
+                                break;
+                            }
+                        case 3:
+                            {
+                                fourthPlaceTxt.text = $"{leaderBoardList[index].profileName} {leaderBoardList[index].recordTime / 60 - (leaderBoardList[index].recordTime / 60 % 1)}:{(leaderBoardList[index].recordTime % 60) - (leaderBoardList[index].recordTime % 60 % 0.01)}";
+                                break;
+                            }
+                        case 4:
+                            {
+                                fifthPlaceTxt.text = $"{leaderBoardList[index].profileName} {leaderBoardList[index].recordTime / 60 - (leaderBoardList[index].recordTime / 60 % 1)}:{(leaderBoardList[index].recordTime % 60) - (leaderBoardList[index].recordTime % 60 % 0.01)}";
+                                index = leaderBoardList.Count;
+                                break;
+                            }
+                    }
+                    placement++;
+                }
+            }
+        }
     }
 }
