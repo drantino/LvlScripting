@@ -963,12 +963,21 @@ MonoBehaviour:
   decelerationValue: 1
   currentSpeed: 0
   maxSpeed: 10
+  baseMaxSpeed: 0
   accelerationMulti: 150
   steerMulti: 10
+  boostMulti: 0
+  debuffMulti: 0
+  buffTimeStamp: 0
+  debuffTimeStamp: 0
+  buffDuration: 0
+  debuffDuration: 0
   gameState: {fileID: 0}
   sphere: {fileID: 9087391212458833402}
   cube: {fileID: 185458286093858489}
   cone: {fileID: 3413740043082279944}
+  isBoosted: 0
+  isDebuffed: 0
 --- !u!114 &3271465827512146327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -985,6 +994,8 @@ MonoBehaviour:
     ghostDataFrames: []
   recording: 0
   gameState: {fileID: 0}
+  ghostDataFilePath: 
+  savedGhostDataTxt: {fileID: 0}
 --- !u!114 &527150251037833573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -999,6 +1010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VehicleCheckPointTracker
   CheckPointController: {fileID: 0}
   currentCheckPoint: 0
+  raceController: {fileID: 0}
 --- !u!1 &6451359859642385242
 GameObject:
   m_ObjectHideFlags: 0
