@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: MapLibrary
   m_EditorClassIdentifier: Assembly-CSharp::MapLibrary
   mapLibrary:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 9e8b0f12c28c0a74d9baaee2f9dad5a1, type: 2}
+  - {fileID: 11400000, guid: 96c1645c79c606545814b0ebd6bcd72a, type: 2}
+  - {fileID: 11400000, guid: 2bbfcbcd697e4bd4bbd83a0b0a281323, type: 2}
   - {fileID: 11400000, guid: c20955cdfc593914d973db8ffac1bbae, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 213971ee423f4424da3cf73707a952a2, type: 2}

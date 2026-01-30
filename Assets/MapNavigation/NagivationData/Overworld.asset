@@ -10,11 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2b6a5883bdf552478be4e531b5165de, type: 3}
-  m_Name: Desert
+  m_Name: Overworld
   m_EditorClassIdentifier: Assembly-CSharp::GameMap
-  preFab: {fileID: 4604367337230354065, guid: 746cfd3a64be0094fbd040945996d5ab, type: 3}
-  mapName: Desert
-  mapID: 3
+  preFab: {fileID: 998324165582904806, guid: e735777fdf0ffb04aac6eefa2d0f6313, type: 3}
+  mapName: Overworld
+  mapID: 0
   entryPoints:
   - engryPointID: 0
-    cell: {x: -1, y: 1, z: 0}
+    cell: {x: -3, y: -11, z: 0}
+  - engryPointID: 1
+    cell: {x: 1, y: -11, z: 0}
+  - engryPointID: 2
+    cell: {x: -1, y: 2, z: 0}
+  - engryPointID: 3
+    cell: {x: 3, y: -21, z: 0}
+  - engryPointID: 4
+    cell: {x: 10, y: -11, z: 0}

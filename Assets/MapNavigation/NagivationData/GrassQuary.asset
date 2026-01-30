@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2b6a5883bdf552478be4e531b5165de, type: 3}
-  m_Name: Desert
+  m_Name: GrassQuary
   m_EditorClassIdentifier: Assembly-CSharp::GameMap
-  preFab: {fileID: 4604367337230354065, guid: 746cfd3a64be0094fbd040945996d5ab, type: 3}
-  mapName: Desert
-  mapID: 3
+  preFab: {fileID: 370396007203212835, guid: c4194d61363c1e74fbe2ba68505cc925, type: 3}
+  mapName: GrassQuary
+  mapID: 1
   entryPoints:
   - engryPointID: 0
-    cell: {x: -1, y: 1, z: 0}
+    cell: {x: -4, y: -9, z: 0}
