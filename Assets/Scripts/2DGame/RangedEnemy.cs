@@ -1,0 +1,48 @@
+using UnityEngine;
+
+public class RangedEnemy : Enemy
+{
+    public GameObject projectilePreFab;
+    public Transform projectileSpawnLocation;
+    public override void Attack()
+    {
+        //instantiate ea projectile
+        // give the projectile a direction + veolcity
+        //projecitle handles collisions
+        GameObject obj = Instantiate(projectilePreFab, projectileSpawnLocation.position,Quaternion.identity);
+        SimpleProjeectile projectile = obj.GetComponent<SimpleProjeectile>();
+        projectile.InstantiateProjectile(new Vector2(0,-1));
+    }
+
+    public override void Die()
+    {
+        
+    }
+
+    public override void Patrol()
+    {
+        
+    }
+
+    public override void Pursue()
+    {
+        
+    }
+
+    public override void TakeDamage(float dmg_)
+    {
+        
+    }
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
