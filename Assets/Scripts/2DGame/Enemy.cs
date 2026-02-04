@@ -30,7 +30,7 @@ public abstract class Enemy : MonoBehaviour
 
     private void Update()
     {
-        if(sightLine.CircleOverLapCheck())
+        if (sightLine.CircleOverLapCheck())
         {
             Pursue();
         }
@@ -38,6 +38,7 @@ public abstract class Enemy : MonoBehaviour
         {
             StartAttackCoroutine();
         }
+        
     }
     public void SetPlayerPosition(Vector2 pos_)
     {

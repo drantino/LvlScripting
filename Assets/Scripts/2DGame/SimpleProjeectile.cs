@@ -14,6 +14,7 @@ public class SimpleProjeectile : MonoBehaviour
     public void InstantiateProjectile(Vector2 direction_)
     {   
         myRigidBody.AddForce (direction_ * speed);
+        StartCoroutine(ProjectileTime());
     }
 
     public IEnumerator ProjectileTime()

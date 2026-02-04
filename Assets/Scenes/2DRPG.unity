@@ -336,6 +336,7 @@ GameObject:
   - component: {fileID: 197187005}
   - component: {fileID: 197187004}
   - component: {fileID: 197187006}
+  - component: {fileID: 197187007}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -440,7 +441,21 @@ MonoBehaviour:
   attackRange: {fileID: 2064873761}
   playerPositoin: {x: 0, y: 0}
   projectilePreFab: {fileID: 9138934245339198704, guid: e16242b498e9c4c4b8f96a4b7b91090f, type: 3}
-  projectileSpawnLocation: {fileID: 0}
+  projectileSpawnLocation: {fileID: 197187005}
+--- !u!114 &197187007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197187002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f591eb4700f89704dba4ca10f034d5d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AIMovement
+  range: 0.5
+  moveSpeed: 5
 --- !u!1 &232167832
 GameObject:
   m_ObjectHideFlags: 0
