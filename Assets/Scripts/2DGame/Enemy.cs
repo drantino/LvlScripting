@@ -51,6 +51,11 @@ public abstract class Enemy : MonoBehaviour
         }
         if (sightLine.CircleOverLapCheck())
         {
+            if(attackCoroutine != null)
+            {
+                StopCoroutine(attackCoroutine);
+            }    
+            
             Pursue();
             return;
         }

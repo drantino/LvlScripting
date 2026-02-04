@@ -11,7 +11,7 @@ public class RangedEnemy : Enemy
         //projecitle handles collisions
         GameObject obj = Instantiate(projectilePreFab, projectileSpawnLocation.position,Quaternion.identity);
         SimpleProjeectile projectile = obj.GetComponent<SimpleProjeectile>();
-        projectile.InstantiateProjectile(new Vector2(0,-1));
+        projectile.InstantiateProjectile(new Vector2(playerPosition.x - projectileSpawnLocation.position.x,playerPosition.y-projectileSpawnLocation.position.y ).normalized);
     }
 
     public override void Die()
