@@ -22,10 +22,15 @@ public abstract class Enemy : MonoBehaviour
     public Vector2 patrolRange, startingPosition;
     private AIMovement aiMovement;
 
+    private bool patroling;
+
     public abstract void Attack();
     public abstract void TakeDamage(float dmg_);
     public abstract void Die();
-    public abstract void Pursue();
+    public void Pursue()
+    {
+        aiMovement.InitializeMovement(playerPosition);
+    }
     private void Awake()
     {
         sightLine.OnOverLap += SetPlayerPosition;
@@ -37,15 +42,24 @@ public abstract class Enemy : MonoBehaviour
 
     private void Update()
     {
+        
+        if (attackRange.CircleOverLapCheck())
+        {
+            aiMovement.StopMovement();
+            StartAttackCoroutine();
+            return;
+        }
         if (sightLine.CircleOverLapCheck())
         {
             Pursue();
+            return;
         }
-        if (attackRange.CircleOverLapCheck())
+        if(!patroling)
         {
-            StartAttackCoroutine();
+            Patrol();
+            patroling = true;
         }
-        
+
     }
     public void SetPlayerPosition(Vector2 pos_)
     {

@@ -9,23 +9,34 @@ public class AIMovement : MonoBehaviour
     public float range, moveSpeed;
     Rigidbody2D myRigidBody;
     public event UnityAction OnArrive;
+    Vector3 newPosition;
     private void Awake()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
     }
-    public void InitializeMovement(Vector3 newPosition)
+    public void InitializeMovement(Vector3 newPosition_)
     {
-        StartCoroutine(MoveToPosition(newPosition));
+        newPosition = newPosition_;
+        StartCoroutine(MoveToPosition());
     }
-    private IEnumerator MoveToPosition(Vector3 newPosition_)
+    public void SetNewPosition(Vector3 newPosition_)
+    {
+        newPosition = newPosition_;
+    }
+    public void StopMovement()
+    {
+        StopAllCoroutines();
+        myRigidBody.linearVelocity = Vector3.zero;
+    }
+    private IEnumerator MoveToPosition()
     {
         bool inRange = false;
         while (!inRange)
         {
-            Vector2 moveDir = newPosition_ - transform.position;
+            Vector2 moveDir = newPosition - transform.position;
             moveDir.Normalize();
             myRigidBody.linearVelocity = moveDir * moveSpeed;
-            inRange = (Vector2.Distance(transform.position, newPosition_) < range);
+            inRange = (Vector2.Distance(transform.position, newPosition) < range);
 
             if (inRange)
             {

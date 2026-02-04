@@ -21,10 +21,6 @@ public class RangedEnemy : Enemy
 
 
 
-    public override void Pursue()
-    {
-        
-    }
 
     public override void TakeDamage(float dmg_)
     {
