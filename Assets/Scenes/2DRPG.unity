@@ -337,6 +337,7 @@ GameObject:
   - component: {fileID: 197187004}
   - component: {fileID: 197187006}
   - component: {fileID: 197187007}
+  - component: {fileID: 197187008}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -439,7 +440,9 @@ MonoBehaviour:
   attackDelay: 1
   sightLine: {fileID: 390681171}
   attackRange: {fileID: 2064873761}
-  playerPositoin: {x: 0, y: 0}
+  playerPosition: {x: 0, y: 0}
+  patrolRange: {x: 2, y: 2}
+  startingPosition: {x: 0, y: 0}
   projectilePreFab: {fileID: 9138934245339198704, guid: e16242b498e9c4c4b8f96a4b7b91090f, type: 3}
   projectileSpawnLocation: {fileID: 197187005}
 --- !u!114 &197187007
@@ -455,7 +458,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIMovement
   range: 0.5
-  moveSpeed: 5
+  moveSpeed: 0.4
+--- !u!50 &197187008
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197187002}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &232167832
 GameObject:
   m_ObjectHideFlags: 0

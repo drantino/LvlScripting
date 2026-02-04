@@ -19,10 +19,7 @@ public class RangedEnemy : Enemy
         
     }
 
-    public override void Patrol()
-    {
-        
-    }
+
 
     public override void Pursue()
     {
