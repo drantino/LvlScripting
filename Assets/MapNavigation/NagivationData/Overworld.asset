@@ -17,12 +17,12 @@ MonoBehaviour:
   mapID: 0
   entryPoints:
   - engryPointID: 0
-    cell: {x: -3, y: -11, z: 0}
+    cell: {x: -4, y: 1, z: 0}
   - engryPointID: 1
-    cell: {x: 1, y: -11, z: 0}
+    cell: {x: -1, y: 0, z: 0}
   - engryPointID: 2
-    cell: {x: -1, y: 2, z: 0}
+    cell: {x: -3, y: 13, z: 0}
   - engryPointID: 3
-    cell: {x: 3, y: -21, z: 0}
+    cell: {x: 1, y: -11, z: 0}
   - engryPointID: 4
-    cell: {x: 10, y: -11, z: 0}
+    cell: {x: 8, y: 0, z: 0}

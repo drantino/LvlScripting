@@ -17,4 +17,4 @@ MonoBehaviour:
   mapID: 2
   entryPoints:
   - engryPointID: 0
-    cell: {x: -4, y: -9, z: 0}
+    cell: {x: -4, y: -1, z: 0}
