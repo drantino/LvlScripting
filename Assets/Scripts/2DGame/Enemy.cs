@@ -25,8 +25,6 @@ public abstract class Enemy : MonoBehaviour
     private bool patroling;
 
     public abstract void Attack();
-    public abstract void TakeDamage(float dmg_);
-    public abstract void Die();
     public void Pursue()
     {
         aiMovement.InitializeMovement(playerPosition);
@@ -54,6 +52,8 @@ public abstract class Enemy : MonoBehaviour
             if(attackCoroutine != null)
             {
                 StopCoroutine(attackCoroutine);
+                //unsure if this is a good way to handle it, but it works
+                attackCoroutine = null;
             }    
             
             Pursue();

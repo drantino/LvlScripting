@@ -12,7 +12,7 @@ public class Treasure : MonoBehaviour, IInteractable, IDamagable, IExplode
         
     }
 
-    public void TakeDamage()
+    public void TakeDamage(int incomeingDamage)
     {
         
     }

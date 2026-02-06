@@ -13,17 +13,4 @@ public class RangedEnemy : Enemy
         SimpleProjeectile projectile = obj.GetComponent<SimpleProjeectile>();
         projectile.InstantiateProjectile(new Vector2(playerPosition.x - projectileSpawnLocation.position.x,playerPosition.y-projectileSpawnLocation.position.y ).normalized);
     }
-
-    public override void Die()
-    {
-        
-    }
-
-
-
-
-    public override void TakeDamage(float dmg_)
-    {
-        
-    }
 }

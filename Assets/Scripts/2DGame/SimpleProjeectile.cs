@@ -23,4 +23,11 @@ public class SimpleProjeectile : MonoBehaviour
         yield return new WaitForEndOfFrame();
         Destroy(gameObject);
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            collision.GetComponent<IDamagable>().TakeDamage(10);
+        }
+    }
 }

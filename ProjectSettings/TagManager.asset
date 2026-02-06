@@ -9,6 +9,7 @@ TagManager:
   - GameState
   - SpeedBoost
   - SpeedDebuff
+  - Enemy
   layers:
   - Default
   - TransparentFX

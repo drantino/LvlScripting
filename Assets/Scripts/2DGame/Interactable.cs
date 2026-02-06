@@ -6,7 +6,7 @@ public interface IInteractable
 }
 public interface IDamagable
 {
-    public void TakeDamage();
+    public void TakeDamage(int incomeingDamage);
 }
 public interface IExplode
 {
