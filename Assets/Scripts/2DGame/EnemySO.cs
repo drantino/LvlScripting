@@ -4,5 +4,5 @@ using UnityEngine;
 public class EnemySO : ScriptableObject
 {
     public GameObject Prefab;
-    public int HP, DEF, ATK;
+    public int DEF, ATK;
 }

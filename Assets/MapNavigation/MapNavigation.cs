@@ -35,6 +35,8 @@ public class MapNavigation : MonoBehaviour
         Grid g = mapParent.GetComponent<Grid>();
         player.position = g.GetCellCenterWorld(mapDictionary[mapID].entryPoints[portalID].cell);
 
+        TwoDGameState.Instance.InitializeMap(mapID);
+
         //get the cell that we want the player to spawn in MapDictionary[mapID].enteryPoints[portalID].cell
         //conver the cell into world space. returns a Vector 3 the new position
         //set the position to the update value

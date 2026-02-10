@@ -8,7 +8,7 @@ public abstract class Enemy : MonoBehaviour
     public int HP;
     public int ATK;
     public int DEF;
-
+    public int enemyID;
     public float attackDelay;
 
     public CircleOverlap sightLine;

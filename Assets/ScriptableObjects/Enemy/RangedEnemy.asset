@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27c109cdb4dd7c4499087313b91d395e, type: 3}
-  m_Name: MeleEnemy
+  m_Name: RangedEnemy
   m_EditorClassIdentifier: Assembly-CSharp::EnemySO
-  Prefab: {fileID: 6759194716206462800, guid: b2341f3a82989004588b6eaec70e24eb, type: 3}
-  DEF: 3
-  ATK: 3
+  Prefab: {fileID: 5657390963895297785, guid: 46c7401b336a43044ba8ae5355345081, type: 3}
+  DEF: 1
+  ATK: 5
