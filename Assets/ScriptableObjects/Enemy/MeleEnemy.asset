@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27c109cdb4dd7c4499087313b91d395e, type: 3}
+  m_Name: MeleEnemy
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySO
+  Prefab: {fileID: 6759194716206462800, guid: b2341f3a82989004588b6eaec70e24eb, type: 3}
+  HP: 0
+  DEF: 3
+  ATK: 3
