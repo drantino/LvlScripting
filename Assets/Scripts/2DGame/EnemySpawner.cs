@@ -5,15 +5,26 @@ public class EnemySpawner : MonoBehaviour
 {
     public Transform[] spawnPoints;
     public List<Enemy> activeEnemies = new List<Enemy>();
-    public void Spawn(EnemyState enemyState, int HP)
+    public EnemyDatabase enemyDatabase;
+    public void Spawn(int enemyID, int HP)
     {
         Transform spawnPoint = spawnPoints[Random.Range(0,spawnPoints.Length)];
-        GameObject tmp = Instantiate(enemyState.enemySO.Prefab, spawnPoint.position, Quaternion.identity);
+        EnemySO enemySO = enemyDatabase.Get(enemyID);
+        GameObject tmp = Instantiate(enemySO.Prefab, spawnPoint.position, Quaternion.identity);
 
         Enemy e = tmp.GetComponent<Enemy>();
         e.HP = HP;
-        e.enemyID = enemyState.EnemyID;
-        e.ATK = enemyState.enemySO.ATK;
-        e.DEF = enemyState.enemySO.DEF;
+        activeEnemies.Add(e);
+        e.enemyID = enemyID;
+        e.ATK = enemySO.ATK;
+        e.DEF = enemySO.DEF;
+    }
+    public void ClearEnemies()
+    {
+        foreach (Enemy e in activeEnemies)
+        {
+            Destroy(e.gameObject);
+        }
+        activeEnemies.Clear();
     }
 }

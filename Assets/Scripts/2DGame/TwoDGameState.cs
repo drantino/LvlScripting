@@ -6,14 +6,19 @@ using UnityEngine;
 public class TwoDGameState : MonoBehaviour
 {
     public static TwoDGameState Instance;
-    public List<MapState> mapStates = new List<MapState>();
+    //public List<MapState> mapStates = new List<MapState>();
+    public TwoDMapGameState mapgameState;
     public Transform mapParent;
     private EnemySpawner spawner;
     private int currentMapID;
     private MapState currentMapState;
+    private void Awake()
+    {
+        Instance = this;
+    }
     private void Start()
     {
-        foreach (MapState mapState in mapStates)
+        foreach (MapState mapState in mapgameState.mapStates)
         {
             mapState.InitalizeMDictionary();
         }
@@ -21,13 +26,13 @@ public class TwoDGameState : MonoBehaviour
     }
     public void InitializeMap(int mapID_)
     {
-        MapState targetMap = null;
-        foreach (MapState mapState in mapStates)
+        
+        foreach (MapState mapState in mapgameState.mapStates)
         {
             if (mapState.mapID == mapID_)
             {
-                targetMap = mapState;
-                BeginEnemySpawn(targetMap);
+                currentMapState = mapState;
+                BeginEnemySpawn(currentMapState);
                 break;
             }
         }
@@ -39,9 +44,19 @@ public class TwoDGameState : MonoBehaviour
         {
             if (enemy.currentHP > 0)
             {
-                spawner.Spawn(enemy, enemy.currentHP);
+                spawner.Spawn(enemy.EnemyID, enemy.currentHP);
             }
 
+        }
+    }
+    public void RestEnemies()
+    {
+        foreach(MapState m in mapgameState.mapStates)
+        {
+            foreach(EnemyState e in m.enemyStates)
+            {
+                e.currentHP = e.maxHP;
+            }
         }
     }
     public void SaveGameState()
@@ -63,7 +78,7 @@ public class MapState
 {
     public int mapID;
     public List<EnemyState> enemyStates;
-    public Dictionary<int, EnemyState> enemyDictionary;
+    [NonSerialized]public Dictionary<int, EnemyState> enemyDictionary;
     public void InitalizeMDictionary()
     {
         enemyDictionary = new Dictionary<int, EnemyState>();
@@ -79,5 +94,11 @@ public class EnemyState
 {
     public int EnemyID;
     public int currentHP;
-    public EnemySO enemySO;
+    public int maxHP;
 }
+[Serializable]
+public class TwoDMapGameState
+{
+    public List<MapState> mapStates;
+}
+

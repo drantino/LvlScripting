@@ -1,5 +1,7 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MapNavigation : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class MapNavigation : MonoBehaviour
     [SerializeField] private Transform mapParent;
     private Dictionary<int,MapData> mapDictionary = new Dictionary<int,MapData>();
     [SerializeField] private GameObject currentMap;
+    public UnityEvent OnMapEnter;
     private void Awake()
     {
         if(Instance == null)
@@ -30,18 +33,28 @@ public class MapNavigation : MonoBehaviour
     }
     public void GoToMap(int mapID, int portalID)
     {
+
+        TwoDGameState.Instance.SaveGameState();
+        currentMap.GetComponentInChildren<EnemySpawner>().ClearEnemies();
+
         Destroy(currentMap);
+
         currentMap = Instantiate(mapDictionary[mapID].preFab, mapParent);
         Grid g = mapParent.GetComponent<Grid>();
         player.position = g.GetCellCenterWorld(mapDictionary[mapID].entryPoints[portalID].cell);
-
-        TwoDGameState.Instance.InitializeMap(mapID);
+        StartCoroutine(InitializeMap(mapID));
+        OnMapEnter?.Invoke();
 
         //get the cell that we want the player to spawn in MapDictionary[mapID].enteryPoints[portalID].cell
         //conver the cell into world space. returns a Vector 3 the new position
         //set the position to the update value
 
         // add aesthhetics: screenfade, sfx, animations
+    }
+    private IEnumerator InitializeMap(int mapID)
+    {
+        yield return new WaitForEndOfFrame();
+        TwoDGameState.Instance.InitializeMap(mapID );
     }
 }
 public class MapData

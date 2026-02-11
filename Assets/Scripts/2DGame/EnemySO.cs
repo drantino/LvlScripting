@@ -5,4 +5,5 @@ public class EnemySO : ScriptableObject
 {
     public GameObject Prefab;
     public int DEF, ATK;
+    public int enemyID;
 }

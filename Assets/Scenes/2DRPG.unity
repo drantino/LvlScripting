@@ -171,6 +171,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5970965521502239336, guid: e735777fdf0ffb04aac6eefa2d0f6313, type: 3}
+      propertyPath: m_ChunkCullingBounds.x
+      value: 0.016129017
+      objectReference: {fileID: 0}
+    - target: {fileID: 5970965521502239336, guid: e735777fdf0ffb04aac6eefa2d0f6313, type: 3}
+      propertyPath: m_ChunkCullingBounds.y
+      value: 0.016129017
+      objectReference: {fileID: 0}
+    - target: {fileID: 7413116975144259097, guid: e735777fdf0ffb04aac6eefa2d0f6313, type: 3}
+      propertyPath: enemyDatabase
+      value: 
+      objectReference: {fileID: 11400000, guid: e963c6fa4b74dfc49800462cb2d21965, type: 2}
+    - target: {fileID: 7413116975144259097, guid: e735777fdf0ffb04aac6eefa2d0f6313, type: 3}
+      propertyPath: activeEnemies.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -856,6 +872,9 @@ MonoBehaviour:
   library: {fileID: 11400000, guid: 8306e8c574a23284c90f484049055a27, type: 2}
   mapParent: {fileID: 1773107959}
   currentMap: {fileID: 420751733}
+  OnMapEnter:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1703894845
 Transform:
   m_ObjectHideFlags: 0
@@ -1020,35 +1039,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521266295c59325489162a7df1c8e7c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TwoDGameState
-  mapStates:
-  - mapID: 0
-    enemyStates:
-    - EnemyID: 0
-      currentHP: 10
-      enemySO: {fileID: 11400000, guid: a67d0ae5fe271774881fe0a0c4bd0d2e, type: 2}
-  - mapID: 1
-    enemyStates: []
-  - mapID: 2
-    enemyStates:
-    - EnemyID: 2
-      currentHP: 5
-      enemySO: {fileID: 11400000, guid: 12a071a20e38d58479024d3915825a8f, type: 2}
-  - mapID: 3
-    enemyStates:
-    - EnemyID: 3
-      currentHP: 5
-      enemySO: {fileID: 11400000, guid: a67d0ae5fe271774881fe0a0c4bd0d2e, type: 2}
-    - EnemyID: 4
-      currentHP: 5
-      enemySO: {fileID: 11400000, guid: a67d0ae5fe271774881fe0a0c4bd0d2e, type: 2}
-  - mapID: 4
-    enemyStates:
-    - EnemyID: 5
-      currentHP: 10
-      enemySO: {fileID: 11400000, guid: a67d0ae5fe271774881fe0a0c4bd0d2e, type: 2}
-    - EnemyID: 6
-      currentHP: 10
-      enemySO: {fileID: 11400000, guid: 12a071a20e38d58479024d3915825a8f, type: 2}
+  mapgameState:
+    mapStates:
+    - mapID: 0
+      enemyStates:
+      - EnemyID: 0
+        currentHP: 10
+        maxHP: 10
   mapParent: {fileID: 1773107959}
 --- !u!4 &1813458730
 Transform:
