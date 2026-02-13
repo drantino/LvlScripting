@@ -25,7 +25,7 @@ public class ScreenFader : MonoBehaviour
         if(screenFade != null)
         {
             StartCoroutine(FadeScreen(duration));
-        }
+        } 
     }
     private IEnumerator FadeScreen(float duration)
     {
@@ -45,7 +45,7 @@ public class ScreenFader : MonoBehaviour
     }
     private void SetAlpha(float alpha)
     {
-        if(screenFade == null)
+        if(screenFade != null)
         {
             Color c = screenFade.color;
             c.a = alpha;
