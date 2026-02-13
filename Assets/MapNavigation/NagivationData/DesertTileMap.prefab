@@ -50,7 +50,7 @@ MonoBehaviour:
   - {fileID: 89277576249301887}
   - {fileID: 3911198532477095747}
   activeEnemies: []
-  enemyDatabase: {fileID: 0}
+  enemyDatabase: {fileID: 11400000, guid: e963c6fa4b74dfc49800462cb2d21965, type: 2}
 --- !u!1 &511040554801577117
 GameObject:
   m_ObjectHideFlags: 0
@@ -76,7 +76,7 @@ Transform:
   m_GameObject: {fileID: 511040554801577117}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.633, y: -0.526, z: 0}
+  m_LocalPosition: {x: -6.19, y: -2.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -107,7 +107,7 @@ Transform:
   m_GameObject: {fileID: 3582055472950801926}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.633, y: -0.007, z: 0}
+  m_LocalPosition: {x: -7.02, y: 2.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

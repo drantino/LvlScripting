@@ -6,15 +6,14 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "EnemyDatabase", menuName = "Scriptable Objects/EnemyDatabase")]
 public class EnemyDatabase : ScriptableObject
 {
-    public List<EnemySO> enemies;
+    public List<EnemySpawnData> enemies;
     private Dictionary<int, EnemySO> lookUp;
     public void BuildookUp()
     {
         lookUp = new Dictionary<int, EnemySO>();
-        foreach (EnemySO enemy in enemies)
+        foreach (EnemySpawnData enemy in enemies)
         {
-            lookUp.Add(enemy.enemyID, enemy);
-
+            lookUp.Add(enemy.enemyID, enemy.enemySO);
         }
     }
     public EnemySO Get(int ID)
