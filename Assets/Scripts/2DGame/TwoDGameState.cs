@@ -2,6 +2,7 @@ using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class TwoDGameState : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class TwoDGameState : MonoBehaviour
     private EnemySpawner spawner;
     private int currentMapID;
     private MapState currentMapState;
+
+    public bool[] treasureChests;
+
+    public SaveData2D saveData;
     private void Awake()
     {
         Instance = this;
@@ -23,6 +28,7 @@ public class TwoDGameState : MonoBehaviour
             mapState.InitalizeMDictionary();
         }
         InitializeMap(0);
+        
     }
     public void InitializeMap(int mapID_)
     {
@@ -71,6 +77,16 @@ public class TwoDGameState : MonoBehaviour
         }
 
     }
+    public void TreasureGet(int index)
+    {
+        treasureChests[index] = true;
+    }
+    public void SaveDataUpdate()
+    {
+        saveData = new SaveData2D();
+        saveData.mapStates = mapgameState;
+        saveData.treasureBools = treasureChests;
+    }
 }
 
 [Serializable]
@@ -101,4 +117,11 @@ public class TwoDMapGameState
 {
     public List<MapState> mapStates;
 }
+[Serializable]
+public class SaveData2D
+{
+    public TwoDMapGameState mapStates;
+    public bool[] treasureBools;
+}
+
 

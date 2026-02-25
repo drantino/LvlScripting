@@ -1,0 +1,6561 @@
+fileFormatVersion: 2
+guid: 804614ab1d601ec4895807c1916570ff
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbf9ee77c214e24986df04937e7ccda
+      internalID: -1955055733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57dad4ae3a21127428519991947de9a8
+      internalID: 1748653377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757b3fa595c49f14d9bbd7622faf1eeb
+      internalID: -186264871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4f0591b2232c149894b24d8584f3ad
+      internalID: 554557576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b06ccd097488c4485b4ef33ecfb48c
+      internalID: 874182982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5be9102a5dc1943b6537fb9c4315fa
+      internalID: -1850930548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24141b322639c1e44acbfaa902b26c0b
+      internalID: -1548670612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7723b3a1d69b69248bd89173a72f721c
+      internalID: -1326151068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15408003a1109d841a116ce65d4ebfa9
+      internalID: 1701705575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2432aee09768f4479554a35e4b9154d
+      internalID: -1521996390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4914c6d4aa6d724286b36d6925e30d2
+      internalID: -582786036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55358c594e366a0489ab760319aea28d
+      internalID: 993551748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3c8288d52384941943a670c4340a87
+      internalID: -228421733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb19002ebf587e246b5cb1b7784fa567
+      internalID: 1135200324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60384d028bd73dc499d12c85b3ee7354
+      internalID: 721636096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b4d7026ac454d42a76cf29969c4b57
+      internalID: 264909242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb12980a74f3344991c7c0bb4378531
+      internalID: -30982791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_17
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8562473b9e92f4b9b05ba82d892139
+      internalID: -1701993503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6a1e0ea98ba4e4e87db1619cdbe078
+      internalID: 714146387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_19
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068facd7dfb3af84e8cc68e0f4eee1d8
+      internalID: 939424196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c63cbc8e4670ef4eb96ba8dc0e15221
+      internalID: -1504586219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_21
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e2710f138287a48b41af059b072f95
+      internalID: 1682421137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_22
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc5df34b31b28845ad3e88dba9688c6
+      internalID: 435346936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_23
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380a5fa0ffa85ca479af5e3afbd5f05d
+      internalID: -164879204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_24
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507cd90fb8a31cd4b9490070e57ded0e
+      internalID: 884074331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_25
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307a9a5f3267efe45b318cf07c22c236
+      internalID: 987040074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14618a345211b5f41bde6674777f700f
+      internalID: 705537490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_27
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977f434e2c6f0204cb1121c6882d320e
+      internalID: 28131923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4681b9b9da40384ea2b57541d3645aa
+      internalID: -486430815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_29
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2bd1465e46108045a1316ba9b466831
+      internalID: 1783933201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d81359b7689404a8e4c3a3ea63e7fa
+      internalID: -1568940749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_31
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cee71732fa8b74fb05d09fc7346b69
+      internalID: 2074717177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3533a7705832954f8a9bec6c74a8c60
+      internalID: -1028517939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_33
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ebcd6f6bc125a45a84566fa2fe4542
+      internalID: 1929502704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f27fb6df0b21e43b09fec123a237be
+      internalID: 51432223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_35
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4f0ad763076d544bef81e21fb2cb52
+      internalID: -454908369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_36
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68192b2ba1de8df4ead5924b10489bb5
+      internalID: -1592932253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_37
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67114ca08cf15954dad20919b684b303
+      internalID: -852771044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83892e29d07b93499e52c29a5044039
+      internalID: -1041427007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_39
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f66c409148f42489006cce37101ced
+      internalID: 2088350328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c953a6b123a89748962cb066946c1aa
+      internalID: 602884724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_41
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4ea24a613dff34db82d671b88738c3
+      internalID: 1008459169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_42
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31aa0d3f5b36f9e498c40dcf959fff6a
+      internalID: 1430945262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_43
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6441472d70ff25469bf3083a7e0fc6b
+      internalID: 455470262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fed5999d7629d45a7efbcf0da56b8d
+      internalID: -1473681240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_45
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53867719490296408fc823159e31289
+      internalID: -31963534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_46
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3434245c7ade554fbec1b4e3bbd8dc9
+      internalID: -707040528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_47
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c300c242207441418476c2540601f54
+      internalID: -1196924098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_48
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e992699cae94b24db548dffe5a04274
+      internalID: 1247904255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_49
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11a6c40f5177a14db8df4bc5ad1770b
+      internalID: 755693256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8b7c1160727f74ab786f25cd3cef6f
+      internalID: 1250049841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_51
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504eacb3792361e448f47ae966c068ac
+      internalID: 1184739188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_52
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cbf6152104dff4c98108831fb8f209
+      internalID: 1068475357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_53
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd57fc62a634d60449213a7e87f0d39d
+      internalID: 85480490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_54
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966ad27634537a24995ac5d0701fe8cb
+      internalID: 803141596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_55
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0169f3e285fc84d855b323ca44a197
+      internalID: 1997831840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_56
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b272a8cba166d7d498cb9fb016eff76e
+      internalID: -1584096327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_57
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55203da4b28fe4a4d98a9af5fab25bf3
+      internalID: 138235724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_58
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d08ed453da617f469edab33387640e1
+      internalID: -635786069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_59
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5878c42b8556849973e3ccc91209ef
+      internalID: 375746425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c0f1fd47f2f3e49966b5632c3431d7
+      internalID: -1207472395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_61
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ee7f4cbaac0bd42b86eb05920e5af3
+      internalID: 127870565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_62
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bedf0795c77968a45bae336feb05e34f
+      internalID: -1792793244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_63
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c609b63a2d885ec40ba44e2055d15ae8
+      internalID: 636845435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_64
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56565e10ef0225f40be23f740369db3c
+      internalID: -1028453321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_65
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43009eb52622a644bb2623f0c4ced78f
+      internalID: -81246211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_66
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee707d9df9ac01048ab8c19e0d652b7b
+      internalID: 1188674921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_67
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7d8ff4d98245c43aa5c871a0bb3061
+      internalID: 178807515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_68
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76bad78d4126f184c94d47965a5824cc
+      internalID: 1195580374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_69
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf7058eb9c627e4995cf86352b3bad9
+      internalID: 1706629742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3543dbb1480698459ad543363909636
+      internalID: 727497023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_71
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e58aefd1da16274c84a4d96b178a41c
+      internalID: 906456742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_72
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f123ee90c4eeef438c412f649024a29
+      internalID: -983449170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_73
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2efc72a2f85e02419bccbbfe6b0b1f0
+      internalID: 717233528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_74
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a8c54efe92aaa418383018096da18d
+      internalID: -946427411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_75
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240c92fe1a31392498b918c6028937d1
+      internalID: -1819313378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_76
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ec2911a7dfb3a4ba4a764d62616fc2
+      internalID: 2014122863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_77
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c33f5d1a34945409c2ca03fbe42c69
+      internalID: -1631119680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_78
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af592678c7ee6a4da0c8ab7d4c7dd8f
+      internalID: 219404842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_79
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e615967f689064ab22f1053ddbd7bb
+      internalID: -1436662225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ace7a0edb614346a7ce33a93f4f455
+      internalID: -1583062359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_81
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c61fb51c84f3b4882584040ace1496
+      internalID: -1782152905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_82
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b5df33b92a29c4eb24855f68b2c1ca
+      internalID: -1200417615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_83
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930ecaeb06619a349a954a9c75c0d52b
+      internalID: 1596283167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_84
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaff64e409d82fb4bac91500cd95a9b3
+      internalID: -992706831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_85
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2195fb30335c9634bb0311424a57ce28
+      internalID: 807819394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_86
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eeb813c3d8eedd43b46bdc5f626c03f
+      internalID: -1881828083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_87
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c4b93d68702fb4ebe2fa43a8792e54
+      internalID: -377074579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_88
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda62cd5166589d4f8e4845c3e7bf0fd
+      internalID: 1164799336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_89
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e7abff5e002414a86aead0833f3afe
+      internalID: 1868305877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615668a3770cce14c998286a88dfe70c
+      internalID: 1320799421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_91
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6511c8d8a500ace469d05e97b884c9fa
+      internalID: 356707505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_92
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb2b669173d5fb48b338f404c5fcdb4
+      internalID: 313531459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_93
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d07b1bae4fa2b143afc8026334d116f
+      internalID: 260350180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_94
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27036a0af1fd0c4699dcedfe493b35e
+      internalID: 353239798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_95
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f70da44d3f2a8054d996c1622c8867c3
+      internalID: 1960842939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_96
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae4a5735dfeb954a98fe3da5aa764c9
+      internalID: -1729875196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_97
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f635be6b088ef46812b63d36d860dd
+      internalID: 1630431753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_98
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7797a3e045671ec4d8426a8020344be0
+      internalID: -502952252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_99
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f20630efd9cd7748848b20d5f03d6e5
+      internalID: 1240912819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f93217efdc0f8a4c880bc08dc1c3f04
+      internalID: 40752107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_101
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 598b496afb15a9b44b0e9e77eb291897
+      internalID: -464786364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_102
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c745493aa8c8140943e7923d4c131a
+      internalID: -2126131323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_103
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0644f8b112d8feb4096b45012fb215ce
+      internalID: 1694319435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_104
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c60c8a3e147648429dbdda3213cc9b1
+      internalID: 1285331615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_105
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7af5b0ed6f60954fb09d26847a7687f
+      internalID: -1647600252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_106
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c810e38353ea7da42ae76077b2ad96a2
+      internalID: 384024672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_107
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058e88c15b2396b42acce0c264b807d7
+      internalID: -314118239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_108
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2b79c4719ba59408b8631bad88128f
+      internalID: 1844922977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_109
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008a44bd3cceaf047bbcaa397e6dcdf1
+      internalID: 1897750903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c9ae0e0bc3b3640b16540f5a574b33
+      internalID: 1354163541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_111
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54daa7df70c3fbb43b5f532ec90a033c
+      internalID: -874963771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_112
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c086a15fc8f90c49bd7caa865d86866
+      internalID: -1387014094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_113
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6061296dca3d4a4f95e54f01be26d00
+      internalID: 990165188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_114
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef66e32790c7d514bb022e5c11c21a50
+      internalID: -1391083991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_115
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0996c74f2f68f24b97e0048da8a3947
+      internalID: 647676822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_116
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e411f9e7460fdf04fbe73d573d385cd2
+      internalID: 1264672898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_117
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40cb3b943f6a1074d9063be6d164bd5e
+      internalID: 352266067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_118
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6accd3c5106ad65439e26ccb96f70ca1
+      internalID: 1380773529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_119
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1be433cbfcc22b499273446b4e8a830
+      internalID: 1151367126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33ffb1733e8439439633640c1b8ad5f
+      internalID: 427307233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_121
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9775bb9c2d9d08c428b33bc5e7adf225
+      internalID: 2077263755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_122
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2777ab7b6a7be498789279bc9f2811
+      internalID: 492814028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_123
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8543bd5ca14d0f54f807ea9a5511db6a
+      internalID: 1925847332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_124
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ad9ab8360f51f4c902db446f0d8dd0
+      internalID: 347587129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_125
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431ce19433feca4468d9f7f0035be7db
+      internalID: -1712384903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_126
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e809559aa540a4408f2117804491915
+      internalID: 1601937439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_127
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440202aa4410f0a45afde1d5784d1f8f
+      internalID: -1699182634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_128
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb3902df9eba5a45896aa37b5a34349
+      internalID: 1111937720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_129
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51951b2a6abcaae4b828f1e3c1b5025f
+      internalID: -160750116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d047cb9cb121d5c44891863d23b74f19
+      internalID: 680044676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_131
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6fd728c61dfde41abf60c4b807109c
+      internalID: -1688278847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_132
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df402d715532304e88c969f927a6d17
+      internalID: -2108637834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_133
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e36982d6c357e3468b014d6464000d4
+      internalID: -108471124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_134
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ff15c0ce270794e9f7866e3052105b
+      internalID: 2110179157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_135
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035c02860c4efd146bfd0e065419b540
+      internalID: -1878246965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_136
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a34adaa32bcf5a45a7cacd61d90e9df
+      internalID: 1764648403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_137
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce85ffad44ff8734b9b103ce7fb78374
+      internalID: 285632912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_138
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d911655d05acf498c1824845156a3f
+      internalID: 1266565979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_139
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1288e61417540047aa35708d8f28f81
+      internalID: 1501391579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93b35cc97008e3438653d75d1883f6c
+      internalID: -842989919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_141
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef2e1a811aa5654c9d4b80d3d36962a
+      internalID: -1259078815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_142
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a9658c0d27a6e4680e0b5419e2ce2d
+      internalID: 2071228305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_143
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123dbee1bf10bcc4aa89f83ce124b968
+      internalID: 1353035770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_144
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471baa150640ff645bf263c93af3496b
+      internalID: 1365273390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_145
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c06ba8f969ceeb41854055c9939cc49
+      internalID: 91925573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_146
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c6cadc73bdc0d4ea7da384c332cc94
+      internalID: 985785304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_147
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64929038946788a4cbed570dd0bcdd06
+      internalID: 1263297142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_148
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516d2ec2cbd6f20418324009c3abab9f
+      internalID: 112212116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_149
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97a16eb7c7818d40a764637a3639773
+      internalID: -436989182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_150
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7533e625d63e24589db2b626ac2cd1
+      internalID: -802048507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_151
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84883b5842158042a639cf8b5853333
+      internalID: -599575150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_152
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3d2ae00086a8548b8b384b6fdb9121
+      internalID: 1506268647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_153
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26e3f5ca1f3c71449ec93a9c0ed4e1a
+      internalID: -71916592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_154
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82315e405df08d942b611f9203dca466
+      internalID: -1657497025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_155
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d6a8aa5a65d904ba983fdc1e9f536c
+      internalID: 639622889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_156
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4173853d5ca164bb5dbb1ccb3d82b1
+      internalID: -1176087593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_157
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a45709662902945b7a75089cb613af
+      internalID: 1661491496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_158
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cefbac178159cab47843fc31fa70505a
+      internalID: 1311476952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_159
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea11da062d731245892ace60225bb6f
+      internalID: 1314477012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0efb73236256bd47aa866c5a9050f1e
+      internalID: 1440071745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_161
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8d9951d275b09498bc519c0f88c496
+      internalID: 862672218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_162
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4251b8a287df6846951394f1c92bd39
+      internalID: 629757490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_163
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf3038786cd1ce45bc2df0dc3c03c80
+      internalID: 2058454404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_164
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b1b8054d74fc14a844ac04b0348f76
+      internalID: 725494487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_165
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ec979edb90b2f4c917263a7426842a
+      internalID: 189230648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_166
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9071be531a70d7748965f6e65d9932b6
+      internalID: 93767161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_167
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00f20c6c135fb14eab9b51e38ef288f
+      internalID: 2038850005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_168
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7920a032732ae7849b1e7e24fdfb9225
+      internalID: -1761026674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_169
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc08c9b56d62e34dbbe2aab8f074a89
+      internalID: 1263951884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_170
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9faec0882044f84dba7fc533df7e0aa
+      internalID: 715809139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_171
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9130cf55b1e6f42a647d0317c8c80c
+      internalID: 1521123380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_172
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab937525e1ad294fa53329d26405b04
+      internalID: -216974580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_173
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d15a21007f641642895463a5557d702
+      internalID: -2104871877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_174
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34665398115523479b5220e62177895
+      internalID: 1826200190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_175
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cfabbeea1329144e9b223552d6855ee
+      internalID: -133281591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_176
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d60961d8b52b70241a1595550a617a97
+      internalID: -129139665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_177
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e287d86882de1d94fa09fbdf96823de2
+      internalID: -856860452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_178
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b54603eb33d6fc4ebb0deb373faf35e
+      internalID: 2069130506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_179
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3840cdaa23b189419c34c01ea91170e
+      internalID: -229629603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_180
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278a3d08b3e7e2848b67b9f09c6e8214
+      internalID: 1731501576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_181
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd5fe2ab37a5624e89e31660b50d317
+      internalID: -1253838156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_182
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd3507f905114e4283e20769496c17e
+      internalID: 1410714110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_183
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4729383974d6024bbf7d0263ba89602
+      internalID: -784147854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_184
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a766b1ade8db2f4ab0aa5094c20abc4
+      internalID: -21002352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_185
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cd88365029d58458dfc20723cbdf1e
+      internalID: 1915528083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_186
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6794884542368ac42b3b6cc87b6bfd65
+      internalID: 438295447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_187
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0886287c41a4a9458363be8a5b13f56
+      internalID: -996990517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_188
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6758f0e8ca4c06d45aa16045ba50c274
+      internalID: -1208484760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_189
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7b4d956d6823b47af100c50c67758b
+      internalID: 423478807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_190
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65f07b1dd5cbf3448708827ad3822b3
+      internalID: 320140111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_191
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36fb00504e426174d918e50093282ee4
+      internalID: 856230507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_192
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f73df6f22c2ca489823cc22e8444e9
+      internalID: 845179744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_193
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be58ac0fbd8e5d48a5ab754178df643
+      internalID: -738283603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_194
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d555ae2b40fd644890d24fad385d7b
+      internalID: 731676642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_195
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc93c1a5089367143aee10f8d6af3c1a
+      internalID: 2133566355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_196
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96035860c63d9b4e92dacbee6bc5693
+      internalID: 1079376711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_197
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc72fc3ac8f5224ba5a3b6ebb1929cd
+      internalID: -177806859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_198
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd452bb7b5c1ae848b4b06b0ec3a6306
+      internalID: -1127197678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_199
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3f46db144a5a446a8d47e541777db0
+      internalID: 589809553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_200
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af0fc114d4586440813471ae2c63a83
+      internalID: -1861979735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_201
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6f5b233d62a314181534bed1267774
+      internalID: -1292709460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_202
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97878e3f383c84d4c8fdc4c02cd3b399
+      internalID: -19999432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_203
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a263498767f561345ac6a27cd2a42328
+      internalID: -1135503168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_204
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20617166c436784eae11d4eb993abea
+      internalID: -767329896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_205
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44ef914e24d6f14a9660d222b878cce
+      internalID: 160578495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_206
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b32a4b48cc45a468d1b9f1767c5970
+      internalID: 1818971542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_207
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14df35721617a9144bfeef2aca37b44e
+      internalID: -612371772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_208
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1960f45092db67c4d8563b1072b91959
+      internalID: 802879090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_209
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3fd4fb3a0e0e0408dcaf4754f6b861
+      internalID: -1074488663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_210
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58da941e740ec7744894531f887d353b
+      internalID: -1800231478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_211
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1404799f63bd6844199ec5b5d7f300c2
+      internalID: -1599351381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_212
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc18eb539e78db458155a8e1d7e38fa
+      internalID: -1733909580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_213
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc973cd93229d1b4db4641673b5ff89d
+      internalID: 1578353088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_214
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac0775cd15e5a94aba48e37fc0ba929
+      internalID: -1518444730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_215
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ffe39e8d2e444449d9bd11e113f41c
+      internalID: 1673666657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_216
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1bd22a5bd2e804593ebf24a20aa6c8
+      internalID: -1296691130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_217
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4b3bb5b3674764da3dee6465e365b1
+      internalID: 1983340908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_218
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b157870e6684d8e4185fdcd2960df317
+      internalID: -997071747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_219
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ea9d99a49833444889d6fd29ea614c
+      internalID: 1670430813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_220
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c968c2f1553a94e939ef3e046cdc87
+      internalID: 1848213328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_221
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37865232d6fd2024e9fd0c61cc77f345
+      internalID: -335724624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_222
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca90cc75696601a46a4e67b09a021ba0
+      internalID: -170072547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_223
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d4baeef87ce2c4891d35190c48416e
+      internalID: -2022679532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_224
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff30549cc31ea3249bf98eb4119cfcf2
+      internalID: -647993629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_225
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b13f533b3aab749bc5c9dd321aba88
+      internalID: 925965791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_226
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2660c34c8c3b30246825b70ee87596ee
+      internalID: 454254610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_227
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a699916f823c4c9479c4790ac5c4d587
+      internalID: 76167053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_228
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995ab821cf7fce9468b8c7ccbbfecf58
+      internalID: 388668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_229
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c26d1cdd281fb4dbb861545882e1e8
+      internalID: 938224914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_230
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036fe37139be2bc4f94e424221336e26
+      internalID: 364831146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_231
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02016dc0dcb3f524b8f05181138ee910
+      internalID: -646994517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_232
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93aa10459003dee4cb96143292d79e36
+      internalID: -1313614615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_233
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9308fe852c20af143b94a1a155b01639
+      internalID: 1723966461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_234
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29dfa879e8bf4444197bf1ece747d7c4
+      internalID: -1634152001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_235
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2f5d002e0fef749a8c377b7de79311
+      internalID: -650958028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_236
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31f3e6f473b2d945ad05e33d91df588
+      internalID: -682458018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_237
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a78c4f8d8ee2a6429f128501b81e490
+      internalID: -446511354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_238
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442f17758b4adcb49a770afd96f62124
+      internalID: 1705485464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_239
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea26767589667ca458871302787973be
+      internalID: 1790426320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_240
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3d58ea29612534fada62910a5d3882
+      internalID: -230743049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_241
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a8a7962daa49b449c32ab77a4bf11e
+      internalID: 868012605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_242
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7068ee34eb95944aa8593d523d5bee5
+      internalID: -645427576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_243
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b8effa29d234244b53ba3df6f5d57f
+      internalID: 255597860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_244
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f87212c8093edc4e8a608260bfd150b
+      internalID: -1910415357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_245
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c03df20a9a68f84290b45168588b228
+      internalID: -1149474062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_246
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358d3396ad40f9f4ab6bdce908c9fa3e
+      internalID: -1814077417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_247
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29606962d5bae9647a5b58a9b94c15b6
+      internalID: 65027687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_248
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad5c84e0a318d24ea05dc079e8bebd4
+      internalID: -1320848416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_249
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadfae46dadad8d4d87a426f5c57f5f0
+      internalID: -1621821355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_250
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf2aaa72d1e59844bed8742d4236102
+      internalID: 2026760187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_251
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee065fa18beb1245b7cefdee64796f0
+      internalID: 333970796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_252
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337f3a0c3ea8ea348addd1fd8b3eedad
+      internalID: -831175452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_253
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee898b920183bfe41b5b4403781c5991
+      internalID: 1231619060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_254
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a13724f7fbc80d45a8cbe9c830d9c39
+      internalID: 372239950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_255
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c787f21102a00044299ae019423c284e
+      internalID: 1652410930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_256
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a98121ccb9fc842aedd9778c20a761
+      internalID: 816160288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_257
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd3c1b0678ba63419eb2db9540ce3a4
+      internalID: 1598132231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_258
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9cbcaa47eef5df4b923e028ff9d733b
+      internalID: -1853459444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_259
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c65653e346d2b4495a6fe5e47471f7
+      internalID: -1534783253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_260
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ab6fe0018cb2140a698dcf6565550e
+      internalID: -1055053091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_261
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee48406c3787ff47a6c0ee822ecaed9
+      internalID: 1741303150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_262
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8878c0c78c5f02499b62df29cc8c05b
+      internalID: 978816064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_263
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a553a2063d603ce48a20be35d89466fb
+      internalID: -1037096660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_264
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfedb88d99d53a74596fa6766a09da06
+      internalID: 2053360281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_265
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b68b9df53375d48bc07d59019cc371
+      internalID: 2112681520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_266
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8c156a5bba247409703fc3311de8fa
+      internalID: 1225723392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_267
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a38f29dd1ee3f84eb42afbc3e2ef115
+      internalID: -1803268055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_268
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40feaff4191d8247b3057b6c80b2cf0
+      internalID: 275993860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_269
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b64ede5dbe6704ea328ab5e63a8747
+      internalID: 117774217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_270
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d1c1df94d40194e9429df1214ff03f
+      internalID: 321891512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_271
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a85ed3a0ff98e04884aafdd98372c51
+      internalID: -2069904193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_272
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a9d2bef4a85fe4684c95a690363f57
+      internalID: -2019981170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_273
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ccb0ab02b53674d93fd78a4ec43b08
+      internalID: -1152472166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_274
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3227e01e6c29743498dc9a8f0b19610a
+      internalID: -457658876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_275
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9dc86a12c4bda44b0e8f8fe888f2e3
+      internalID: 280303634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_276
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2403c5d10fdfed74ca608f7833c2feb1
+      internalID: -1605949051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_277
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce0ac6b4b3927c44a7bf94007806cb6
+      internalID: -642594843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_278
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a6427280bb6de40a9674cbcc63810a
+      internalID: -1270118261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_279
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d217cea3415644a9b6489f56506c01
+      internalID: 1226086401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d05b4d63b72c006418fda50a76d48cf4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: True
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":true,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_0: -1955055733
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_1: 1748653377
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_10: -582786036
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_100: 40752107
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_101: -464786364
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_102: -2126131323
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_103: 1694319435
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_104: 1285331615
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_105: -1647600252
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_106: 384024672
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_107: -314118239
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_108: 1844922977
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_109: 1897750903
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_11: 993551748
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_110: 1354163541
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_111: -874963771
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_112: -1387014094
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_113: 990165188
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_114: -1391083991
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_115: 647676822
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_116: 1264672898
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_117: 352266067
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_118: 1380773529
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_119: 1151367126
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_12: -228421733
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_120: 427307233
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_121: 2077263755
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_122: 492814028
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_123: 1925847332
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_124: 347587129
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_125: -1712384903
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_126: 1601937439
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_127: -1699182634
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_128: 1111937720
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_129: -160750116
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_13: 1135200324
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_130: 680044676
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_131: -1688278847
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_132: -2108637834
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_133: -108471124
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_134: 2110179157
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_135: -1878246965
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_136: 1764648403
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_137: 285632912
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_138: 1266565979
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_139: 1501391579
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_14: 721636096
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_140: -842989919
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_141: -1259078815
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_142: 2071228305
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_143: 1353035770
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_144: 1365273390
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_145: 91925573
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_146: 985785304
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_147: 1263297142
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_148: 112212116
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_149: -436989182
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_15: 264909242
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_150: -802048507
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_151: -599575150
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_152: 1506268647
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_153: -71916592
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_154: -1657497025
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_155: 639622889
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_156: -1176087593
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_157: 1661491496
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_158: 1311476952
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_159: 1314477012
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_16: -30982791
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_160: 1440071745
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_161: 862672218
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_162: 629757490
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_163: 2058454404
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_164: 725494487
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_165: 189230648
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_166: 93767161
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_167: 2038850005
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_168: -1761026674
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_169: 1263951884
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_17: -1701993503
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_170: 715809139
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_171: 1521123380
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_172: -216974580
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_173: -2104871877
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_174: 1826200190
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_175: -133281591
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_176: -129139665
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_177: -856860452
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_178: 2069130506
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_179: -229629603
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_18: 714146387
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_180: 1731501576
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_181: -1253838156
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_182: 1410714110
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_183: -784147854
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_184: -21002352
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_185: 1915528083
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_186: 438295447
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_187: -996990517
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_188: -1208484760
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_189: 423478807
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_19: 939424196
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_190: 320140111
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_191: 856230507
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_192: 845179744
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_193: -738283603
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_194: 731676642
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_195: 2133566355
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_196: 1079376711
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_197: -177806859
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_198: -1127197678
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_199: 589809553
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_2: -186264871
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_20: -1504586219
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_200: -1861979735
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_201: -1292709460
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_202: -19999432
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_203: -1135503168
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_204: -767329896
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_205: 160578495
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_206: 1818971542
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_207: -612371772
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_208: 802879090
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_209: -1074488663
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_21: 1682421137
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_210: -1800231478
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_211: -1599351381
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_212: -1733909580
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_213: 1578353088
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_214: -1518444730
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_215: 1673666657
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_216: -1296691130
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_217: 1983340908
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_218: -997071747
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_219: 1670430813
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_22: 435346936
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_220: 1848213328
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_221: -335724624
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_222: -170072547
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_223: -2022679532
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_224: -647993629
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_225: 925965791
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_226: 454254610
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_227: 76167053
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_228: 388668
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_229: 938224914
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_23: -164879204
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_230: 364831146
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_231: -646994517
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_232: -1313614615
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_233: 1723966461
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_234: -1634152001
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_235: -650958028
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_236: -682458018
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_237: -446511354
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_238: 1705485464
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_239: 1790426320
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_24: 884074331
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_240: -230743049
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_241: 868012605
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_242: -645427576
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_243: 255597860
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_244: -1910415357
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_245: -1149474062
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_246: -1814077417
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_247: 65027687
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_248: -1320848416
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_249: -1621821355
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_25: 987040074
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_250: 2026760187
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_251: 333970796
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_252: -831175452
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_253: 1231619060
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_254: 372239950
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_255: 1652410930
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_256: 816160288
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_257: 1598132231
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_258: -1853459444
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_259: -1534783253
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_26: 705537490
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_260: -1055053091
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_261: 1741303150
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_262: 978816064
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_263: -1037096660
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_264: 2053360281
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_265: 2112681520
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_266: 1225723392
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_267: -1803268055
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_268: 275993860
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_269: 117774217
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_27: 28131923
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_270: 321891512
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_271: -2069904193
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_272: -2019981170
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_273: -1152472166
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_274: -457658876
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_275: 280303634
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_276: -1605949051
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_277: -642594843
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_278: -1270118261
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_279: 1226086401
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_28: -486430815
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_29: 1783933201
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_3: 554557576
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_30: -1568940749
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_31: 2074717177
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_32: -1028517939
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_33: 1929502704
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_34: 51432223
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_35: -454908369
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_36: -1592932253
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_37: -852771044
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_38: -1041427007
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_39: 2088350328
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_4: 874182982
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_40: 602884724
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_41: 1008459169
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_42: 1430945262
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_43: 455470262
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_44: -1473681240
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_45: -31963534
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_46: -707040528
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_47: -1196924098
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_48: 1247904255
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_49: 755693256
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_5: -1850930548
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_50: 1250049841
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_51: 1184739188
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_52: 1068475357
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_53: 85480490
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_54: 803141596
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_55: 1997831840
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_56: -1584096327
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_57: 138235724
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_58: -635786069
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_59: 375746425
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_6: -1548670612
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_60: -1207472395
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_61: 127870565
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_62: -1792793244
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_63: 636845435
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_64: -1028453321
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_65: -81246211
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_66: 1188674921
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_67: 178807515
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_68: 1195580374
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_69: 1706629742
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_7: -1326151068
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_70: 727497023
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_71: 906456742
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_72: -983449170
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_73: 717233528
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_74: -946427411
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_75: -1819313378
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_76: 2014122863
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_77: -1631119680
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_78: 219404842
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_79: -1436662225
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_8: 1701705575
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_80: -1583062359
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_81: -1782152905
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_82: -1200417615
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_83: 1596283167
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_84: -992706831
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_85: 807819394
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_86: -1881828083
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_87: -377074579
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_88: 1164799336
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_89: 1868305877
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_9: -1521996390
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_90: 1320799421
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_91: 356707505
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_92: 313531459
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_93: 260350180
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_94: 353239798
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_95: 1960842939
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_96: -1729875196
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_97: 1630431753
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_98: -502952252
+      color_tileset_16x16_Jerom&amp;Eiyeron_CC-BY-SA-3.0_8_99: 1240912819
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
