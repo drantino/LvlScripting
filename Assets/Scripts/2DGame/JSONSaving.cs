@@ -21,7 +21,8 @@ public class JSONSaving : MonoBehaviour
         {
             string json = File.ReadAllText(file);
 
-            TwoDGameState.Instance.mapgameState = JsonUtility.FromJson<TwoDMapGameState>(json);
+            TwoDGameState.Instance.saveData = JsonUtility.FromJson<SaveData2D>(json);
+            TwoDGameState.Instance.LoadSaveDate();
             Debug.Log("Loaded");
         }
         else

@@ -87,6 +87,12 @@ public class TwoDGameState : MonoBehaviour
         saveData.mapStates = mapgameState;
         saveData.treasureBools = treasureChests;
     }
+    public void LoadSaveDate()
+    {
+
+        mapgameState = saveData.mapStates;
+        treasureChests = saveData.treasureBools;
+    }
 }
 
 [Serializable]
