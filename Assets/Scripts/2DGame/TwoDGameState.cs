@@ -49,8 +49,7 @@ public class TwoDGameState : MonoBehaviour
     {
         try
         {
-            string filePath = Application.persistentDataPath + "/Assets/Resources/save.json";
-            Debug.Log(filePath);
+            LoadSaveDate();
             return true;
         }
         catch
@@ -118,9 +117,44 @@ public class TwoDGameState : MonoBehaviour
         saveData.mapStates = mapgameState;
         saveData.treasureBools = treasureChests;
     }
+    [ContextMenu("JSON save")]
+    public void SaveData()
+    {
+        SaveDataUpdate();
+        string filePath = "Assets/Resources/save.json";
+        string json = JsonUtility.ToJson(saveData);
+        try
+        {
+            File.WriteAllText(filePath, json);
+            Debug.Log($"Saved at {filePath}");
+        }
+        catch
+        {
+            Debug.Log("Failed to save.");
+        }
+    }
+    [ContextMenu("JSON Load")]
     public void LoadSaveDate()
     {
+        string file = "Assets/Resources/save.json";
+        if (File.Exists(file))
+        {
+            try
+            {
+                string json = File.ReadAllText(file);
 
+                saveData = JsonUtility.FromJson<SaveData2D>(json);
+                Debug.Log("Loaded");
+            }
+            catch
+            {
+                Debug.Log("Fail to load.");
+            }
+        }
+        else
+        {
+            Debug.LogError("Save file not found.");
+        }
         mapgameState = saveData.mapStates;
         treasureChests = saveData.treasureBools;
     }
