@@ -3,13 +3,16 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Windows;
 using System;
+using System.Collections;
 public class SpritCharScript : MonoBehaviour, IDamagable
 {
-    InputAction move;
-    public float movementSpeed;
+    InputAction move, attack;
+    public float movementSpeed, attackCD;
     public Vector2 movementValue;
     public event Action<Vector2> OnMove;
-
+    private SpritCharAnimationScript animationScript;
+    public GameObject weapon;
+    private bool attacking;
     //stats
     public int HP, MaxHP, ATK, DEF;
 
@@ -17,9 +20,13 @@ public class SpritCharScript : MonoBehaviour, IDamagable
     void Start()
     {
         move = InputSystem.actions.FindAction("Move");
+        attack = InputSystem.actions.FindAction("Attack");
         move.performed += GetMovementVector;
         move.canceled += GetMovementVector;
         HP = MaxHP;
+        animationScript = GetComponent<SpritCharAnimationScript>();
+        attacking = false; 
+        weapon.SetActive(false);
     }
     public void GetMovementVector(InputAction.CallbackContext c)
     {
@@ -29,16 +36,77 @@ public class SpritCharScript : MonoBehaviour, IDamagable
     // Update is called once per frame
     void Update()
     {
-        
+        if(!attacking && attack.WasCompletedThisFrame())
+        {
+            Attack();
+        }
     }
     private void FixedUpdate()
     {
         transform.Translate(new Vector3(movementValue.x, movementValue.y, 0) * movementSpeed * Time.deltaTime);
+    }
+    private void Attack()
+    {
+        switch (animationScript.currentState)
+        {
+            case PlayerAnimationState.Idle_Down:
+            case PlayerAnimationState.Walk_Down:
+                {
+                    weapon.transform.localPosition = new Vector3(0,-0.25f,0);
+                    weapon.transform.localRotation = Quaternion.Euler(0,0,180);
+                    weapon.SetActive(true);
+                    StartCoroutine(ResetAttack());
+                    break;
+                }
+            case PlayerAnimationState.Idle_Up:
+            case PlayerAnimationState.Walk_Up:
+                {
+                    weapon.transform.localPosition = new Vector3(0, 0.2f, 0);
+                    weapon.transform.localRotation = Quaternion.Euler(0, 0, 0);
+                    weapon.SetActive(true);
+                    StartCoroutine(ResetAttack());
+                    break;
+                }
+            case PlayerAnimationState.Idle_Right:
+            case PlayerAnimationState.Walk_Right:
+                {
+                    weapon.transform.localPosition = new Vector3(0.2f, -0.075f, 0);
+                    weapon.transform.localRotation = Quaternion.Euler(0, 0, -90);
+                    weapon.SetActive(true);
+                    StartCoroutine(ResetAttack());
+                    break;
+                }
+            case PlayerAnimationState.Idle_Left:
+            case PlayerAnimationState.Walk_Left:
+                {
+                    weapon.transform.localPosition = new Vector3(-0.2f, -0.075f, 0);
+                    weapon.transform.localRotation = Quaternion.Euler(0, 0, 90);
+                    weapon.SetActive(true);
+                    StartCoroutine(ResetAttack());
+                    break;
+                }
+            default:
+                {
+
+                    break;
+                }
+        }
     }
     public void TakeDamage(int incomingDamage)
     {
         int damageTaken = incomingDamage - DEF;
         damageTaken = Mathf.Clamp(damageTaken, 0, 9999);
         HP -= damageTaken;
+    }
+    public void SendDMG(Collider2D collider)
+    {
+        collider.GetComponent<IDamagable>().TakeDamage(ATK);
+    }
+    IEnumerator ResetAttack()
+    {
+        attacking = true;
+        yield return new WaitForSeconds(attackCD);
+        weapon.SetActive(false);
+        attacking = false;
     }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(AIMovement))]
-public abstract class Enemy : MonoBehaviour
+public abstract class Enemy : MonoBehaviour , IDamagable
 {
     public string enemyName;
     public int HP;
@@ -93,5 +93,15 @@ public abstract class Enemy : MonoBehaviour
             yield return new WaitForSeconds(attackDelay);
         }
         //yield return null; not needed but just incase
+    }
+    public void TakeDamage(int incomingDamage)
+    {
+        int damageTaken = incomingDamage - DEF;
+        damageTaken = Mathf.Clamp(damageTaken, 0, 9999);
+        HP -= damageTaken;
+        if(HP <= 0)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }
