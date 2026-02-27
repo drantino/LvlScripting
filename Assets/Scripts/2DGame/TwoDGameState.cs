@@ -9,6 +9,7 @@ public class TwoDGameState : MonoBehaviour
     public static TwoDGameState Instance;
     public MapNavigation mapNavigation;
     public TwoDMapGameState mapgameState;
+    public MainUIScript mainUIScript;
     public Transform mapParent;
     private EnemySpawner spawner;
     private int currentMapID;
@@ -37,6 +38,11 @@ public class TwoDGameState : MonoBehaviour
         GameObject player = Instantiate(playerPrefab);
         mapNavigation.player = player.transform;
         mapNavigation.GoToMap(0, 0);
+        for(int index = 0; index < treasureChests.Length; index++)
+        {
+            treasureChests[index] = false;
+        }
+        mainUIScript.ResetChestsUI();
         Debug.Log("StartNew");
     }
     public bool LoadSaveGame()
@@ -104,6 +110,7 @@ public class TwoDGameState : MonoBehaviour
     public void TreasureGet(int index)
     {
         treasureChests[index] = true;
+        mainUIScript.TreasureUIGet(index);
     }
     public void SaveDataUpdate()
     {
