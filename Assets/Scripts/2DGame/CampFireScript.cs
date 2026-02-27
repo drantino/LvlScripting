@@ -21,9 +21,10 @@ public class CampFireScript : MonoBehaviour,IInteractable
             interactable = false;
         }
     }
-    public void Interact()
+    public void Interact(GameObject sendGameObject)
     {
         TwoDGameState.Instance.RestEnemies();
         ScreenFader.instance.BeginScreenFade(3);
+        sendGameObject.GetComponent<SpritCharScript>().PlayerRest();
     }
 }

@@ -1,11 +1,19 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MainUIScript : MonoBehaviour
 {
     [SerializeField] TwoDGameState gameState;
+    public static MainUIScript instance;
     public GameObject noSaveDataText, mainMenuUI;
     public Image treasureChest0, treasureChest1, treasureChest2;
+    public TextMeshProUGUI hpValue, atkValue, defValue;
+
+    private void Awake()
+    {
+        instance = this;
+    }
     public void StartNewGame()
     {
         gameState.StartNewGame();
@@ -60,5 +68,16 @@ public class MainUIScript : MonoBehaviour
         treasureChest0.color = color;
         treasureChest1.color = color;
         treasureChest2.color = color;
+    }
+    public void UpdateCharHud(GameObject character)
+    {
+        
+        SpritCharScript charScript;
+        if (character.TryGetComponent<SpritCharScript>(out charScript))
+        {
+            hpValue.text = $"{charScript.HP}/{charScript.MaxHP}";
+            atkValue.text = charScript.ATK.ToString();
+            defValue.text = charScript.DEF.ToString();
+        }
     }
 }

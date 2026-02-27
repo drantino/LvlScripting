@@ -29,6 +29,7 @@ public class SpritCharScript : MonoBehaviour, IDamagable
         animationScript = GetComponent<SpritCharAnimationScript>();
         attacking = false; 
         weapon.SetActive(false);
+        MainUIScript.instance.UpdateCharHud(gameObject);
     }
     public void GetMovementVector(InputAction.CallbackContext c)
     {
@@ -44,7 +45,7 @@ public class SpritCharScript : MonoBehaviour, IDamagable
         }
         if(interact.WasPressedThisFrame() && interactableObject != null)
         {
-            interactableObject.Interact();
+            interactableObject.Interact(gameObject);
         }
     }
     private void FixedUpdate()
@@ -103,6 +104,7 @@ public class SpritCharScript : MonoBehaviour, IDamagable
         int damageTaken = incomingDamage - DEF;
         damageTaken = Mathf.Clamp(damageTaken, 0, 9999);
         HP -= damageTaken;
+        MainUIScript.instance.UpdateCharHud(gameObject);
     }
     public void SendDMG(Collider2D collider)
     {
@@ -127,5 +129,10 @@ public class SpritCharScript : MonoBehaviour, IDamagable
         {
             interactableObject = null;
         }
+    }
+    public void PlayerRest()
+    {
+        HP = MaxHP;
+        MainUIScript.instance.UpdateCharHud(gameObject);
     }
 }

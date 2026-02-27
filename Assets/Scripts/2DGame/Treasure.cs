@@ -15,7 +15,7 @@ public class Treasure : MonoBehaviour, IInteractable, IDamagable, IExplode
         
     }
 
-    public void Interact()
+    public void Interact(GameObject sentObject)
     {
         
     }

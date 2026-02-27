@@ -181,7 +181,7 @@ MonoBehaviour:
   HP: 0
   MaxHP: 100
   ATK: 5
-  DEF: 10
+  DEF: 1
 --- !u!212 &1473998571373354304
 SpriteRenderer:
   serializedVersion: 2
