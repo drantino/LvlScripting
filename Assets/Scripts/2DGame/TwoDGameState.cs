@@ -16,6 +16,7 @@ public class TwoDGameState : MonoBehaviour
     private MapState currentMapState;
 
     public GameObject playerPrefab;
+    public GameObject player;
 
     public bool[] treasureChests;
 
@@ -35,7 +36,7 @@ public class TwoDGameState : MonoBehaviour
     }
     public void StartNewGame()
     {
-        GameObject player = Instantiate(playerPrefab);
+        player = Instantiate(playerPrefab);
         mapNavigation.player = player.transform;
         mapNavigation.GoToMap(0, 0);
         for(int index = 0; index < treasureChests.Length; index++)
@@ -101,6 +102,7 @@ public class TwoDGameState : MonoBehaviour
             List<Enemy> enemies = spawner.activeEnemies;
             foreach (Enemy enemy in enemies)
             {
+                Debug.Log(currentMapState.enemyDictionary[enemy.enemyID] != null);
                 currentMapState.enemyDictionary[enemy.enemyID].currentHP = enemy.HP;
             }
         }
@@ -116,6 +118,8 @@ public class TwoDGameState : MonoBehaviour
         saveData = new SaveData2D();
         saveData.mapStates = mapgameState;
         saveData.treasureBools = treasureChests;
+        saveData.currentMapIndex = mapNavigation.currentMapIndex;
+        saveData.playerCurrentHP = player.GetComponent<SpritCharScript>().HP;
     }
     [ContextMenu("JSON save")]
     public void SaveData()
@@ -157,6 +161,10 @@ public class TwoDGameState : MonoBehaviour
         }
         mapgameState = saveData.mapStates;
         treasureChests = saveData.treasureBools;
+        player = Instantiate(playerPrefab);
+        mapNavigation.player = player.transform;
+        mapNavigation.GoToMap(saveData.currentMapIndex, 0);
+        player.GetComponent<SpritCharScript>().HP = saveData.playerCurrentHP;
     }
 }
 
@@ -193,6 +201,8 @@ public class SaveData2D
 {
     public TwoDMapGameState mapStates;
     public bool[] treasureBools;
+    public int currentMapIndex;
+    public int playerCurrentHP;
 }
 
 

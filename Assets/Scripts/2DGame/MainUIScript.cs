@@ -15,7 +15,7 @@ public class MainUIScript : MonoBehaviour
     {
         if(gameState.LoadSaveGame())
         {
-            Debug.Log("asdf");
+            mainMenuUI.SetActive(false);
         }
         else
         {

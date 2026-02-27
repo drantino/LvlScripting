@@ -12,6 +12,7 @@ public class MapNavigation : MonoBehaviour
     private Dictionary<int,MapData> mapDictionary = new Dictionary<int,MapData>();
     [SerializeField] private GameObject currentMap;
     public UnityEvent OnMapEnter;
+    public int currentMapIndex;
     private void Awake()
     {
         if(Instance == null)
@@ -57,6 +58,7 @@ public class MapNavigation : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
         TwoDGameState.Instance.InitializeMap(mapID );
+        currentMapIndex = mapID;
     }
 }
 public class MapData
