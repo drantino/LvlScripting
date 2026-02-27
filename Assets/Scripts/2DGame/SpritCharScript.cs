@@ -12,7 +12,7 @@ public class SpritCharScript : MonoBehaviour, IDamagable
     public event Action<Vector2> OnMove;
     private SpritCharAnimationScript animationScript;
     public GameObject weapon;
-    private bool attacking;
+    private bool attacking, dead;
     public IInteractable interactableObject;
     //stats
     public int HP, MaxHP, ATK, DEF;
@@ -26,9 +26,10 @@ public class SpritCharScript : MonoBehaviour, IDamagable
         move.performed += GetMovementVector;
         move.canceled += GetMovementVector;
         animationScript = GetComponent<SpritCharAnimationScript>();
-        attacking = false; 
+        attacking = false;
         weapon.SetActive(false);
         MainUIScript.instance.UpdateCharHud(gameObject);
+        dead = false;
     }
     public void GetMovementVector(InputAction.CallbackContext c)
     {
@@ -38,7 +39,7 @@ public class SpritCharScript : MonoBehaviour, IDamagable
     // Update is called once per frame
     void Update()
     {
-        if(!attacking && attack.WasCompletedThisFrame())
+        if(!attacking && attack.WasCompletedThisFrame() && !dead)
         {
             Attack();
         }
@@ -104,6 +105,14 @@ public class SpritCharScript : MonoBehaviour, IDamagable
         damageTaken = Mathf.Clamp(damageTaken, 0, 9999);
         HP -= damageTaken;
         MainUIScript.instance.UpdateCharHud(gameObject);
+        if(HP <= 0)
+        {
+            TwoDGameState.Instance.PlayerKilled();
+            move.performed -= GetMovementVector;
+            move.canceled -= GetMovementVector;
+            dead = true;
+            StartCoroutine(DeathAnimation());
+        }
     }
     public void SendDMG(Collider2D collider)
     {
@@ -115,6 +124,11 @@ public class SpritCharScript : MonoBehaviour, IDamagable
         yield return new WaitForSeconds(attackCD);
         weapon.SetActive(false);
         attacking = false;
+    }
+    IEnumerator DeathAnimation()
+    {
+        yield return new WaitForSeconds(1);
+        transform.Rotate(0,0,-90);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

@@ -179,8 +179,17 @@ public class TwoDGameState : MonoBehaviour
     }
     public void ReturnToMainMenu()
     {
-        MapNavigation.Instance.ClearMap();
+        try
+        {
+            MapNavigation.Instance.ClearMap();
+        }
+        catch { }
         Destroy(player);
+    }
+    public void PlayerKilled()
+    {
+        MapNavigation.Instance.ClearMap();
+        MainUIScript.instance.OpenGameOverPanel();
     }
 }
 

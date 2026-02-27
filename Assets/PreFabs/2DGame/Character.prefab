@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2049772845654536137}
   - component: {fileID: 6238676011804927618}
   - component: {fileID: 8522153156713691596}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7938764014641081385}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: chara2_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 3995377736541614872}
   - component: {fileID: 4277109232281181273}
   - component: {fileID: 2560497805491886506}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Character
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: -403172250, guid: 8fb179ee1a34e3e47accf4c8d6e8caa4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -354,7 +354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6822747448539290012}
   - component: {fileID: 6474383421979251729}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
