@@ -6,13 +6,14 @@ using System;
 using System.Collections;
 public class SpritCharScript : MonoBehaviour, IDamagable
 {
-    InputAction move, attack;
+    InputAction move, attack, interact;
     public float movementSpeed, attackCD;
     public Vector2 movementValue;
     public event Action<Vector2> OnMove;
     private SpritCharAnimationScript animationScript;
     public GameObject weapon;
     private bool attacking;
+    public IInteractable interactableObject;
     //stats
     public int HP, MaxHP, ATK, DEF;
 
@@ -21,6 +22,7 @@ public class SpritCharScript : MonoBehaviour, IDamagable
     {
         move = InputSystem.actions.FindAction("Move");
         attack = InputSystem.actions.FindAction("Attack");
+        interact = InputSystem.actions.FindAction("Interact");
         move.performed += GetMovementVector;
         move.canceled += GetMovementVector;
         HP = MaxHP;
@@ -39,6 +41,10 @@ public class SpritCharScript : MonoBehaviour, IDamagable
         if(!attacking && attack.WasCompletedThisFrame())
         {
             Attack();
+        }
+        if(interact.WasPressedThisFrame() && interactableObject != null)
+        {
+            interactableObject.Interact();
         }
     }
     private void FixedUpdate()
@@ -108,5 +114,18 @@ public class SpritCharScript : MonoBehaviour, IDamagable
         yield return new WaitForSeconds(attackCD);
         weapon.SetActive(false);
         attacking = false;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        collision.TryGetComponent<IInteractable>(out interactableObject);
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        IInteractable newCollision;
+        collision.TryGetComponent<IInteractable>(out newCollision);
+        if (newCollision == interactableObject)
+        {
+            interactableObject = null;
+        }
     }
 }
