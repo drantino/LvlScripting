@@ -111,6 +111,11 @@ public class SpritCharAnimationScript : MonoBehaviour
             animationDictionary.Add(animationStateData.state, animationStateData.animation);
         }
     }
+    private void OnDestroy()
+    {
+        SpritCharScript spriteChar = GetComponent<SpritCharScript>();
+        spriteChar.OnMove -= SetAnimationState;
+    }
 }
 //[CreateAssetMenu(fileName = "AnimationSO", menuName = "AnimationSO")]
 //public class AnimationData : ScriptableObject

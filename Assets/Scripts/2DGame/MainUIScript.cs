@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,7 +7,7 @@ public class MainUIScript : MonoBehaviour
 {
     [SerializeField] TwoDGameState gameState;
     public static MainUIScript instance;
-    public GameObject noSaveDataText, mainMenuUI;
+    public GameObject noSaveDataText, mainMenuUI, savedText;
     public Image treasureChest0, treasureChest1, treasureChest2;
     public TextMeshProUGUI hpValue, atkValue, defValue;
 
@@ -21,7 +22,7 @@ public class MainUIScript : MonoBehaviour
     }
     public void ContinueGame()
     {
-        if(gameState.LoadSaveGame())
+        if (gameState.LoadSaveGame())
         {
             mainMenuUI.SetActive(false);
         }
@@ -36,7 +37,7 @@ public class MainUIScript : MonoBehaviour
     }
     public void TreasureUIGet(int index)
     {
-        switch(index)
+        switch (index)
         {
             case 0:
                 {
@@ -71,7 +72,7 @@ public class MainUIScript : MonoBehaviour
     }
     public void UpdateCharHud(GameObject character)
     {
-        
+
         SpritCharScript charScript;
         if (character.TryGetComponent<SpritCharScript>(out charScript))
         {
@@ -79,5 +80,28 @@ public class MainUIScript : MonoBehaviour
             atkValue.text = charScript.ATK.ToString();
             defValue.text = charScript.DEF.ToString();
         }
+    }
+    public void MainMenu()
+    {
+        TwoDGameState.Instance.ReturnToMainMenu();
+        mainMenuUI.SetActive(true);
+    }
+    public void SaveGame()
+    {
+        try
+        {
+            TwoDGameState.Instance.SaveData();
+            StartCoroutine(ResetSavedText());
+        }
+        catch
+        {
+            Debug.LogWarning("Failed To Save");
+        }
+    }
+    IEnumerator ResetSavedText()
+    {
+        savedText.SetActive(true);
+        yield return new WaitForSeconds(3);
+        savedText.SetActive(false);
     }
 }

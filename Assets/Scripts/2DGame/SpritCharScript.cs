@@ -25,7 +25,6 @@ public class SpritCharScript : MonoBehaviour, IDamagable
         interact = InputSystem.actions.FindAction("Interact");
         move.performed += GetMovementVector;
         move.canceled += GetMovementVector;
-        HP = MaxHP;
         animationScript = GetComponent<SpritCharAnimationScript>();
         attacking = false; 
         weapon.SetActive(false);
@@ -134,5 +133,10 @@ public class SpritCharScript : MonoBehaviour, IDamagable
     {
         HP = MaxHP;
         MainUIScript.instance.UpdateCharHud(gameObject);
+    }
+    private void OnDestroy()
+    {
+        move.performed -= GetMovementVector;
+        move.canceled -= GetMovementVector;
     }
 }

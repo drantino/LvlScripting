@@ -39,7 +39,8 @@ public class TwoDGameState : MonoBehaviour
         player = Instantiate(playerPrefab);
         mapNavigation.player = player.transform;
         mapNavigation.GoToMap(0, 0);
-        for(int index = 0; index < treasureChests.Length; index++)
+        player.GetComponent<SpritCharScript>().HP = player.GetComponent<SpritCharScript>().MaxHP;
+        for (int index = 0; index < treasureChests.Length; index++)
         {
             treasureChests[index] = false;
         }
@@ -164,10 +165,22 @@ public class TwoDGameState : MonoBehaviour
             mapState.InitalizeMDictionary();
         }
         treasureChests = saveData.treasureBools;
+        for(int index = 0; index < treasureChests.Length; index++)
+        {
+            if (treasureChests[index])
+            {
+                MainUIScript.instance.TreasureUIGet(index);
+            }
+        }
         player = Instantiate(playerPrefab);
         mapNavigation.player = player.transform;
         mapNavigation.GoToMap(saveData.currentMapIndex, 0);
         player.GetComponent<SpritCharScript>().HP = saveData.playerCurrentHP;
+    }
+    public void ReturnToMainMenu()
+    {
+        MapNavigation.Instance.ClearMap();
+        Destroy(player);
     }
 }
 

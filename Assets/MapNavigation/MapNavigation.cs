@@ -38,9 +38,7 @@ public class MapNavigation : MonoBehaviour
         TwoDGameState.Instance.SaveGameState();
         if (currentMap != null)
         {
-            currentMap.GetComponentInChildren<EnemySpawner>().ClearEnemies();
-
-            Destroy(currentMap);
+            ClearMap();
         }
         currentMap = Instantiate(mapDictionary[mapID].preFab, mapParent);
         Grid g = mapParent.GetComponent<Grid>();
@@ -59,6 +57,12 @@ public class MapNavigation : MonoBehaviour
         yield return new WaitForEndOfFrame();
         TwoDGameState.Instance.InitializeMap(mapID );
         currentMapIndex = mapID;
+    }
+    public void ClearMap()
+    {
+        currentMap.GetComponentInChildren<EnemySpawner>().ClearEnemies();
+
+        Destroy(currentMap);
     }
 }
 public class MapData
