@@ -1,4 +1,4 @@
-using JetBrains.Annotations;
+using System.IO;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,12 +7,14 @@ using UnityEngine.Rendering;
 public class TwoDGameState : MonoBehaviour
 {
     public static TwoDGameState Instance;
-    //public List<MapState> mapStates = new List<MapState>();
+    public MapNavigation mapNavigation;
     public TwoDMapGameState mapgameState;
     public Transform mapParent;
     private EnemySpawner spawner;
     private int currentMapID;
     private MapState currentMapState;
+
+    public GameObject playerPrefab;
 
     public bool[] treasureChests;
 
@@ -28,11 +30,31 @@ public class TwoDGameState : MonoBehaviour
             mapState.InitalizeMDictionary();
         }
         InitializeMap(0);
-        
+
+    }
+    public void StartNewGame()
+    {
+        GameObject player = Instantiate(playerPrefab);
+        mapNavigation.player = player.transform;
+        mapNavigation.GoToMap(0, 0);
+        Debug.Log("StartNew");
+    }
+    public bool LoadSaveGame()
+    {
+        try
+        {
+            string filePath = Application.persistentDataPath + "/Assets/Resources/save.json";
+            Debug.Log(filePath);
+            return true;
+        }
+        catch
+        {
+            return false;
+        }
     }
     public void InitializeMap(int mapID_)
     {
-        
+
         foreach (MapState mapState in mapgameState.mapStates)
         {
             if (mapState.mapID == mapID_)
@@ -46,20 +68,22 @@ public class TwoDGameState : MonoBehaviour
     public void BeginEnemySpawn(MapState map)
     {
         spawner = mapParent.GetComponentInChildren<EnemySpawner>();
-        foreach (EnemyState enemy in map.enemyStates)
+        if (spawner != null)
         {
-            if (enemy.currentHP > 0)
+            foreach (EnemyState enemy in map.enemyStates)
             {
-                spawner.Spawn(enemy.EnemyID, enemy.currentHP);
+                if (enemy.currentHP > 0)
+                {
+                    spawner.Spawn(enemy.EnemyID, enemy.currentHP);
+                }
             }
-
         }
     }
     public void RestEnemies()
     {
-        foreach(MapState m in mapgameState.mapStates)
+        foreach (MapState m in mapgameState.mapStates)
         {
-            foreach(EnemyState e in m.enemyStates)
+            foreach (EnemyState e in m.enemyStates)
             {
                 e.currentHP = e.maxHP;
             }
@@ -70,7 +94,7 @@ public class TwoDGameState : MonoBehaviour
         if (spawner != null)
         {
             List<Enemy> enemies = spawner.activeEnemies;
-            foreach(Enemy enemy in enemies)
+            foreach (Enemy enemy in enemies)
             {
                 currentMapState.enemyDictionary[enemy.enemyID].currentHP = enemy.HP;
             }
@@ -100,11 +124,11 @@ public class MapState
 {
     public int mapID;
     public List<EnemyState> enemyStates;
-    [NonSerialized]public Dictionary<int, EnemyState> enemyDictionary;
+    [NonSerialized] public Dictionary<int, EnemyState> enemyDictionary;
     public void InitalizeMDictionary()
     {
         enemyDictionary = new Dictionary<int, EnemyState>();
-        foreach(EnemyState enemy in enemyStates)
+        foreach (EnemyState enemy in enemyStates)
         {
             enemyDictionary.Add(enemy.EnemyID, enemy);
         }

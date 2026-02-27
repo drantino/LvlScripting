@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class MapNavigation : MonoBehaviour
 {
     public static MapNavigation Instance;
-    [SerializeField] private Transform player;
+    [SerializeField] public Transform player;
     [SerializeField] private MapLibrary library;
     [SerializeField] private Transform mapParent;
     private Dictionary<int,MapData> mapDictionary = new Dictionary<int,MapData>();
@@ -35,10 +35,12 @@ public class MapNavigation : MonoBehaviour
     {
 
         TwoDGameState.Instance.SaveGameState();
-        currentMap.GetComponentInChildren<EnemySpawner>().ClearEnemies();
+        if (currentMap != null)
+        {
+            currentMap.GetComponentInChildren<EnemySpawner>().ClearEnemies();
 
-        Destroy(currentMap);
-
+            Destroy(currentMap);
+        }
         currentMap = Instantiate(mapDictionary[mapID].preFab, mapParent);
         Grid g = mapParent.GetComponent<Grid>();
         player.position = g.GetCellCenterWorld(mapDictionary[mapID].entryPoints[portalID].cell);

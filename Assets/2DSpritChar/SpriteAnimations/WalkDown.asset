@@ -9,13 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 0410e6b64d88bf741ba7265671232d31, type: 3}
   m_Name: WalkDown
   m_EditorClassIdentifier: Assembly-CSharp::AnimationData
-  animationName: Walk_Down
+  animationName: 
   frames:
   - {fileID: -2087672689, guid: 8fb179ee1a34e3e47accf4c8d6e8caa4, type: 3}
   - {fileID: -403172250, guid: 8fb179ee1a34e3e47accf4c8d6e8caa4, type: 3}
   - {fileID: 1167659318, guid: 8fb179ee1a34e3e47accf4c8d6e8caa4, type: 3}
-  - {fileID: -403172250, guid: 8fb179ee1a34e3e47accf4c8d6e8caa4, type: 3}
   frameDelay: 0.3

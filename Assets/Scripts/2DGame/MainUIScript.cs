@@ -2,15 +2,26 @@ using UnityEngine;
 
 public class MainUIScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] TwoDGameState gameState;
+    public GameObject noSaveDataText, mainMenuUI;
+    public void StartNewGame()
     {
-        
+        gameState.StartNewGame();
+        mainMenuUI.SetActive(false);
     }
-
-    // Update is called once per frame
-    void Update()
+    public void ContinueGame()
     {
-        
+        if(gameState.LoadSaveGame())
+        {
+            Debug.Log("asdf");
+        }
+        else
+        {
+            noSaveDataText.SetActive(true);
+        }
+    }
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }

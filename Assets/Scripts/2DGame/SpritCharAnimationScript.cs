@@ -1,6 +1,5 @@
 using NUnit.Framework;
 using System;
-using Unity.VisualScripting.ReorderableList;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
@@ -113,13 +112,13 @@ public class SpritCharAnimationScript : MonoBehaviour
         }
     }
 }
-[CreateAssetMenu(fileName = "AnimationSO", menuName = "AnimationSO")]
-public class AnimationData : ScriptableObject
-{
-    public string animationName;
-    public Sprite[] frames;
-    public float frameDelay;
-}
+//[CreateAssetMenu(fileName = "AnimationSO", menuName = "AnimationSO")]
+//public class AnimationData : ScriptableObject
+//{
+//    public string animationName;
+//    public Sprite[] frames;
+//    public float frameDelay;
+//}
 public enum PlayerAnimationState
 {
     Idle_Down,
