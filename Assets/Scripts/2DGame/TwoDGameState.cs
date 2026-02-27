@@ -13,7 +13,7 @@ public class TwoDGameState : MonoBehaviour
     public Transform mapParent;
     private EnemySpawner spawner;
     private int currentMapID;
-    private MapState currentMapState;
+    [SerializeField] private MapState currentMapState;
 
     public GameObject playerPrefab;
     public GameObject player;
@@ -102,7 +102,6 @@ public class TwoDGameState : MonoBehaviour
             List<Enemy> enemies = spawner.activeEnemies;
             foreach (Enemy enemy in enemies)
             {
-                Debug.Log(currentMapState.enemyDictionary[enemy.enemyID] != null);
                 currentMapState.enemyDictionary[enemy.enemyID].currentHP = enemy.HP;
             }
         }
@@ -160,6 +159,10 @@ public class TwoDGameState : MonoBehaviour
             Debug.LogError("Save file not found.");
         }
         mapgameState = saveData.mapStates;
+        foreach (MapState mapState in mapgameState.mapStates)
+        {
+            mapState.InitalizeMDictionary();
+        }
         treasureChests = saveData.treasureBools;
         player = Instantiate(playerPrefab);
         mapNavigation.player = player.transform;
