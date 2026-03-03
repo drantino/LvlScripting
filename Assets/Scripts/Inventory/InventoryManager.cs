@@ -30,5 +30,6 @@ public class InventoryManager : MonoBehaviour
             inventory[itemToRemove_].quantity--;
             return;
         }
+        inventory.Remove(itemToRemove_);
     }
 }
