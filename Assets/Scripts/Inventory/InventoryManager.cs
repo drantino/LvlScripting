@@ -11,7 +11,7 @@ public class InventoryManager : MonoBehaviour
         AddItem(tmp);
         AddItem(tmp);
 
-        Debug.Log(inventory[tmp].quantity);
+        Debug.Log((inventory[tmp] as WeaponItemData).weaponStrength);
     }
 
     public void AddItem(InventoryItemSO itemToAdd_)
