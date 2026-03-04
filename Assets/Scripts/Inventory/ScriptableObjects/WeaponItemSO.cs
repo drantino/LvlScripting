@@ -5,6 +5,7 @@ public class WeaponItemSO : InventoryItemSO
 {
     public int weaponStrength;
     public int weaponDurability;
+    public EquipmentSlot equipmentSlot;
 
     public override InventoryItemData CreateRunttimeData()
     {

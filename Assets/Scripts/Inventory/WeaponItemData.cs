@@ -4,6 +4,7 @@ public class WeaponItemData : InventoryItemData
 {
     public int weaponStrength;
     public int weaponDurability;
+    public EquipmentSlot equipmentSlot;
 
     public WeaponItemData(WeaponItemSO config_)
     {
@@ -13,6 +14,7 @@ public class WeaponItemData : InventoryItemData
         this.itemName = config_.itemName;
         this.icon = config_.icon;
         this.weaponDurability = config_.weaponDurability;
+        equipmentSlot = config_.equipmentSlot;
         quantity = 1;
     }
 }

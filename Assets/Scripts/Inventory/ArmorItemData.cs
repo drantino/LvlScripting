@@ -3,7 +3,7 @@ using UnityEngine;
 public class ArmorItemData:InventoryItemData
 {
     public int armorRating;
-    public ArmorSlot armorSlot;
+    public EquipmentSlot equipmentSlot;
 
     public ArmorItemData(ArmorItemSO config_)
     {
@@ -12,6 +12,6 @@ public class ArmorItemData:InventoryItemData
         this.itemName = config_.itemName;
         this.icon = config_.icon;
         armorRating = config_.armorRating;
-        armorSlot = config_.armorSlot;
+        equipmentSlot = config_.equipmentSlot;
     }
 }
