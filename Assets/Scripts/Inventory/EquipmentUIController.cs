@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class EquipmentUIController : MonoBehaviour
 {
     public List<EquipmentUISlot> equipmentUISlots = new();
-    public Dictionary<EquipmentSlot, Image> equipmentUIDictonary = new();
+    public Dictionary<ItemType, Image> equipmentUIDictonary = new();
 
     private void Start()
     {
@@ -17,9 +17,9 @@ public class EquipmentUIController : MonoBehaviour
         }
         EquipmentManager.instance.onEquip += UpdateUI;
     }
-    public void UpdateUI(Dictionary<EquipmentSlot, InventoryItemData> equipment)
+    public void UpdateUI(Dictionary<ItemType, InventoryItemData> equipment)
     {
-        foreach(EquipmentSlot equipmentSlot in equipment.Keys)
+        foreach(ItemType equipmentSlot in equipment.Keys)
         {
             if (equipment[equipmentSlot] != null)
             {
@@ -34,6 +34,6 @@ public class EquipmentUIController : MonoBehaviour
 [Serializable]
 public class EquipmentUISlot
 {
-    public EquipmentSlot equipmentType;
+    public ItemType equipmentType;
     public Image uiImage;
 }

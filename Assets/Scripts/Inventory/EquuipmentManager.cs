@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EquipmentManager : MonoBehaviour
 {
-    public Dictionary<EquipmentSlot, InventoryItemData> equipmentDictionary = new();
+    public Dictionary<ItemType, InventoryItemData> equipmentDictionary = new();
     public static EquipmentManager instance;
-    public event Action<Dictionary<EquipmentSlot, InventoryItemData>> onEquip;
+    public event Action<Dictionary<ItemType, InventoryItemData>> onEquip;
     public void Awake()
     {
         if(instance == null)
@@ -17,24 +17,24 @@ public class EquipmentManager : MonoBehaviour
     }
     public void InitalizeEquipment()
     {
-        equipmentDictionary.Add(EquipmentSlot.HELM, null);
-        equipmentDictionary.Add(EquipmentSlot.CHEST, null);
-        equipmentDictionary.Add(EquipmentSlot.LEGS, null);
-        equipmentDictionary.Add(EquipmentSlot.BOOTS, null);
-        equipmentDictionary.Add(EquipmentSlot.WEAPON, null);
+        equipmentDictionary.Add(ItemType.HELM, null);
+        equipmentDictionary.Add(ItemType.CHEST, null);
+        equipmentDictionary.Add(ItemType.LEGS, null);
+        equipmentDictionary.Add(ItemType.BOOTS, null);
+        equipmentDictionary.Add(ItemType.WEAPON, null);
 
     }
     public void EquipItem(InventoryItemData itemToEquip)
     {
         if (itemToEquip is ArmorItemData armor)
         {
-            equipmentDictionary[armor.equipmentSlot] = armor;
-            Debug.Log(equipmentDictionary[armor.equipmentSlot].itemName + " was equipped");
+            equipmentDictionary[armor.itemType] = armor;
+            Debug.Log(equipmentDictionary[armor.itemType].itemName + " was equipped");
         }
         else if (itemToEquip is WeaponItemData weapon)
         {
-            equipmentDictionary[weapon.equipmentSlot] = weapon;
-            Debug.Log(equipmentDictionary[weapon.equipmentSlot].itemName + " was equipped");
+            equipmentDictionary[weapon.itemType] = weapon;
+            Debug.Log(equipmentDictionary[weapon.itemType].itemName + " was equipped");
         }
         onEquip?.Invoke(equipmentDictionary);
     }

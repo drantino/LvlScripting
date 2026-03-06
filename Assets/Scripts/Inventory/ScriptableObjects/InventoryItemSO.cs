@@ -6,7 +6,16 @@ public abstract class InventoryItemSO : ScriptableObject
     public string itemName;
     public string flavourText;
     public Sprite icon;
+    public ItemType itemType;
 
     public abstract InventoryItemData CreateRunttimeData();
 
+}
+public enum ItemType
+{
+    HELM,
+    CHEST,
+    LEGS,
+    BOOTS,
+    WEAPON
 }

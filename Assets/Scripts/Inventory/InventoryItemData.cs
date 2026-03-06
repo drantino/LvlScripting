@@ -7,4 +7,5 @@ public abstract class InventoryItemData
     public string itemName;
     public string flavourText;
     public Sprite icon;
+    public ItemType itemType;
 }

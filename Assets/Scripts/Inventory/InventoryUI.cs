@@ -12,10 +12,29 @@ public class InventoryUI : MonoBehaviour
     {
         Dictionary<InventoryItemSO, InventoryItemData> inventoryRef = targetInventory.inventory;
 
-        foreach(InventoryItemData item in inventoryRef.Values )
+        foreach (InventoryItemData item in inventoryRef.Values)
         {
             GameObject tmp = Instantiate(buttonPrefab, contentParent);
             tmp.GetComponent<InventoryButtonUI>().InitalizeButton(item);
+        }
+    }
+    public void InitalizeInvUIByType(ItemType slotType)
+    {
+        Dictionary<InventoryItemSO, InventoryItemData> inventoryRef = targetInventory.inventory;
+        switch (slotType)
+        {
+            case ItemType.HELM:
+                {
+                    foreach (InventoryItemData item in inventoryRef.Values)
+                    {
+                        if(item.itemType == ItemType.HELM)
+                        {
+                            GameObject tmp = Instantiate(buttonPrefab, contentParent);
+                            tmp.GetComponent<InventoryButtonUI>().InitalizeButton(item);
+                        } 
+                    }
+                    break;
+                }
         }
     }
 }
