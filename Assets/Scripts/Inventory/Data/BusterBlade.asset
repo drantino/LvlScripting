@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec0db7f7f5089634db109307ce338d01, type: 3}
   m_Name: BusterBlade
   m_EditorClassIdentifier: Assembly-CSharp::WeaponItemSO
-  itemName: BusterSword
+  itemName: BusterBlade
   flavourText: A sword that busts
   icon: {fileID: 1266565979, guid: 804614ab1d601ec4895807c1916570ff, type: 3}
   itemType: 3

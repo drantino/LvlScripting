@@ -12,13 +12,7 @@ public class InventoryUI : MonoBehaviour
     {
         Dictionary<InventoryItemSO, InventoryItemData> inventoryRef = targetInventory.inventory;
 
-        if (contentParent.childCount > 0)
-        {
-            for (int index = contentParent.childCount -1; index >= 0; index--)
-            {
-                Destroy(contentParent.GetChild(index).gameObject);
-            }
-        }
+        ClearContentChildren();
 
         foreach (InventoryItemData item in inventoryRef.Values)
         {
@@ -29,13 +23,7 @@ public class InventoryUI : MonoBehaviour
     public void InitalizeInvUIByType(int slotType)
     {
         Dictionary<InventoryItemSO, InventoryItemData> inventoryRef = targetInventory.inventory;
-        if(contentParent.childCount > 0)
-        {
-            for (int index = contentParent.childCount-1; index >= 0; index--)
-            {
-                Destroy(contentParent.GetChild(index).gameObject);
-            }
-        }
+        ClearContentChildren();
         
         switch (slotType)
         {
@@ -111,6 +99,16 @@ public class InventoryUI : MonoBehaviour
                     }
                     break;
                 }
+        }
+    }
+    public void ClearContentChildren()
+    {
+        if (contentParent.childCount > 0)
+        {
+            for (int index = contentParent.childCount - 1; index >= 0; index--)
+            {
+                Destroy(contentParent.GetChild(index).gameObject);
+            }
         }
     }
 }

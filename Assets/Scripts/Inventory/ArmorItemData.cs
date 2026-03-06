@@ -12,5 +12,6 @@ public class ArmorItemData:InventoryItemData
         this.icon = config_.icon;
         armorRating = config_.armorRating;
         itemType = config_.itemType;
+        quantity = 1;
     }
 }
