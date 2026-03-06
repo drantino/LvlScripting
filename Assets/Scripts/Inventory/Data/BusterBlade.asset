@@ -15,5 +15,6 @@ MonoBehaviour:
   itemName: BusterSword
   flavourText: A sword that busts
   icon: {fileID: 1266565979, guid: 804614ab1d601ec4895807c1916570ff, type: 3}
+  itemType: 3
   weaponStrength: 19
   weaponDurability: 100

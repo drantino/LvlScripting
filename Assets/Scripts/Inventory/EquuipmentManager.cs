@@ -18,9 +18,8 @@ public class EquipmentManager : MonoBehaviour
     public void InitalizeEquipment()
     {
         equipmentDictionary.Add(ItemType.HELM, null);
-        equipmentDictionary.Add(ItemType.CHEST, null);
-        equipmentDictionary.Add(ItemType.LEGS, null);
-        equipmentDictionary.Add(ItemType.BOOTS, null);
+        equipmentDictionary.Add(ItemType.ARMOR, null);
+        equipmentDictionary.Add(ItemType.SHIELD, null);
         equipmentDictionary.Add(ItemType.WEAPON, null);
 
     }

@@ -14,8 +14,8 @@ public abstract class InventoryItemSO : ScriptableObject
 public enum ItemType
 {
     HELM,
-    CHEST,
-    LEGS,
-    BOOTS,
-    WEAPON
+    ARMOR,
+    SHIELD,
+    WEAPON,
+    OTHER
 }

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef6b6cce08d72d94fb64ac4d9bf042a1, type: 3}
+  m_Name: ShieldShield
+  m_EditorClassIdentifier: Assembly-CSharp::ArmorItemSO
+  itemName: ShieldShield
+  flavourText: Its pants for the legs
+  icon: {fileID: 715809139, guid: 804614ab1d601ec4895807c1916570ff, type: 3}
+  itemType: 2
+  armorRating: 5
