@@ -12,10 +12,12 @@ public class InventoryUI : MonoBehaviour
     {
         Dictionary<InventoryItemSO, InventoryItemData> inventoryRef = targetInventory.inventory;
 
-        while(contentParent.childCount > 0)
+        if (contentParent.childCount > 0)
         {
-            Destroy(contentParent.GetChild(0));
-            return;
+            for (int index = contentParent.childCount -1; index >= 0; index--)
+            {
+                Destroy(contentParent.GetChild(index).gameObject);
+            }
         }
 
         foreach (InventoryItemData item in inventoryRef.Values)
@@ -29,10 +31,9 @@ public class InventoryUI : MonoBehaviour
         Dictionary<InventoryItemSO, InventoryItemData> inventoryRef = targetInventory.inventory;
         if(contentParent.childCount > 0)
         {
-            while (contentParent.childCount > 0)
+            for (int index = contentParent.childCount-1; index >= 0; index--)
             {
-                Destroy(contentParent.GetChild(0));
-                return;
+                Destroy(contentParent.GetChild(index).gameObject);
             }
         }
         
