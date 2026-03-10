@@ -1,12 +1,13 @@
-using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class InventoryContainer : MonoBehaviour
 {
-    private Dictionary<InventoryItemSO, InventoryItemData> containerInventory = new();
+    public Dictionary<InventoryItemSO, InventoryItemData> containerInventory = new();
     public List<InventoryItemSO> startingInventory = new();
     public InventoryManager playerInventoryManager;
+    public event Action<InventoryContainer> onContainerUpdate;
     private void Start()
     {
         foreach (InventoryItemSO item in startingInventory)
@@ -24,6 +25,7 @@ public class InventoryContainer : MonoBehaviour
         {
             containerInventory[itemToAdd_].quantity++;
         }
+        onContainerUpdate?.Invoke(this);
     }
     public void AddItemToPlayerInventory(InventoryItemSO itemToRemove_)
     {
@@ -39,5 +41,7 @@ public class InventoryContainer : MonoBehaviour
                 containerInventory.Remove(itemToRemove_);
             }
         }
+        playerInventoryManager.AddItem(itemToRemove_);
+        onContainerUpdate?.Invoke(this);
     }
 }
