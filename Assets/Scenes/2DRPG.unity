@@ -6326,9 +6326,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ContainerUI
   targetInventory: {fileID: 1243672032}
-  buttonPrefab: {fileID: 0}
-  contentParent: {fileID: 0}
-  containerParent: {fileID: 0}
+  buttonPrefab: {fileID: 1322933414399135763, guid: 42cf74cd572ea0c44a12ef567d825dda, type: 3}
+  contentParent: {fileID: 1334706298}
+  containerParent: {fileID: 949294843}
+  debugContainer: {fileID: 1617667302}
 --- !u!114 &1121493339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7423,7 +7424,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1617667301}
-  - component: {fileID: 1617667300}
+  - component: {fileID: 1617667302}
   m_Layer: 0
   m_Name: Container
   m_TagString: Untagged
@@ -7431,22 +7432,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1617667300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1617667299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea4aecf52963b4c418681b6fe4dea818, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ContainerUI
-  targetInventory: {fileID: 1243672032}
-  buttonPrefab: {fileID: 1322933414399135763, guid: 42cf74cd572ea0c44a12ef567d825dda, type: 3}
-  contentParent: {fileID: 1334706298}
-  containerParent: {fileID: 949294843}
 --- !u!4 &1617667301
 Transform:
   m_ObjectHideFlags: 0
@@ -7462,6 +7447,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1617667302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617667299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3e77144f609f9042a5018f71ec49538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryContainer
+  startingInventory:
+  - {fileID: 11400000, guid: 34a5fa76ad1d76746944f6fc163cefa6, type: 2}
+  - {fileID: 11400000, guid: 988db609e81ab3442baaa0ed323a52f3, type: 2}
+  playerInventoryManager: {fileID: 1243672032}
 --- !u!1 &1637593950
 GameObject:
   m_ObjectHideFlags: 0
