@@ -14,8 +14,14 @@ public class ContainerUI : MonoBehaviour
 
     private void Start()
     {
+        
+    }
+    [ContextMenu("InitalizeDebugUI")]
+    public void InitalizeDebugUI()
+    {
         InitalizeUI(debugContainer);
     }
+
 
     public void InitalizeUI(InventoryContainer container_)
     {
@@ -26,12 +32,12 @@ public class ContainerUI : MonoBehaviour
         foreach (InventoryItemData item in inventoryRef.Values)
         {
             GameObject tmp = Instantiate(buttonPrefab, contentParent);
-            tmp.GetComponent<ContainerBuutton>().InitalizeButton(item,container_,true);
+            tmp.GetComponent<ContainerBuutton>().InitalizeButton(item,container_,false);
             uiButtons.Add(tmp);
         }
         foreach (InventoryItemData item in containerRef.Values)
         {
-            GameObject tmp = Instantiate(buttonPrefab, contentParent);
+            GameObject tmp = Instantiate(buttonPrefab, containerParent);
             tmp.GetComponent<ContainerBuutton>().InitalizeButton(item, container_, true);
             uiButtons.Add(tmp);
         }
@@ -50,12 +56,12 @@ public class ContainerUI : MonoBehaviour
         foreach (InventoryItemData item in inventoryRef.Values)
         {
             GameObject tmp = Instantiate(buttonPrefab, contentParent);
-            tmp.GetComponent<ContainerBuutton>().InitalizeButton(item, container_, true);
+            tmp.GetComponent<ContainerBuutton>().InitalizeButton(item, container_, false);
             uiButtons.Add(tmp);
         }
         foreach (InventoryItemData item in containerRef.Values)
         {
-            GameObject tmp = Instantiate(buttonPrefab, contentParent);
+            GameObject tmp = Instantiate(buttonPrefab, containerParent);
             tmp.GetComponent<ContainerBuutton>().InitalizeButton(item, container_, true);
             uiButtons.Add(tmp);
         }
