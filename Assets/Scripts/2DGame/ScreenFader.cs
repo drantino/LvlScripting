@@ -25,21 +25,24 @@ public class ScreenFader : MonoBehaviour
         if(screenFade != null)
         {
             StartCoroutine(FadeScreen(duration));
+            TwoDGameState.Instance.EnableControls(false);
         } 
     }
     private IEnumerator FadeScreen(float duration)
     {
         //immediately set screen to black
         SetAlpha(1f);
-
+        Time.timeScale = 0;
         float timer = 0f;
         while(timer < duration)
         {
             float alpha = Mathf.Lerp(1f, 0f, timer/duration);
             SetAlpha(alpha);
-            timer += Time.deltaTime;
+            timer += Time.unscaledDeltaTime;
             yield return null;
         }
+        Time.timeScale = 1;
+        //TwoDGameState.Instance.EnableControls(true);
         //ensure it fully transparent
         SetAlpha(0f);
     }

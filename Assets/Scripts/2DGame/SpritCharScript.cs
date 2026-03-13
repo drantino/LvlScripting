@@ -153,4 +153,16 @@ public class SpritCharScript : MonoBehaviour, IDamagable
         move.performed -= GetMovementVector;
         move.canceled -= GetMovementVector;
     }
+    //private void OnEnable()
+    //{
+    //    movementValue = Vector2.zero;
+    //    OnMove?.Invoke(movementValue);
+    //    move.Disable();
+    //}
+    //private void OnDisable()
+    //{
+    //    movementValue = Vector2.zero;
+    //    OnMove?.Invoke(movementValue);
+    //    move.Enable();
+    //}
 }

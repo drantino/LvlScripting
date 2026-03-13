@@ -113,6 +113,14 @@ public class TwoDGameState : MonoBehaviour
         treasureChests[index] = true;
         mainUIScript.TreasureUIGet(index);
     }
+    public void EnableControls(bool isEnabled)
+    {
+        if(player != null)
+        {
+            //player.GetComponent<SpritCharScript>().enabled = isEnabled;
+        }
+
+    }
     public void SaveDataUpdate()
     {
         saveData = new SaveData2D();
