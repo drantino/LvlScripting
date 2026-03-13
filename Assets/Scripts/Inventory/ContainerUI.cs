@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ContainerUI : MonoBehaviour
 {
+    public GameObject containerUI;
     public InventoryManager targetInventory;
     public GameObject buttonPrefab;
     public Transform contentParent;
@@ -25,6 +26,7 @@ public class ContainerUI : MonoBehaviour
 
     public void InitalizeUI(InventoryContainer container_)
     {
+        containerUI.SetActive(true);
         Dictionary<InventoryItemSO, InventoryItemData> inventoryRef = targetInventory.inventory;
         Dictionary<InventoryItemSO, InventoryItemData> containerRef = container_.containerInventory;
 
@@ -65,5 +67,14 @@ public class ContainerUI : MonoBehaviour
             tmp.GetComponent<ContainerBuutton>().InitalizeButton(item, container_, true);
             uiButtons.Add(tmp);
         }
+    }
+    public void CloseContainerUI()
+    {
+        foreach (GameObject button in uiButtons)
+        {
+            Destroy(button);
+        }
+        uiButtons.Clear();
+        containerUI.SetActive(false);
     }
 }

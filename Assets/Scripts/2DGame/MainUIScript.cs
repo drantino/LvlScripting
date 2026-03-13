@@ -7,7 +7,7 @@ public class MainUIScript : MonoBehaviour
 {
     [SerializeField] TwoDGameState gameState;
     public static MainUIScript instance;
-    public GameObject noSaveDataText, mainMenuUI, savedText, gameOverPanel;
+    public GameObject noSaveDataText, mainMenuUI, savedText, gameOverPanel, inventoryPanel;
     public Image treasureChest0, treasureChest1, treasureChest2;
     public TextMeshProUGUI hpValue, atkValue, defValue;
 
@@ -80,6 +80,16 @@ public class MainUIScript : MonoBehaviour
             atkValue.text = charScript.ATK.ToString();
             defValue.text = charScript.DEF.ToString();
         }
+    }
+    public void OpenInventory()
+    {
+        inventoryPanel.SetActive(true);
+        inventoryPanel.GetComponent<InventoryUI>().InitalizeInvUIByType(0);
+    }
+    public void CloseInventory()
+    {
+        inventoryPanel.SetActive(false);
+        inventoryPanel.GetComponent<InventoryUI>().ClearContentChildren();
     }
     public void MainMenu()
     {
