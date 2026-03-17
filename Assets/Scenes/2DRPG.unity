@@ -8157,7 +8157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1637593951
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10728,6 +10728,7 @@ MonoBehaviour:
   savedText: {fileID: 701458229}
   gameOverPanel: {fileID: 1944804403}
   inventoryPanel: {fileID: 668868399}
+  containerUIPanel: {fileID: 1121493336}
   treasureChest0: {fileID: 1556949596}
   treasureChest1: {fileID: 672386198}
   treasureChest2: {fileID: 1153956239}
