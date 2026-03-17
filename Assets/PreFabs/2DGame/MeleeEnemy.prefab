@@ -171,8 +171,8 @@ MonoBehaviour:
   startingPosition: {x: 0, y: 0}
   ChestPrefab: {fileID: 3525731930115786838, guid: e7ae908bcc0e3f8438079cc5d556051b, type: 3}
   drops:
-  - {fileID: 11400000, guid: 34a5fa76ad1d76746944f6fc163cefa6, type: 2}
-  - {fileID: 11400000, guid: 988db609e81ab3442baaa0ed323a52f3, type: 2}
+  - {fileID: 11400000, guid: c208b0ef6d885b94f91244e2f6b64596, type: 2}
+  - {fileID: 11400000, guid: 8ea645f1f30e4ce43ba68177eb5d154e, type: 2}
   attackHitBox: {fileID: 4142939290062397969}
   myAnimator: {fileID: 0}
 --- !u!114 &4288455721769016463

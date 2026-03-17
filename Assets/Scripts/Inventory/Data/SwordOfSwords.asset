@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0db7f7f5089634db109307ce338d01, type: 3}
+  m_Name: SwordOfSwords
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponItemSO
+  itemName: SwordsofSwords
+  flavourText: Its the sword of swords
+  icon: {fileID: 1501391579, guid: 804614ab1d601ec4895807c1916570ff, type: 3}
+  itemType: 3
+  weaponStrength: 20
+  weaponDurability: 100
