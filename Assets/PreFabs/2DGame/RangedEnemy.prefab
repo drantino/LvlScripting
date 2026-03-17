@@ -214,6 +214,10 @@ MonoBehaviour:
   playerPosition: {x: 0, y: 0}
   patrolRange: {x: 2, y: 2}
   startingPosition: {x: 0, y: 0}
+  ChestPrefab: {fileID: 3525731930115786838, guid: e7ae908bcc0e3f8438079cc5d556051b, type: 3}
+  drops:
+  - {fileID: 11400000, guid: 321574d8e787e944186bbb153fc6a83d, type: 2}
+  - {fileID: 11400000, guid: 59222bf157f285d4cb125ae5588303d2, type: 2}
   projectilePreFab: {fileID: 9138934245339198704, guid: e16242b498e9c4c4b8f96a4b7b91090f, type: 3}
   projectileSpawnLocation: {fileID: 8129670575714758198}
 --- !u!114 &262282885239566682

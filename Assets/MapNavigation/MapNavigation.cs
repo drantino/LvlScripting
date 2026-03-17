@@ -10,7 +10,7 @@ public class MapNavigation : MonoBehaviour
     [SerializeField] private MapLibrary library;
     [SerializeField] private Transform mapParent;
     private Dictionary<int,MapData> mapDictionary = new Dictionary<int,MapData>();
-    [SerializeField] private GameObject currentMap;
+    [SerializeField] public GameObject currentMap;
     public UnityEvent OnMapEnter;
     public int currentMapIndex;
     private void Awake()

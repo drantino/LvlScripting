@@ -1,8 +1,9 @@
+using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(AIMovement))]
-public abstract class Enemy : MonoBehaviour , IDamagable
+public abstract class Enemy : MonoBehaviour, IDamagable
 {
     public string enemyName;
     public int HP;
@@ -24,6 +25,9 @@ public abstract class Enemy : MonoBehaviour , IDamagable
 
     private bool patroling;
 
+    public GameObject ChestPrefab;
+
+    public List<InventoryItemSO> drops;
     public abstract void Attack();
     public void Pursue()
     {
@@ -40,7 +44,7 @@ public abstract class Enemy : MonoBehaviour , IDamagable
 
     private void Update()
     {
-        
+
         if (attackRange.CircleOverLapCheck())
         {
             aiMovement.StopMovement();
@@ -49,17 +53,17 @@ public abstract class Enemy : MonoBehaviour , IDamagable
         }
         if (sightLine.CircleOverLapCheck())
         {
-            if(attackCoroutine != null)
+            if (attackCoroutine != null)
             {
                 StopCoroutine(attackCoroutine);
                 //unsure if this is a good way to handle it, but it works
                 attackCoroutine = null;
-            }    
-            
+            }
+
             Pursue();
             return;
         }
-        if(!patroling)
+        if (!patroling)
         {
             Patrol();
             patroling = true;
@@ -83,11 +87,11 @@ public abstract class Enemy : MonoBehaviour , IDamagable
         {
             attackCoroutine = StartCoroutine(AttackCoroutine());
         }
-        
+
     }
     public IEnumerator AttackCoroutine()
     {
-        while(true)
+        while (true)
         {
             Attack();
             yield return new WaitForSeconds(attackDelay);
@@ -99,9 +103,20 @@ public abstract class Enemy : MonoBehaviour , IDamagable
         int damageTaken = incomingDamage - DEF;
         damageTaken = Mathf.Clamp(damageTaken, 0, 9999);
         HP -= damageTaken;
-        if(HP <= 0)
+        if (HP <= 0)
         {
             gameObject.SetActive(false);
+            GameObject chestSpawn = Instantiate(ChestPrefab,MapNavigation.Instance.currentMap.transform);
+            chestSpawn.transform.position = transform.position;
+            if (drops.Count > 0)
+            {
+                foreach (InventoryItemSO item in drops)
+                {
+                    chestSpawn.GetComponent<InventoryContainer>().startingInventory.Add(item);
+                }
+                chestSpawn.SetActive(true);
+            }
+
         }
     }
 }
