@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
-
+[Serializable]
 public abstract class InventoryItemData
 {
     public InventoryItemSO config;

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BusterBlade
   m_EditorClassIdentifier: Assembly-CSharp::WeaponItemSO
   itemName: BusterBlade
-  ItemID: 10
+  ItemID: 0
   flavourText: A sword that busts
   icon: {fileID: 1266565979, guid: 804614ab1d601ec4895807c1916570ff, type: 3}
   itemType: 3

@@ -141,7 +141,13 @@ public class TwoDGameState : MonoBehaviour
         }
         
         saveData.currentInventoryStateSO = new ();
-        saveData.currentInventoryStateSO.inventoryState = InventoryManager.instance.inventory;
+        saveData.currentInventoryStateSO.inventoryState = new();
+        foreach (InventoryItemData item in InventoryManager.instance.inventory.Values)
+        {
+            saveData.currentInventoryStateSO.inventoryState.Add(item);
+            Debug.Log(item.itemID);
+        }
+            
     }
     [ContextMenu("JSON save")]
     public void SaveData()
@@ -252,7 +258,7 @@ public class ItemState
 [Serializable]
 public class InventoryState
 {
-    public Dictionary<InventoryItemSO, InventoryItemData> inventoryState;
+    public List<InventoryItemData> inventoryState;
 }
 [Serializable]
 public class SaveData2D
