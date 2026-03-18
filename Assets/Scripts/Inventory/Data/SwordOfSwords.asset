@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SwordOfSwords
   m_EditorClassIdentifier: Assembly-CSharp::WeaponItemSO
   itemName: SwordsofSwords
+  ItemID: 6
   flavourText: Its the sword of swords
   icon: {fileID: 1501391579, guid: 804614ab1d601ec4895807c1916570ff, type: 3}
   itemType: 3

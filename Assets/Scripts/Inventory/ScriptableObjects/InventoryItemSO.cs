@@ -4,6 +4,7 @@ using UnityEngine;
 public abstract class InventoryItemSO : ScriptableObject
 {
     public string itemName;
+    public int ItemID;
     public string flavourText;
     public Sprite icon;
     public ItemType itemType;

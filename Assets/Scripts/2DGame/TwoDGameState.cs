@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using Unity.VisualScripting.ReorderableList;
+
 
 public class TwoDGameState : MonoBehaviour
 {
@@ -128,6 +130,14 @@ public class TwoDGameState : MonoBehaviour
         saveData.treasureBools = treasureChests;
         saveData.currentMapIndex = mapNavigation.currentMapIndex;
         saveData.playerCurrentHP = player.GetComponent<SpritCharScript>().HP;
+        saveData.currentInventoryState = new List<ItemState>();
+        foreach(InventoryItemData item in InventoryManager.instance.inventory.Values)
+        {
+            ItemState tmp = new ItemState();
+            tmp.itemID = item.itemID;
+            tmp.quantity = item.quantity;
+            saveData.currentInventoryState.Add(tmp);
+        }
     }
     [ContextMenu("JSON save")]
     public void SaveData()
@@ -230,12 +240,19 @@ public class TwoDMapGameState
     public List<MapState> mapStates;
 }
 [Serializable]
+public class ItemState
+{
+    public int itemID;
+    public int quantity;
+}
+[Serializable]
 public class SaveData2D
 {
     public TwoDMapGameState mapStates;
     public bool[] treasureBools;
     public int currentMapIndex;
     public int playerCurrentHP;
+    public List<ItemState> currentInventoryState;
 }
 
 

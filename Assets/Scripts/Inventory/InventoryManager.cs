@@ -5,9 +5,13 @@ public class InventoryManager : MonoBehaviour
 {
     public Dictionary<InventoryItemSO, InventoryItemData> inventory = new Dictionary<InventoryItemSO, InventoryItemData>();
     public InventoryItemSO[] tmp;
-
+    public static InventoryManager instance;
     private void Start()
     {
+        if(instance == null)
+        {
+            instance = this;
+        }       
         foreach (InventoryItemSO item in tmp)
         {
             AddItem(item);

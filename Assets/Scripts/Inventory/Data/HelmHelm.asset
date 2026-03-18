@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: HelmHelm
   m_EditorClassIdentifier: Assembly-CSharp::ArmorItemSO
   itemName: HelmHelm
+  ItemID: 3
   flavourText: A helm for a helm
   icon: {fileID: -996990517, guid: 804614ab1d601ec4895807c1916570ff, type: 3}
   itemType: 0

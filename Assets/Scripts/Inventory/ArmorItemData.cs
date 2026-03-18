@@ -7,6 +7,7 @@ public class ArmorItemData:InventoryItemData
     public ArmorItemData(ArmorItemSO config_)
     {
         this.config = config_;
+        itemID = config_.ItemID;
         this.flavourText = config_.flavourText;
         this.itemName = config_.itemName;
         this.icon = config_.icon;

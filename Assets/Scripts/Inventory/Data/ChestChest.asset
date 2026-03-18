@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ChestChest
   m_EditorClassIdentifier: Assembly-CSharp::ArmorItemSO
   itemName: ChestChest
+  ItemID: 1
   flavourText: Its a chest piece
   icon: {fileID: 1440071745, guid: 804614ab1d601ec4895807c1916570ff, type: 3}
   itemType: 1

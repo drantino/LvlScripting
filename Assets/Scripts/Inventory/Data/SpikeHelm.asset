@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SpikeHelm
   m_EditorClassIdentifier: Assembly-CSharp::ArmorItemSO
   itemName: SpikeHelm
+  ItemID: 5
   flavourText: Helm with a spike
   icon: {fileID: 438295447, guid: 804614ab1d601ec4895807c1916570ff, type: 3}
   itemType: 0

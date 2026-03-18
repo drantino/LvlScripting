@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ShieldShield
   m_EditorClassIdentifier: Assembly-CSharp::ArmorItemSO
   itemName: ShieldShield
+  ItemID: 4
   flavourText: Its pants for the legs
   icon: {fileID: 715809139, guid: 804614ab1d601ec4895807c1916570ff, type: 3}
   itemType: 2
