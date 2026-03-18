@@ -1,9 +1,10 @@
-using System.IO;
 using System;
 using System.Collections.Generic;
+using System.IO;
+using Unity.VisualScripting.ReorderableList;
+using UnityEditor.Overlays;
 using UnityEngine;
 using UnityEngine.Rendering;
-using Unity.VisualScripting.ReorderableList;
 
 
 public class TwoDGameState : MonoBehaviour
@@ -138,6 +139,9 @@ public class TwoDGameState : MonoBehaviour
             tmp.quantity = item.quantity;
             saveData.currentInventoryState.Add(tmp);
         }
+        
+        saveData.currentInventoryStateSO = new ();
+        saveData.currentInventoryStateSO.inventoryState = InventoryManager.instance.inventory;
     }
     [ContextMenu("JSON save")]
     public void SaveData()
@@ -152,7 +156,7 @@ public class TwoDGameState : MonoBehaviour
         }
         catch
         {
-            Debug.Log("Failed to save.");
+            Debug.Log("Failed to save to location.");
         }
     }
     [ContextMenu("JSON Load")]
@@ -246,6 +250,11 @@ public class ItemState
     public int quantity;
 }
 [Serializable]
+public class InventoryState
+{
+    public Dictionary<InventoryItemSO, InventoryItemData> inventoryState;
+}
+[Serializable]
 public class SaveData2D
 {
     public TwoDMapGameState mapStates;
@@ -253,6 +262,7 @@ public class SaveData2D
     public int currentMapIndex;
     public int playerCurrentHP;
     public List<ItemState> currentInventoryState;
+    public InventoryState currentInventoryStateSO;
 }
 
 

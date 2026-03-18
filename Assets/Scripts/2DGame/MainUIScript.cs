@@ -103,15 +103,15 @@ public class MainUIScript : MonoBehaviour
     }
     public void SaveGame()
     {
-        try
+        //try
         {
             TwoDGameState.Instance.SaveData();
             StartCoroutine(ResetSavedText());
         }
-        catch
-        {
-            Debug.LogWarning("Failed To Save");
-        }
+        //catch
+        //{
+        //    Debug.LogWarning("Failed To Save");
+        //}
     }
     IEnumerator ResetSavedText()
     {
