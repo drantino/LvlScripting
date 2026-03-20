@@ -48,6 +48,8 @@ public class TwoDGameState : MonoBehaviour
             treasureChests[index] = false;
         }
         mainUIScript.ResetChestsUI();
+
+        InventoryManager.instance.inventory = new();
         Debug.Log("StartNew");
     }
     public bool LoadSaveGame()
@@ -132,22 +134,13 @@ public class TwoDGameState : MonoBehaviour
         saveData.currentMapIndex = mapNavigation.currentMapIndex;
         saveData.playerCurrentHP = player.GetComponent<SpritCharScript>().HP;
         saveData.currentInventoryState = new List<ItemState>();
-        foreach(InventoryItemData item in InventoryManager.instance.inventory.Values)
+        foreach(KeyValuePair<InventoryItemSO,InventoryItemData> item in InventoryManager.instance.inventory)
         {
             ItemState tmp = new ItemState();
-            tmp.itemID = item.itemID;
-            tmp.quantity = item.quantity;
+            tmp.itemSO = item.Key;
+            tmp.quantity = item.Value.quantity;
             saveData.currentInventoryState.Add(tmp);
-        }
-        
-        saveData.currentInventoryStateSO = new ();
-        saveData.currentInventoryStateSO.inventoryState = new();
-        foreach (InventoryItemData item in InventoryManager.instance.inventory.Values)
-        {
-            saveData.currentInventoryStateSO.inventoryState.Add(item);
-            Debug.Log(item.itemID);
-        }
-            
+        }            
     }
     [ContextMenu("JSON save")]
     public void SaveData()
@@ -204,6 +197,14 @@ public class TwoDGameState : MonoBehaviour
         mapNavigation.player = player.transform;
         mapNavigation.GoToMap(saveData.currentMapIndex, 0);
         player.GetComponent<SpritCharScript>().HP = saveData.playerCurrentHP;
+
+        InventoryManager.instance.inventory = new();
+
+        foreach(ItemState loadedData in saveData.currentInventoryState)
+        {
+            InventoryManager.instance.AddItem(loadedData.itemSO);
+            InventoryManager.instance.inventory[loadedData.itemSO].quantity = loadedData.quantity;
+        }
     }
     public void ReturnToMainMenu()
     {
@@ -252,13 +253,8 @@ public class TwoDMapGameState
 [Serializable]
 public class ItemState
 {
-    public int itemID;
+    public InventoryItemSO itemSO;
     public int quantity;
-}
-[Serializable]
-public class InventoryState
-{
-    public List<InventoryItemData> inventoryState;
 }
 [Serializable]
 public class SaveData2D
@@ -268,7 +264,6 @@ public class SaveData2D
     public int currentMapIndex;
     public int playerCurrentHP;
     public List<ItemState> currentInventoryState;
-    public InventoryState currentInventoryStateSO;
 }
 
 

@@ -1,6 +1,7 @@
-using System.Collections.Generic;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 [RequireComponent(typeof(AIMovement))]
 public abstract class Enemy : MonoBehaviour, IDamagable
@@ -110,9 +111,14 @@ public abstract class Enemy : MonoBehaviour, IDamagable
             chestSpawn.transform.position = transform.position;
             if (drops.Count > 0)
             {
-                foreach (InventoryItemSO item in drops)
+                if(drops.Count > 1)
                 {
-                    chestSpawn.GetComponent<InventoryContainer>().startingInventory.Add(item);
+                    int rand = Random.Range(0,drops.Count);
+                    chestSpawn.GetComponent<InventoryContainer>().startingInventory.Add(drops[rand]);
+                }
+                else
+                {
+                    chestSpawn.GetComponent<InventoryContainer>().startingInventory.Add(drops[1]);
                 }
                 chestSpawn.SetActive(true);
             }

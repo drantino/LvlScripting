@@ -6,6 +6,8 @@ public class InventoryManager : MonoBehaviour
     public Dictionary<InventoryItemSO, InventoryItemData> inventory = new Dictionary<InventoryItemSO, InventoryItemData>();
     public InventoryItemSO[] tmp;
     public static InventoryManager instance;
+    public InventoryItemData[] inventoryItemRefrenceList;
+    public Dictionary<int, InventoryItemData> inventoryItemReferenceDictionary = new Dictionary<int, InventoryItemData>();
     private void Start()
     {
         if(instance == null)
@@ -16,6 +18,7 @@ public class InventoryManager : MonoBehaviour
         {
             AddItem(item);
         }
+
     }
 
     public void AddItem(InventoryItemSO itemToAdd_)
