@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Unity.VisualScripting.ReorderableList;
 using UnityEditor.Overlays;
 using UnityEngine;
@@ -50,6 +51,9 @@ public class TwoDGameState : MonoBehaviour
         mainUIScript.ResetChestsUI();
 
         InventoryManager.instance.inventory = new();
+        EquipmentManager.instance.equipmentDictionary = new();
+        EquipmentManager.instance.InitalizeEquipment();
+        EquipmentManager.instance.EquipItem(null);
         Debug.Log("StartNew");
     }
     public bool LoadSaveGame()
@@ -140,7 +144,15 @@ public class TwoDGameState : MonoBehaviour
             tmp.itemSO = item.Key;
             tmp.quantity = item.Value.quantity;
             saveData.currentInventoryState.Add(tmp);
-        }            
+        }
+        saveData.currentEquipmentState = new EquipmentState();
+        saveData.currentEquipmentState.equipmentArray = new InventoryItemSO[EquipmentManager.instance.equipmentDictionary.Count];
+        int index = 0;
+        foreach(KeyValuePair<ItemType,InventoryItemData> equipment in EquipmentManager.instance.equipmentDictionary)
+        {
+            saveData.currentEquipmentState.equipmentArray[index] = InventoryManager.instance.inventory.FirstOrDefault(x => x.Value == equipment.Value).Key;
+            index++;
+        }
     }
     [ContextMenu("JSON save")]
     public void SaveData()
@@ -175,35 +187,49 @@ public class TwoDGameState : MonoBehaviour
             {
                 Debug.Log("Fail to load.");
             }
+
+
+            mapgameState = saveData.mapStates;
+            foreach (MapState mapState in mapgameState.mapStates)
+            {
+                mapState.InitalizeMDictionary();
+            }
+            treasureChests = saveData.treasureBools;
+            for (int index = 0; index < treasureChests.Length; index++)
+            {
+                if (treasureChests[index])
+                {
+                    MainUIScript.instance.TreasureUIGet(index);
+                }
+            }
+            player = Instantiate(playerPrefab);
+            mapNavigation.player = player.transform;
+            mapNavigation.GoToMap(saveData.currentMapIndex, 0);
+            player.GetComponent<SpritCharScript>().HP = saveData.playerCurrentHP;
+
+            InventoryManager.instance.inventory = new();
+
+            foreach (ItemState loadedData in saveData.currentInventoryState)
+            {
+                InventoryManager.instance.AddItem(loadedData.itemSO);
+                InventoryManager.instance.inventory[loadedData.itemSO].quantity = loadedData.quantity;
+            }
+
+            EquipmentManager.instance.equipmentDictionary = new Dictionary<ItemType, InventoryItemData>();
+            EquipmentManager.instance.InitalizeEquipment();
+            
+            foreach (InventoryItemSO loadedData in saveData.currentEquipmentState.equipmentArray)
+            {
+                try
+                {
+                    EquipmentManager.instance.EquipItem(InventoryManager.instance.inventory[loadedData]);
+                }
+                catch { }
+            }
         }
         else
         {
             Debug.LogError("Save file not found.");
-        }
-        mapgameState = saveData.mapStates;
-        foreach (MapState mapState in mapgameState.mapStates)
-        {
-            mapState.InitalizeMDictionary();
-        }
-        treasureChests = saveData.treasureBools;
-        for(int index = 0; index < treasureChests.Length; index++)
-        {
-            if (treasureChests[index])
-            {
-                MainUIScript.instance.TreasureUIGet(index);
-            }
-        }
-        player = Instantiate(playerPrefab);
-        mapNavigation.player = player.transform;
-        mapNavigation.GoToMap(saveData.currentMapIndex, 0);
-        player.GetComponent<SpritCharScript>().HP = saveData.playerCurrentHP;
-
-        InventoryManager.instance.inventory = new();
-
-        foreach(ItemState loadedData in saveData.currentInventoryState)
-        {
-            InventoryManager.instance.AddItem(loadedData.itemSO);
-            InventoryManager.instance.inventory[loadedData.itemSO].quantity = loadedData.quantity;
         }
     }
     public void ReturnToMainMenu()
@@ -257,6 +283,11 @@ public class ItemState
     public int quantity;
 }
 [Serializable]
+public class EquipmentState
+{
+    public InventoryItemSO[] equipmentArray;
+}
+[Serializable]
 public class SaveData2D
 {
     public TwoDMapGameState mapStates;
@@ -264,6 +295,7 @@ public class SaveData2D
     public int currentMapIndex;
     public int playerCurrentHP;
     public List<ItemState> currentInventoryState;
+    public EquipmentState currentEquipmentState;
 }
 
 
