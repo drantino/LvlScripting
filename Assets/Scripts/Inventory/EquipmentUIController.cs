@@ -16,6 +16,7 @@ public class EquipmentUIController : MonoBehaviour
             equipmentUIDictonary.Add(slot.equipmentType, slot.uiImage);
         }
         EquipmentManager.instance.onEquip += UpdateUI;
+        EquipmentManager.instance.onClearEquipment += ClearEquipmentUI;
     }
     public void UpdateUI(Dictionary<ItemType, InventoryItemData> equipment)
     {
@@ -28,6 +29,13 @@ public class EquipmentUIController : MonoBehaviour
                 tmp.a = 1;
                 equipmentUIDictonary[equipmentSlot].color = tmp;
             }
+        }
+    }
+    public void ClearEquipmentUI(Dictionary<ItemType, InventoryItemData> equipment)
+    {
+        foreach (ItemType equipmentSlot in equipment.Keys)
+        {            
+                equipmentUIDictonary[equipmentSlot].sprite = null;
         }
     }
 }

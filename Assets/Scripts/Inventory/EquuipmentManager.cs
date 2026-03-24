@@ -6,7 +6,8 @@ public class EquipmentManager : MonoBehaviour
 {
     public Dictionary<ItemType, InventoryItemData> equipmentDictionary = new();
     public static EquipmentManager instance;
-    public event Action<Dictionary<ItemType, InventoryItemData>> onEquip;
+    public event Action<Dictionary<ItemType, InventoryItemData>> onEquip, onClearEquipment;
+    //public Action ;
     public void Awake()
     {
         if(instance == null)
@@ -36,5 +37,11 @@ public class EquipmentManager : MonoBehaviour
             Debug.Log(equipmentDictionary[weapon.itemType].itemName + " was equipped");
         }
         onEquip?.Invoke(equipmentDictionary);
+    }
+    public void ClearInventory()
+    {
+        equipmentDictionary.Clear();
+        InitalizeEquipment();
+        onClearEquipment?.Invoke(equipmentDictionary);
     }
 }

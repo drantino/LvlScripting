@@ -51,9 +51,7 @@ public class TwoDGameState : MonoBehaviour
         mainUIScript.ResetChestsUI();
 
         InventoryManager.instance.inventory = new();
-        EquipmentManager.instance.equipmentDictionary = new();
-        EquipmentManager.instance.InitalizeEquipment();
-        EquipmentManager.instance.EquipItem(null);
+        EquipmentManager.instance.ClearInventory();
         Debug.Log("StartNew");
     }
     public bool LoadSaveGame()
