@@ -50,7 +50,6 @@ public class MapNavigation : MonoBehaviour
         //conver the cell into world space. returns a Vector 3 the new position
         //set the position to the update value
 
-        // add aesthhetics: screenfade, sfx, animations
     }
     private IEnumerator InitializeMap(int mapID)
     {
