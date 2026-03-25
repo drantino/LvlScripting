@@ -55,8 +55,14 @@ public class TwoDGameState : MonoBehaviour
     {
         try
         {
-            LoadSaveDate();
-            return true;
+            if(LoadSaveDate())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         catch
         {
@@ -153,7 +159,15 @@ public class TwoDGameState : MonoBehaviour
     public void SaveData()
     {
         SaveDataUpdate();
-        string filePath = "Assets/Resources/save.json";
+        if(!Directory.Exists(Application.persistentDataPath + "/Assets/Resources"))
+        {
+            try
+            {
+                Directory.CreateDirectory(Application.persistentDataPath + "/Assets/Resources");
+            }
+            catch { Debug.LogWarning("Failed to create path."); }
+        }
+        string filePath = Application.persistentDataPath + "/Assets/Resources/save.json";
         string json = JsonUtility.ToJson(saveData);
         try
         {
@@ -166,9 +180,9 @@ public class TwoDGameState : MonoBehaviour
         }
     }
     [ContextMenu("JSON Load")]
-    public void LoadSaveDate()
+    public bool LoadSaveDate()
     {
-        string file = "Assets/Resources/save.json";
+        string file = Application.persistentDataPath+"/Assets/Resources/save.json";
         if (File.Exists(file))
         {
             try
@@ -201,15 +215,20 @@ public class TwoDGameState : MonoBehaviour
             mapNavigation.player = player.transform;
             mapNavigation.GoToMap(saveData.currentMapIndex, 0);
             player.GetComponent<SpritCharScript>().HP = saveData.playerCurrentHP;
-
+            
             InventoryManager.instance.inventory = new();
-
+            
             foreach (ItemState loadedData in saveData.currentInventoryState)
             {
-                InventoryManager.instance.AddItem(loadedData.itemSO);
-                InventoryManager.instance.inventory[loadedData.itemSO].quantity = loadedData.quantity;
+                try
+                {
+                    InventoryManager.instance.AddItem(loadedData.itemSO);
+                    InventoryManager.instance.inventory[loadedData.itemSO].quantity = loadedData.quantity;
+                }
+                catch { }
+                
             }
-
+            
             EquipmentManager.instance.equipmentDictionary = new Dictionary<ItemType, InventoryItemData>();
             EquipmentManager.instance.InitalizeEquipment();
             
@@ -221,10 +240,13 @@ public class TwoDGameState : MonoBehaviour
                 }
                 catch { }
             }
+            
+            return true;
         }
         else
         {
             Debug.LogError("Save file not found.");
+            return false;
         }
     }
     public void ReturnToMainMenu()
