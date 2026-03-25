@@ -2,9 +2,15 @@ lvl scripting assignment 5
 
 sound effects and sound controls
 
+make quick menu side in and out
+
+
+
 make equipment effect stats
 levels should do something
 -+1 dmg and def, +10 hp?
+
+model of weapon reflected by current weapon?
 
 follow player within bounds of camera range
 
