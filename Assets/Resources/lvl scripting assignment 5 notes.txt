@@ -1,0 +1,21 @@
+lvl scripting assignment 5
+
+sound effects and sound controls
+
+make equipment effect stats
+levels should do something
+-+1 dmg and def, +10 hp?
+
+follow player within bounds of camera range
+
+map containers to allow saving chests
+
+forest area, maybe do parallax fore ground for tree tops
+
+desert area leads into a underground cavern
+
+tundra area could lead to a mansion?
+
+final item for each area could be key item? 
+like forest using shovel to get into desert underground
+underground could lead to a mining camp that has a key for tundra mansion
