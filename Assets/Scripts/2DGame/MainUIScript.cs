@@ -1,30 +1,48 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class MainUIScript : MonoBehaviour
 {
     [SerializeField] TwoDGameState gameState;
     public static MainUIScript instance;
-    public GameObject noSaveDataText, mainMenuUI, savedText, gameOverPanel, inventoryPanel, containerUIPanel,player;
+    public GameObject noSaveDataText, mainMenuUI, savedText, gameOverPanel, inventoryPanel, containerUIPanel, player, gameMenuPanel;
     public Image treasureChest0, treasureChest1, treasureChest2;
     public TextMeshProUGUI hpValue, atkValue, defValue;
-
+    private InputAction pause;
     private void Awake()
     {
         instance = this;
+        pause = InputSystem.actions.FindAction("Pause");
+    }
+    private void Update()
+    {
+        if(pause.WasCompletedThisFrame())
+        {
+            if(gameMenuPanel.activeSelf)
+            {
+                CloseGameMenuPanel();
+            }
+            else
+            {
+                OpenGameMenuPanel();
+            }
+        }
     }
     public void StartNewGame()
     {
         gameState.StartNewGame();
         mainMenuUI.SetActive(false);
+        Time.timeScale = 1.0f;
     }
     public void ContinueGame()
     {
         if (gameState.LoadSaveGame())
         {
             mainMenuUI.SetActive(false);
+            Time.timeScale = 1.0f;
         }
         else
         {
@@ -118,5 +136,15 @@ public class MainUIScript : MonoBehaviour
         savedText.SetActive(true);
         yield return new WaitForSeconds(3);
         savedText.SetActive(false);
+    }
+    public void OpenGameMenuPanel()
+    {
+        gameMenuPanel.SetActive(true);
+        Time.timeScale = 0.0f;
+    }
+    public void CloseGameMenuPanel()
+    {
+        gameMenuPanel.SetActive(false );
+        Time.timeScale = 1.0f;
     }
 }
