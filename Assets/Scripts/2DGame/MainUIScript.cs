@@ -7,7 +7,7 @@ public class MainUIScript : MonoBehaviour
 {
     [SerializeField] TwoDGameState gameState;
     public static MainUIScript instance;
-    public GameObject noSaveDataText, mainMenuUI, savedText, gameOverPanel, inventoryPanel, containerUIPanel;
+    public GameObject noSaveDataText, mainMenuUI, savedText, gameOverPanel, inventoryPanel, containerUIPanel,player;
     public Image treasureChest0, treasureChest1, treasureChest2;
     public TextMeshProUGUI hpValue, atkValue, defValue;
 
@@ -70,15 +70,15 @@ public class MainUIScript : MonoBehaviour
         treasureChest1.color = color;
         treasureChest2.color = color;
     }
-    public void UpdateCharHud(GameObject character)
+    public void UpdateCharHud()
     {
-
         SpritCharScript charScript;
-        if (character.TryGetComponent<SpritCharScript>(out charScript))
+        if (player != null && player.TryGetComponent<SpritCharScript>(out charScript))
         {
             hpValue.text = $"{charScript.HP}/{charScript.MaxHP}";
             atkValue.text = charScript.ATK.ToString();
             defValue.text = charScript.DEF.ToString();
+
         }
     }
     public void OpenInventory()

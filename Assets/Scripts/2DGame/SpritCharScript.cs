@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.Windows;
 using System;
 using System.Collections;
+using System.Runtime.InteropServices.WindowsRuntime;
 public class SpritCharScript : MonoBehaviour, IDamagable
 {
     InputAction move, attack, interact;
@@ -15,8 +16,23 @@ public class SpritCharScript : MonoBehaviour, IDamagable
     private bool attacking, dead;
     public IInteractable interactableObject;
     //stats
-    public int HP, MaxHP, ATK, DEF;
-
+    public int HP, MaxHP;
+    public int ATK
+    {
+        get
+        {
+            int atk = 5 + EquipmentManager.instance.equipmentATK;
+            return atk;
+        }
+    }
+    public int DEF
+    {
+        get
+        {          
+            int def = EquipmentManager.instance.equipmentDEF;
+            return def;
+        }
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,7 +44,8 @@ public class SpritCharScript : MonoBehaviour, IDamagable
         animationScript = GetComponent<SpritCharAnimationScript>();
         attacking = false;
         weapon.SetActive(false);
-        MainUIScript.instance.UpdateCharHud(gameObject);
+        MainUIScript.instance.player = this.gameObject;
+        MainUIScript.instance.UpdateCharHud(); 
         dead = false;
     }
     public void GetMovementVector(InputAction.CallbackContext c)
@@ -39,11 +56,11 @@ public class SpritCharScript : MonoBehaviour, IDamagable
     // Update is called once per frame
     void Update()
     {
-        if(!attacking && attack.WasCompletedThisFrame() && !dead)
+        if (!attacking && attack.WasCompletedThisFrame() && !dead)
         {
             Attack();
         }
-        if(interact.WasPressedThisFrame() && interactableObject != null)
+        if (interact.WasPressedThisFrame() && interactableObject != null)
         {
             interactableObject.Interact(gameObject);
         }
@@ -59,8 +76,8 @@ public class SpritCharScript : MonoBehaviour, IDamagable
             case PlayerAnimationState.Idle_Down:
             case PlayerAnimationState.Walk_Down:
                 {
-                    weapon.transform.localPosition = new Vector3(0,-0.25f,0);
-                    weapon.transform.localRotation = Quaternion.Euler(0,0,180);
+                    weapon.transform.localPosition = new Vector3(0, -0.25f, 0);
+                    weapon.transform.localRotation = Quaternion.Euler(0, 0, 180);
                     weapon.SetActive(true);
                     StartCoroutine(ResetAttack());
                     break;
@@ -104,8 +121,8 @@ public class SpritCharScript : MonoBehaviour, IDamagable
         int damageTaken = incomingDamage - DEF;
         damageTaken = Mathf.Clamp(damageTaken, 0, 9999);
         HP -= damageTaken;
-        MainUIScript.instance.UpdateCharHud(gameObject);
-        if(HP <= 0)
+        MainUIScript.instance.UpdateCharHud();
+        if (HP <= 0)
         {
             TwoDGameState.Instance.PlayerKilled();
             move.performed -= GetMovementVector;
@@ -128,7 +145,7 @@ public class SpritCharScript : MonoBehaviour, IDamagable
     IEnumerator DeathAnimation()
     {
         yield return new WaitForSeconds(1);
-        transform.Rotate(0,0,-90);
+        transform.Rotate(0, 0, -90);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -146,7 +163,7 @@ public class SpritCharScript : MonoBehaviour, IDamagable
     public void PlayerRest()
     {
         HP = MaxHP;
-        MainUIScript.instance.UpdateCharHud(gameObject);
+        MainUIScript.instance.UpdateCharHud();
     }
     private void OnDestroy()
     {
