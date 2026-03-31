@@ -141,10 +141,12 @@ public class MainUIScript : MonoBehaviour
     {
         gameMenuPanel.SetActive(true);
         Time.timeScale = 0.0f;
+        player.GetComponent<SpritCharScript>().enabled = false;
     }
     public void CloseGameMenuPanel()
     {
         gameMenuPanel.SetActive(false );
         Time.timeScale = 1.0f;
+        player.GetComponent<SpritCharScript>().enabled = true;
     }
 }
