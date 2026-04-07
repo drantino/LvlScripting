@@ -82,5 +82,9 @@ public class MapData
         {
             entryPoints.Add(m.engryPointID, m);
         }
+        foreach(TreasureChest t in config.chests)
+        {
+
+        }
     }
 }

@@ -21,5 +21,6 @@ public class MapEntryPoint
 public class TreasureChest
 {
     public bool defaultInventory;
-    public InventoryContainer container;
+    public Vector2 chestLocation;
+    public List<InventoryItemSO> startingItems;
 }

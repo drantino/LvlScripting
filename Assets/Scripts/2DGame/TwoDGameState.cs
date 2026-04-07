@@ -14,6 +14,7 @@ public class TwoDGameState : MonoBehaviour
     public MainUIScript mainUIScript;
     public Transform mapParent;
     private EnemySpawner spawner;
+    private MapChests chests;
     private int currentMapID;
     [SerializeField] private MapState currentMapState;
 
@@ -79,6 +80,7 @@ public class TwoDGameState : MonoBehaviour
             {
                 currentMapState = mapState;
                 BeginEnemySpawn(currentMapState);
+                //initialize chest on map
                 break;
             }
         }
@@ -96,6 +98,11 @@ public class TwoDGameState : MonoBehaviour
                 }
             }
         }
+    }
+    public void BeginChestSpawn(MapState map)
+    {
+        chests = mapParent.GetComponentInChildren<MapChests>();
+        //logich ere
     }
     public void RestEnemies()
     {
@@ -272,7 +279,7 @@ public class MapState
     public int mapID;
     public List<EnemyState> enemyStates;
     [NonSerialized] public Dictionary<int, EnemyState> enemyDictionary;
-    public List<ChestState> chestStates;
+    public List<TreasureChest> chestStates;
     public void InitalizeMDictionary()
     {
         enemyDictionary = new Dictionary<int, EnemyState>();
