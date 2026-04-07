@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -271,6 +272,7 @@ public class MapState
     public int mapID;
     public List<EnemyState> enemyStates;
     [NonSerialized] public Dictionary<int, EnemyState> enemyDictionary;
+    public List<ChestState> chestStates;
     public void InitalizeMDictionary()
     {
         enemyDictionary = new Dictionary<int, EnemyState>();
@@ -304,6 +306,12 @@ public class EquipmentState
 {
     public InventoryItemSO[] equipmentArray;
 }
+[Serializable]
+public class ChestState
+{
+    public bool defaultItems;
+    public List<InventoryItemData> itemList;
+}   
 [Serializable]
 public class SaveData2D
 {

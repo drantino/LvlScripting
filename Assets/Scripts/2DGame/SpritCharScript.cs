@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.Windows;
 using System;
 using System.Collections;
-using System.Runtime.InteropServices.WindowsRuntime;
+using System.Collections.Generic;
 public class SpritCharScript : MonoBehaviour, IDamagable
 {
     InputAction move, attack, interact;
@@ -14,7 +14,7 @@ public class SpritCharScript : MonoBehaviour, IDamagable
     private SpritCharAnimationScript animationScript;
     public GameObject weapon;
     private bool attacking, dead;
-    public IInteractable interactableObject;
+    public List<IInteractable> interactableObjects;
     //stats
     public int HP, MaxHP;
     public int ATK
@@ -47,6 +47,7 @@ public class SpritCharScript : MonoBehaviour, IDamagable
         MainUIScript.instance.player = this.gameObject;
         MainUIScript.instance.UpdateCharHud(); 
         dead = false;
+        interactableObjects = new List<IInteractable>();
     }
     public void GetMovementVector(InputAction.CallbackContext c)
     {
@@ -60,9 +61,16 @@ public class SpritCharScript : MonoBehaviour, IDamagable
         {
             Attack();
         }
-        if (interact.WasPressedThisFrame() && interactableObject != null)
+        if (interact.WasPressedThisFrame() && interactableObjects.Count > 0)
         {
-            interactableObject.Interact(gameObject);
+            if(interactableObjects[0] == null)
+            {
+                interactableObjects.RemoveAt(0);
+            }
+            else
+            {
+                interactableObjects[0].Interact(gameObject);
+            }  
         }
     }
     private void FixedUpdate()
@@ -149,15 +157,20 @@ public class SpritCharScript : MonoBehaviour, IDamagable
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.TryGetComponent<IInteractable>(out interactableObject);
+        IInteractable interactable;
+        collision.TryGetComponent<IInteractable>(out interactable);
+        if(!interactableObjects.Contains(interactable))
+        {
+            interactableObjects.Add(interactable);
+        } 
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         IInteractable newCollision;
         collision.TryGetComponent<IInteractable>(out newCollision);
-        if (newCollision == interactableObject)
+        if (interactableObjects.Contains(newCollision))
         {
-            interactableObject = null;
+            interactableObjects.Remove(newCollision);
         }
     }
     public void PlayerRest()

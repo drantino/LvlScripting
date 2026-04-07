@@ -9,10 +9,17 @@ public class GameMap : ScriptableObject
     public string mapName;
     public int mapID;
     public List<MapEntryPoint> entryPoints;
+    public List<TreasureChest> chests;
 }
 [Serializable]
 public class MapEntryPoint
 {
     public int engryPointID;
     public Vector3Int cell;
+}
+[Serializable]
+public class TreasureChest
+{
+    public bool defaultInventory;
+    public InventoryContainer container;
 }
