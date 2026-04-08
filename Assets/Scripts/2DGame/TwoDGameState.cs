@@ -49,6 +49,8 @@ public class TwoDGameState : MonoBehaviour
         }
         mainUIScript.ResetChestsUI();
 
+        //reset all map treasurechests to default, just need to the toggle, might need to be higher
+
         InventoryManager.instance.inventory = new();
         EquipmentManager.instance.ClearInventory();
         Debug.Log("StartNew");
@@ -80,7 +82,6 @@ public class TwoDGameState : MonoBehaviour
             {
                 currentMapState = mapState;
                 BeginEnemySpawn(currentMapState);
-                //initialize chest on map
                 BeginChestSpawn(currentMapState);
                 break;
             }
@@ -120,7 +121,6 @@ public class TwoDGameState : MonoBehaviour
                     {
                         chestScript.chests[chest.chestID].FillWithDataInventory(itemData);
                     }
-
                 }
             }
         }
