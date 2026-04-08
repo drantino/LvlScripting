@@ -10,6 +10,12 @@ public class InventoryContainer : MonoBehaviour
     public event Action<InventoryContainer> onContainerUpdate;
     private void Start()
     {
+        
+    }
+    public void FillWithStartingInv()
+    {
+        Debug.Log("Fill");
+        containerInventory.Clear();
         foreach (InventoryItemSO item in startingInventory)
         {
             if (!containerInventory.TryAdd(item, item.CreateRunttimeData()))
@@ -17,6 +23,11 @@ public class InventoryContainer : MonoBehaviour
                 containerInventory[item].quantity++;
             }
         }
+    }
+    public void FillWithDataInventory(InventoryItemData itemToAdd_)
+    {
+        containerInventory.TryAdd(itemToAdd_.config, itemToAdd_.config.CreateRunttimeData());
+        containerInventory[itemToAdd_.config].quantity = itemToAdd_.quantity;
     }
     public void AddItemTOContainer(InventoryItemSO itemToAdd_)
     {

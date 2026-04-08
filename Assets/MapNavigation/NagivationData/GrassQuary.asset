@@ -21,7 +21,13 @@ MonoBehaviour:
   chests:
   - defaultInventory: 1
     chestLocation: {x: -3, y: 1}
+    mapID: 1
+    chestID: 0
   - defaultInventory: 1
     chestLocation: {x: -3, y: -2}
+    mapID: 1
+    chestID: 1
   - defaultInventory: 1
     chestLocation: {x: 0, y: 2}
+    mapID: 1
+    chestID: 2

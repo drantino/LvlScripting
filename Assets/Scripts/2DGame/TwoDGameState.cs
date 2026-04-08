@@ -14,7 +14,7 @@ public class TwoDGameState : MonoBehaviour
     public MainUIScript mainUIScript;
     public Transform mapParent;
     private EnemySpawner spawner;
-    private MapChests chests;
+    private MapChests chestScript;
     private int currentMapID;
     [SerializeField] private MapState currentMapState;
 
@@ -57,7 +57,7 @@ public class TwoDGameState : MonoBehaviour
     {
         try
         {
-            if(LoadSaveDate())
+            if (LoadSaveDate())
             {
                 return true;
             }
@@ -81,6 +81,7 @@ public class TwoDGameState : MonoBehaviour
                 currentMapState = mapState;
                 BeginEnemySpawn(currentMapState);
                 //initialize chest on map
+                BeginChestSpawn(currentMapState);
                 break;
             }
         }
@@ -101,8 +102,28 @@ public class TwoDGameState : MonoBehaviour
     }
     public void BeginChestSpawn(MapState map)
     {
-        chests = mapParent.GetComponentInChildren<MapChests>();
-        //logich ere
+        chestScript = mapParent.GetComponentInChildren<MapChests>();
+        
+        if (chestScript != null && chestScript.chests.Count > 0)
+        {
+            foreach (TreasureChest chest in map.chestStates)
+            {
+                if (chest.defaultInventory)
+                {
+                    
+                    chestScript.chests[chest.chestID].FillWithStartingInv();
+                }
+                else
+                {
+                    chestScript.chests[chest.chestID].containerInventory.Clear();
+                    foreach (InventoryItemData itemData in chest.currentInventory)
+                    {
+                        chestScript.chests[chest.chestID].FillWithDataInventory(itemData);
+                    }
+
+                }
+            }
+        }
     }
     public void RestEnemies()
     {
@@ -133,7 +154,7 @@ public class TwoDGameState : MonoBehaviour
     }
     public void EnableControls(bool isEnabled)
     {
-        if(player != null)
+        if (player != null)
         {
             //player.GetComponent<SpritCharScript>().enabled = isEnabled;
         }
@@ -147,7 +168,7 @@ public class TwoDGameState : MonoBehaviour
         saveData.currentMapIndex = mapNavigation.currentMapIndex;
         saveData.playerCurrentHP = player.GetComponent<SpritCharScript>().HP;
         saveData.currentInventoryState = new List<ItemState>();
-        foreach(KeyValuePair<InventoryItemSO,InventoryItemData> item in InventoryManager.instance.inventory)
+        foreach (KeyValuePair<InventoryItemSO, InventoryItemData> item in InventoryManager.instance.inventory)
         {
             ItemState tmp = new ItemState();
             tmp.itemSO = item.Key;
@@ -157,7 +178,7 @@ public class TwoDGameState : MonoBehaviour
         saveData.currentEquipmentState = new EquipmentState();
         saveData.currentEquipmentState.equipmentArray = new InventoryItemSO[EquipmentManager.instance.equipmentDictionary.Count];
         int index = 0;
-        foreach(KeyValuePair<ItemType,InventoryItemData> equipment in EquipmentManager.instance.equipmentDictionary)
+        foreach (KeyValuePair<ItemType, InventoryItemData> equipment in EquipmentManager.instance.equipmentDictionary)
         {
             saveData.currentEquipmentState.equipmentArray[index] = InventoryManager.instance.inventory.FirstOrDefault(x => x.Value == equipment.Value).Key;
             index++;
@@ -167,7 +188,7 @@ public class TwoDGameState : MonoBehaviour
     public void SaveData()
     {
         SaveDataUpdate();
-        if(!Directory.Exists(Application.persistentDataPath + "/Assets/Resources"))
+        if (!Directory.Exists(Application.persistentDataPath + "/Assets/Resources"))
         {
             try
             {
@@ -190,7 +211,7 @@ public class TwoDGameState : MonoBehaviour
     [ContextMenu("JSON Load")]
     public bool LoadSaveDate()
     {
-        string file = Application.persistentDataPath+"/Assets/Resources/save.json";
+        string file = Application.persistentDataPath + "/Assets/Resources/save.json";
         if (File.Exists(file))
         {
             try
@@ -223,9 +244,9 @@ public class TwoDGameState : MonoBehaviour
             mapNavigation.player = player.transform;
             mapNavigation.GoToMap(saveData.currentMapIndex, 0);
             player.GetComponent<SpritCharScript>().HP = saveData.playerCurrentHP;
-            
+
             InventoryManager.instance.inventory = new();
-            
+
             foreach (ItemState loadedData in saveData.currentInventoryState)
             {
                 try
@@ -234,12 +255,12 @@ public class TwoDGameState : MonoBehaviour
                     InventoryManager.instance.inventory[loadedData.itemSO].quantity = loadedData.quantity;
                 }
                 catch { }
-                
+
             }
-            
+
             EquipmentManager.instance.equipmentDictionary = new Dictionary<ItemType, InventoryItemData>();
             EquipmentManager.instance.InitalizeEquipment();
-            
+
             foreach (InventoryItemSO loadedData in saveData.currentEquipmentState.equipmentArray)
             {
                 try
@@ -248,7 +269,7 @@ public class TwoDGameState : MonoBehaviour
                 }
                 catch { }
             }
-            
+
             return true;
         }
         else
@@ -313,12 +334,12 @@ public class EquipmentState
 {
     public InventoryItemSO[] equipmentArray;
 }
-[Serializable]
-public class ChestState
-{
-    public bool defaultItems;
-    public List<InventoryItemData> itemList;
-}   
+//[Serializable]
+//public class ChestState
+//{
+//    public bool defaultItems;
+//    public List<InventoryItemData> itemList;
+//}
 [Serializable]
 public class SaveData2D
 {

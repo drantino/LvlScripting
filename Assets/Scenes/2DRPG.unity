@@ -9903,13 +9903,28 @@ MonoBehaviour:
       - EnemyID: 0
         currentHP: 10
         maxHP: 10
+      chestStates: []
     - mapID: 1
       enemyStates: []
+      chestStates:
+      - defaultInventory: 1
+        chestLocation: {x: 0, y: 0}
+        mapID: 0
+        chestID: 0
+      - defaultInventory: 1
+        chestLocation: {x: 0, y: 0}
+        mapID: 0
+        chestID: 1
+      - defaultInventory: 1
+        chestLocation: {x: 0, y: 0}
+        mapID: 0
+        chestID: 2
     - mapID: 2
       enemyStates:
       - EnemyID: 1
         currentHP: 10
         maxHP: 10
+      chestStates: []
     - mapID: 3
       enemyStates:
       - EnemyID: 2
@@ -9918,6 +9933,7 @@ MonoBehaviour:
       - EnemyID: 3
         currentHP: 10
         maxHP: 10
+      chestStates: []
     - mapID: 4
       enemyStates:
       - EnemyID: 4
@@ -9926,11 +9942,13 @@ MonoBehaviour:
       - EnemyID: 5
         currentHP: 10
         maxHP: 10
+      chestStates: []
   mainUIScript: {fileID: 1976405172}
   mapParent: {fileID: 1773107959}
   currentMapState:
     mapID: 0
     enemyStates: []
+    chestStates: []
   playerPrefab: {fileID: 5445358952284660217, guid: aa227ef691a4f4f429b80f5b8bdb28d2, type: 3}
   player: {fileID: 0}
   treasureChests: 000000
