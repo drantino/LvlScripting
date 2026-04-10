@@ -212,6 +212,7 @@ public class TwoDGameState : MonoBehaviour
             saveData.currentEquipmentState.equipmentArray[index] = InventoryManager.instance.inventory.FirstOrDefault(x => x.Value == equipment.Value).Key;
             index++;
         }
+        //save mapstates chest data
     }
     [ContextMenu("JSON save")]
     public void SaveData()

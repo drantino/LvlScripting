@@ -48,6 +48,8 @@ public class SpritCharScript : MonoBehaviour, IDamagable
         MainUIScript.instance.UpdateCharHud(); 
         dead = false;
         interactableObjects = new List<IInteractable>();
+        enabled = false;
+        enabled = true;
     }
     public void GetMovementVector(InputAction.CallbackContext c)
     {

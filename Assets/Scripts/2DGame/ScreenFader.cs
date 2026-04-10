@@ -30,6 +30,7 @@ public class ScreenFader : MonoBehaviour
     }
     private IEnumerator FadeScreen(float duration)
     {
+        TwoDGameState.Instance.player.GetComponent<SpritCharScript>().enabled = true;
         //immediately set screen to black
         SetAlpha(1f);
         Time.timeScale = 0;
@@ -42,7 +43,7 @@ public class ScreenFader : MonoBehaviour
             yield return null;
         }
         Time.timeScale = 1;
-        //TwoDGameState.Instance.EnableControls(true);
+        TwoDGameState.Instance.player.GetComponent<SpritCharScript>().enabled = true;
         //ensure it fully transparent
         SetAlpha(0f);
     }

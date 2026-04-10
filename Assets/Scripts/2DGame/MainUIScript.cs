@@ -114,6 +114,8 @@ public class MainUIScript : MonoBehaviour
         TwoDGameState.Instance.ReturnToMainMenu();
         mainMenuUI.SetActive(true);
         gameOverPanel.SetActive(false);
+        gameMenuPanel.SetActive(false);
+        Time.timeScale = 1.0f;
     }
     public void OpenGameOverPanel()
     {
