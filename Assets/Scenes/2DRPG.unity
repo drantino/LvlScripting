@@ -8912,6 +8912,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 34a5fa76ad1d76746944f6fc163cefa6, type: 2}
   - {fileID: 11400000, guid: 988db609e81ab3442baaa0ed323a52f3, type: 2}
   playerInventoryManager: {fileID: 1243672032}
+  inventoryID: -1
 --- !u!1 &1637593950
 GameObject:
   m_ObjectHideFlags: 0
@@ -9909,10 +9910,13 @@ MonoBehaviour:
       chestStates:
       - defaultItems: 1
         chestID: 0
+        itemList: []
       - defaultItems: 1
         chestID: 1
+        itemList: []
       - defaultItems: 1
         chestID: 2
+        itemList: []
     - mapID: 2
       enemyStates:
       - EnemyID: 1
