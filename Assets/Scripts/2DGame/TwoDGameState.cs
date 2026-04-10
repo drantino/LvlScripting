@@ -104,26 +104,31 @@ public class TwoDGameState : MonoBehaviour
     public void BeginChestSpawn(MapState map)
     {
         chestScript = mapParent.GetComponentInChildren<MapChests>();
-        
+
         if (chestScript != null && chestScript.chests.Count > 0)
         {
-            foreach (TreasureChest chest in map.chestStates)
+            foreach (ChestState chest in map.chestStates)
             {
-                if (chest.defaultInventory)
+                if (chest.defaultItems)
                 {
-                    
+
                     chestScript.chests[chest.chestID].FillWithStartingInv();
                 }
                 else
                 {
                     chestScript.chests[chest.chestID].containerInventory.Clear();
-                    foreach (InventoryItemData itemData in chest.currentInventory)
+                    foreach (InventoryItemData itemData in chest.itemList)
                     {
                         chestScript.chests[chest.chestID].FillWithDataInventory(itemData);
                     }
                 }
+                chestScript.chests[chest.chestID].inventoryID = chest.chestID;
             }
         }
+    }
+    public void UpdateMapChestState(int id)
+    {
+        currentMapState.chestStates[id].defaultItems = false;
     }
     public void RestEnemies()
     {
@@ -145,7 +150,31 @@ public class TwoDGameState : MonoBehaviour
                 currentMapState.enemyDictionary[enemy.enemyID].currentHP = enemy.HP;
             }
         }
+        if (chestScript != null)
+        {
+            foreach (ChestState chest in currentMapState.chestStates)
+            {
+                if (!chest.defaultItems)
+                {
+                    if (chest.itemList == null)
+                    {
+                        chest.itemList = new();
+                    }
+                    else
+                    {
+                        chest.itemList.Clear();
+                    }
 
+                    if (chestScript.chests[chest.chestID].containerInventory.Count > 0)
+                    {
+                        foreach (InventoryItemData itemData in chestScript.chests[chest.chestID].containerInventory.Values)
+                        {
+                            chest.itemList.Add(itemData);
+                        }
+                    }
+                }
+            }
+        }
     }
     public void TreasureGet(int index)
     {
@@ -300,7 +329,7 @@ public class MapState
     public int mapID;
     public List<EnemyState> enemyStates;
     [NonSerialized] public Dictionary<int, EnemyState> enemyDictionary;
-    public List<TreasureChest> chestStates;
+    public List<ChestState> chestStates;
     public void InitalizeMDictionary()
     {
         enemyDictionary = new Dictionary<int, EnemyState>();
@@ -334,12 +363,13 @@ public class EquipmentState
 {
     public InventoryItemSO[] equipmentArray;
 }
-//[Serializable]
-//public class ChestState
-//{
-//    public bool defaultItems;
-//    public List<InventoryItemData> itemList;
-//}
+[Serializable]
+public class ChestState
+{
+    public bool defaultItems;
+    public int chestID;
+    public List<InventoryItemData> itemList;
+}
 [Serializable]
 public class SaveData2D
 {

@@ -8,6 +8,7 @@ public class InventoryContainer : MonoBehaviour
     public List<InventoryItemSO> startingInventory = new();
     public InventoryManager playerInventoryManager;
     public event Action<InventoryContainer> onContainerUpdate;
+    public int inventoryID = -1;
     private void Start()
     {
         
@@ -36,6 +37,10 @@ public class InventoryContainer : MonoBehaviour
         {
             containerInventory[itemToAdd_].quantity++;
         }
+        if(inventoryID >=0)
+        {
+            TwoDGameState.Instance.UpdateMapChestState(inventoryID);
+        }
         onContainerUpdate?.Invoke(this);
     }
     public void AddItemToPlayerInventory(InventoryItemSO itemToRemove_)
@@ -53,6 +58,10 @@ public class InventoryContainer : MonoBehaviour
             }
         }
         playerInventoryManager.AddItem(itemToRemove_);
+        if (inventoryID >= 0)
+        {
+            TwoDGameState.Instance.UpdateMapChestState(inventoryID);
+        }
         onContainerUpdate?.Invoke(this);
     }
 }

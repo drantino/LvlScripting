@@ -9907,17 +9907,11 @@ MonoBehaviour:
     - mapID: 1
       enemyStates: []
       chestStates:
-      - defaultInventory: 1
-        chestLocation: {x: 0, y: 0}
-        mapID: 0
+      - defaultItems: 1
         chestID: 0
-      - defaultInventory: 1
-        chestLocation: {x: 0, y: 0}
-        mapID: 0
+      - defaultItems: 1
         chestID: 1
-      - defaultInventory: 1
-        chestLocation: {x: 0, y: 0}
-        mapID: 0
+      - defaultItems: 1
         chestID: 2
     - mapID: 2
       enemyStates:

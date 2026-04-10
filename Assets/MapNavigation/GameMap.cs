@@ -20,7 +20,7 @@ public class MapEntryPoint
 [Serializable]
 public class TreasureChest
 {
-    public bool defaultInventory;
+    public bool defaultInventory;//might be pointless
     public int  chestID;
     public List<InventoryItemData> currentInventory;
 }
