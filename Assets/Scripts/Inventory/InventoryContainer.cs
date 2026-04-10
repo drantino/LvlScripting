@@ -25,10 +25,10 @@ public class InventoryContainer : MonoBehaviour
             }
         }
     }
-    public void FillWithDataInventory(InventoryItemData itemToAdd_)
+    public void FillWithDataInventory(InventoryItemSO itemToAdd_, int quanityToAdd)
     {
-        containerInventory.TryAdd(itemToAdd_.config, itemToAdd_.config.CreateRunttimeData());
-        containerInventory[itemToAdd_.config].quantity = itemToAdd_.quantity;
+        containerInventory.TryAdd(itemToAdd_, itemToAdd_.CreateRunttimeData());
+        containerInventory[itemToAdd_].quantity = quanityToAdd;
     }
     public void AddItemTOContainer(InventoryItemSO itemToAdd_)
     {

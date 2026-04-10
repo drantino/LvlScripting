@@ -117,9 +117,9 @@ public class TwoDGameState : MonoBehaviour
                 else
                 {
                     chestScript.chests[chest.chestID].containerInventory.Clear();
-                    foreach (InventoryItemData itemData in chest.itemList)
+                    foreach (ItemState itemData in chest.itemList)
                     {
-                        chestScript.chests[chest.chestID].FillWithDataInventory(itemData);
+                        chestScript.chests[chest.chestID].FillWithDataInventory(itemData.itemSO,itemData.quantity);
                     }
                 }
                 chestScript.chests[chest.chestID].inventoryID = chest.chestID;
@@ -169,7 +169,10 @@ public class TwoDGameState : MonoBehaviour
                     {
                         foreach (InventoryItemData itemData in chestScript.chests[chest.chestID].containerInventory.Values)
                         {
-                            chest.itemList.Add(itemData);
+                            ItemState tmp = new();
+                            tmp.itemSO = itemData.config;
+                            tmp.quantity = itemData.quantity;
+                            chest.itemList.Add(tmp);
                         }
                     }
                 }
@@ -191,6 +194,7 @@ public class TwoDGameState : MonoBehaviour
     }
     public void SaveDataUpdate()
     {
+        SaveGameState();
         saveData = new SaveData2D();
         saveData.mapStates = mapgameState;
         saveData.treasureBools = treasureChests;
@@ -213,6 +217,7 @@ public class TwoDGameState : MonoBehaviour
             index++;
         }
         //save mapstates chest data
+        //saveData.ch
     }
     [ContextMenu("JSON save")]
     public void SaveData()
@@ -329,8 +334,9 @@ public class MapState
 {
     public int mapID;
     public List<EnemyState> enemyStates;
-    [NonSerialized] public Dictionary<int, EnemyState> enemyDictionary;
     public List<ChestState> chestStates;
+    [NonSerialized] public Dictionary<int, EnemyState> enemyDictionary;
+    
     public void InitalizeMDictionary()
     {
         enemyDictionary = new Dictionary<int, EnemyState>();
@@ -369,7 +375,7 @@ public class ChestState
 {
     public bool defaultItems;
     public int chestID;
-    public List<InventoryItemData> itemList;
+    public List<ItemState> itemList;
 }
 [Serializable]
 public class SaveData2D
