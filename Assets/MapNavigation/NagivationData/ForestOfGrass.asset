@@ -12,12 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b6a5883bdf552478be4e531b5165de, type: 3}
   m_Name: ForestOfGrass
   m_EditorClassIdentifier: Assembly-CSharp::GameMap
-  preFab: {fileID: 0}
+  preFab: {fileID: 7730675567339514469, guid: 9448359287812db43be645dcb138aa27, type: 3}
   mapName: ForestOfGrass
   mapID: 5
   entryPoints:
   - engryPointID: 0
     cell: {x: 0, y: -5, z: 0}
-  chests:
-  - defaultInventory: 0
-    chestID: 0
+  chests: []
