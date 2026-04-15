@@ -10,13 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2b6a5883bdf552478be4e531b5165de, type: 3}
-  m_Name: Cave
+  m_Name: InnerCave
   m_EditorClassIdentifier: Assembly-CSharp::GameMap
-  preFab: {fileID: 1210371422538447314, guid: 50586b263ad043941a4e84c68d535442, type: 3}
-  mapName: Cave
-  mapID: 6
+  preFab: {fileID: 6426688975921208691, guid: 687fc3da75fbc9c479497137a55682da, type: 3}
+  mapName: InnerCave
+  mapID: 7
   entryPoints:
   - engryPointID: 0
-    cell: {x: -8, y: -3, z: 0}
-  - engryPointID: 1
-    cell: {x: 7, y: -4, z: 0}
+    cell: {x: 7, y: 3, z: 0}
