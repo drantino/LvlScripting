@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 3995377736541614872}
   - component: {fileID: 4277109232281181273}
   - component: {fileID: 2560497805491886506}
+  - component: {fileID: 211015646071279399}
   m_Layer: 3
   m_Name: Character
   m_TagString: Player
@@ -176,12 +177,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpritCharScript
   movementSpeed: 3
   attackCD: 0.2
+  invincibleDuration: 2
+  invincibleTill: 0
   movementValue: {x: 0, y: 0}
   weapon: {fileID: 1293765405370540129}
   HP: 0
   MaxHP: 100
-  ATK: 5
-  DEF: 1
 --- !u!212 &1473998571373354304
 SpriteRenderer:
   serializedVersion: 2
@@ -344,6 +345,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.19, y: 0.15}
   m_EdgeRadius: 0
+--- !u!95 &211015646071279399
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5445358952284660217}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a809c0eae9aae4645bf560d586136c1d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6489036236171640841
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,13 +8,14 @@ using System.Collections.Generic;
 public class SpritCharScript : MonoBehaviour, IDamagable
 {
     InputAction move, attack, interact;
-    public float movementSpeed, attackCD;
+    public float movementSpeed, attackCD, invincibleDuration, invincibleTill;
     public Vector2 movementValue;
     public event Action<Vector2> OnMove;
     private SpritCharAnimationScript animationScript;
     public GameObject weapon;
-    private bool attacking, dead;
+    private bool attacking, dead, invincible;
     public List<IInteractable> interactableObjects;
+    private Animator myAnimator;
     //stats
     public int HP, MaxHP;
     public int ATK
@@ -50,6 +51,7 @@ public class SpritCharScript : MonoBehaviour, IDamagable
         interactableObjects = new List<IInteractable>();
         enabled = false;
         enabled = true;
+        myAnimator = GetComponent<Animator>();
     }
     public void GetMovementVector(InputAction.CallbackContext c)
     {
@@ -78,6 +80,12 @@ public class SpritCharScript : MonoBehaviour, IDamagable
     private void FixedUpdate()
     {
         transform.Translate(new Vector3(movementValue.x, movementValue.y, 0) * movementSpeed * Time.deltaTime);
+
+        if(invincible && invincibleTill < Time.time)
+        {
+            myAnimator.SetBool("Invincible", false);
+            invincible = false;
+        }
     }
     private void Attack()
     {
@@ -128,17 +136,23 @@ public class SpritCharScript : MonoBehaviour, IDamagable
     }
     public void TakeDamage(int incomingDamage)
     {
-        int damageTaken = incomingDamage - DEF;
-        damageTaken = Mathf.Clamp(damageTaken, 0, 9999);
-        HP -= damageTaken;
-        MainUIScript.instance.UpdateCharHud();
-        if (HP <= 0)
+        if (!invincible)
         {
-            TwoDGameState.Instance.PlayerKilled();
-            move.performed -= GetMovementVector;
-            move.canceled -= GetMovementVector;
-            dead = true;
-            StartCoroutine(DeathAnimation());
+            int damageTaken = incomingDamage - DEF;
+            damageTaken = Mathf.Clamp(damageTaken, 0, 9999);
+            HP -= damageTaken;
+            MainUIScript.instance.UpdateCharHud();
+            if (HP <= 0)
+            {
+                TwoDGameState.Instance.PlayerKilled();
+                move.performed -= GetMovementVector;
+                move.canceled -= GetMovementVector;
+                dead = true;
+                StartCoroutine(DeathAnimation());
+            }
+            invincibleTill = Time.time + invincibleDuration;
+            myAnimator.SetBool("Invincible", true);
+            invincible = true;
         }
     }
     public void SendDMG(Collider2D collider)
