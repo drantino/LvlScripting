@@ -103,6 +103,7 @@ public abstract class Enemy : MonoBehaviour, IDamagable
         int damageTaken = incomingDamage - DEF;
         damageTaken = Mathf.Clamp(damageTaken, 0, 9999);
         HP -= damageTaken;
+        SoundEffectManager.Instance.PlaySoundByName("EnemyTakeDamage");
         if (HP <= 0)
         {
             gameObject.SetActive(false);
@@ -119,6 +120,7 @@ public abstract class Enemy : MonoBehaviour, IDamagable
                 {
                     chestSpawn.GetComponent<InventoryContainer>().startingInventory.Add(drops[1]);
                 }
+                chestSpawn.GetComponent<InventoryContainer>().FillWithStartingInv();
                 chestSpawn.SetActive(true);
             }
 

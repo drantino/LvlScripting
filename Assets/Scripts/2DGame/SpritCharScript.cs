@@ -133,6 +133,7 @@ public class SpritCharScript : MonoBehaviour, IDamagable
                     break;
                 }
         }
+        SoundEffectManager.Instance.PlaySoundByName("PlayerSwordSwing");
     }
     public void TakeDamage(int incomingDamage)
     {
@@ -142,6 +143,7 @@ public class SpritCharScript : MonoBehaviour, IDamagable
             damageTaken = Mathf.Clamp(damageTaken, 0, 9999);
             HP -= damageTaken;
             MainUIScript.instance.UpdateCharHud();
+            SoundEffectManager.Instance.PlaySoundByName("PlayerTakeDamage");
             if (HP <= 0)
             {
                 TwoDGameState.Instance.PlayerKilled();
