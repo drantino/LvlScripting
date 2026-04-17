@@ -5860,6 +5860,7 @@ MonoBehaviour:
   bgmClips:
   - {fileID: 11400000, guid: 66820019e170c1241bc1f0adc713b67b, type: 2}
   - {fileID: 11400000, guid: 646f4b3c121b5ba41ad6b18183ecd46b, type: 2}
+  - {fileID: 11400000, guid: 2ee5cf3fd93395c4eafa394742e59b2f, type: 2}
   currentPlayingAudio: 
 --- !u!4 &902536826
 Transform:

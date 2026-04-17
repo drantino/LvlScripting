@@ -53,7 +53,7 @@ public class TwoDGameState : MonoBehaviour
 
         InventoryManager.instance.inventory = new();
         EquipmentManager.instance.ClearInventory();
-        BGMManager.Instance.PlayBGMByName("OverworldBGM");
+        BGMManager.Instance.PlayBGMByName("OverworldBGM");//This will later be changed over to map load for map dependent music
         Debug.Log("StartNew");
     }
     public bool LoadSaveGame()
@@ -62,6 +62,7 @@ public class TwoDGameState : MonoBehaviour
         {
             if (LoadSaveDate())
             {
+                BGMManager.Instance.PlayBGMByName("OverworldBGM");//This will later be changed over to map load for map dependent music
                 return true;
             }
             else
@@ -322,11 +323,14 @@ public class TwoDGameState : MonoBehaviour
         }
         catch { }
         Destroy(player);
+        BGMManager.Instance.PlayBGMByName("MainMenuBGM");
     }
     public void PlayerKilled()
     {
         MapNavigation.Instance.ClearMap();
         MainUIScript.instance.OpenGameOverPanel();
+        player.GetComponent<SpritCharScript>().enabled = false;
+        BGMManager.Instance.PlayBGMByName("GameOverBGM");
     }
 }
 

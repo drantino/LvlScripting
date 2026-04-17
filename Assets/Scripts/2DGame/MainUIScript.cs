@@ -116,6 +116,7 @@ public class MainUIScript : MonoBehaviour
         gameOverPanel.SetActive(false);
         gameMenuPanel.SetActive(false);
         Time.timeScale = 1.0f;
+        BGMManager.Instance.PlayBGMByName("MainMenuBGM");
     }
     public void OpenGameOverPanel()
     {

@@ -152,9 +152,12 @@ public class SpritCharScript : MonoBehaviour, IDamagable
                 dead = true;
                 StartCoroutine(DeathAnimation());
             }
-            invincibleTill = Time.time + invincibleDuration;
-            myAnimator.SetBool("Invincible", true);
-            invincible = true;
+            else
+            {
+                invincibleTill = Time.time + invincibleDuration;
+                myAnimator.SetBool("Invincible", true);
+                invincible = true;
+            }
         }
     }
     public void SendDMG(Collider2D collider)
