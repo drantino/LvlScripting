@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51f79ffb13e07da42b1a9d2c14f55c1d, type: 3}
   m_Name: PlayerSwordSwing
   m_EditorClassIdentifier: Assembly-CSharp::AudioEffectSO
-  clipName: 
-  audioClip: {fileID: 0}
+  clipName: PlayerSwordSwing
+  audioClip: {fileID: 8300000, guid: de0008f944eb811499deba4319bee0a8, type: 3}

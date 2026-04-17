@@ -53,6 +53,7 @@ public class TwoDGameState : MonoBehaviour
 
         InventoryManager.instance.inventory = new();
         EquipmentManager.instance.ClearInventory();
+        BGMManager.Instance.PlayBGMByName("OverworldBGM");
         Debug.Log("StartNew");
     }
     public bool LoadSaveGame()

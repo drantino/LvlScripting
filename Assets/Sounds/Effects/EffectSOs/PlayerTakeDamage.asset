@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51f79ffb13e07da42b1a9d2c14f55c1d, type: 3}
   m_Name: PlayerTakeDamage
   m_EditorClassIdentifier: Assembly-CSharp::AudioEffectSO
-  clipName: 
-  audioClip: {fileID: 0}
+  clipName: PlayerTakeDamage
+  audioClip: {fileID: 8300000, guid: f228141fd8cb59649b6ed7d025bab5fd, type: 3}

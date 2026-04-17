@@ -12,6 +12,6 @@ public class MapPortol : MonoBehaviour
             return;
         }
         MapNavigation.Instance.GoToMap(targetMap, targetEntryPoint);
-
+        SoundEffectManager.Instance.PlaySoundByName("DoorOpen");
     }
 }

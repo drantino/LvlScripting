@@ -76,5 +76,6 @@ public class ContainerUI : MonoBehaviour
         }
         uiButtons.Clear();
         containerUI.SetActive(false);
+        Time.timeScale = 1f;
     }
 }

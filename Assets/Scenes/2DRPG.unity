@@ -2001,9 +2001,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundEffectManager
   myAudioSource: {fileID: 0}
-  swordSwing: {fileID: 8300000, guid: de0008f944eb811499deba4319bee0a8, type: 3}
-  playerDamaged: {fileID: 8300000, guid: f228141fd8cb59649b6ed7d025bab5fd, type: 3}
-  enemyDamaged: {fileID: 8300000, guid: b9d7d70a0d987824a94a54f15921150b, type: 3}
+  audioClips:
+  - {fileID: 11400000, guid: 68bf114adb06e3d44ad592cdbdb8d32a, type: 2}
+  - {fileID: 11400000, guid: 792da62dd5b712b40981747a3b05aa98, type: 2}
+  - {fileID: 11400000, guid: 3ff63253fde3b7f46bd79f00d3f70420, type: 2}
+  - {fileID: 11400000, guid: 1169a740e85a7784ba00ae98870c60b3, type: 2}
 --- !u!4 &269252994
 Transform:
   m_ObjectHideFlags: 0
@@ -5855,6 +5857,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BGMManager
   myAudioSource: {fileID: 0}
+  bgmClips:
+  - {fileID: 11400000, guid: 66820019e170c1241bc1f0adc713b67b, type: 2}
+  - {fileID: 11400000, guid: 646f4b3c121b5ba41ad6b18183ecd46b, type: 2}
+  currentPlayingAudio: 
 --- !u!4 &902536826
 Transform:
   m_ObjectHideFlags: 0
