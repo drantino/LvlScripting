@@ -42,7 +42,7 @@ public abstract class Enemy : MonoBehaviour, IDamagable
         startingPosition = transform.position;
     }
 
-    private void Update()
+    public virtual void Update()
     {
 
         if (attackRange.CircleOverLapCheck())
