@@ -8,7 +8,7 @@ public class MainUIScript : MonoBehaviour
 {
     [SerializeField] TwoDGameState gameState;
     public static MainUIScript instance;
-    public GameObject noSaveDataText, mainMenuUI, savedText, gameOverPanel, inventoryPanel, containerUIPanel, player, gameMenuPanel;
+    public GameObject noSaveDataText, mainMenuUI, savedText, gameOverPanel, inventoryPanel, containerUIPanel, player, gameMenuPanel, settingsPanel;
     public Image treasureChest0, treasureChest1, treasureChest2;
     public TextMeshProUGUI hpValue, atkValue, defValue;
     private InputAction pause;
@@ -151,5 +151,27 @@ public class MainUIScript : MonoBehaviour
         gameMenuPanel.SetActive(false );
         Time.timeScale = 1.0f;
         player.GetComponent<SpritCharScript>().enabled = true;
+    }
+    public void OnSettingsButtonPress()
+    {
+        if(settingsPanel.activeSelf)
+        {
+            settingsPanel.SetActive(false);
+            if (player != null)
+            {
+                player.GetComponent<SpritCharScript>().enabled = true;
+            }
+            Time.timeScale = 1f;
+        }
+        else
+        {
+            settingsPanel.SetActive(true);
+            if (player != null)
+            {
+                player.GetComponent<SpritCharScript>().enabled = true;
+            }
+            Time.timeScale = 0f;
+        }
+        
     }
 }
