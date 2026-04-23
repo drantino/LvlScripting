@@ -9,6 +9,7 @@ using UnityEngine;
 public class TwoDGameState : MonoBehaviour
 {
     public static TwoDGameState Instance;
+    public SettingsSO settings;
     public MapNavigation mapNavigation;
     public TwoDMapGameState mapgameState;
     public MainUIScript mainUIScript;
@@ -27,6 +28,7 @@ public class TwoDGameState : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        InitalizeSettings();
     }
     private void Start()
     {
@@ -331,6 +333,13 @@ public class TwoDGameState : MonoBehaviour
         MainUIScript.instance.OpenGameOverPanel();
         player.GetComponent<SpritCharScript>().enabled = false;
         BGMManager.Instance.PlayBGMByName("GameOverBGM");
+    }
+    public void InitalizeSettings()
+    {
+        if(settings != null)
+        {
+            
+        }
     }
 }
 

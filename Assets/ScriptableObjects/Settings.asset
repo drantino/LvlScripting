@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91702d801e33a5a40849709148cd3219, type: 3}
   m_Name: Settings
   m_EditorClassIdentifier: Assembly-CSharp::SettingsSO
-  Volume: 1
+  Volume: 0.100000165

@@ -16,7 +16,8 @@ public class BGMManager : MonoBehaviour
             Instance = this;
         }
         myAudioSource = GetComponent<AudioSource>();
-        if(bgms  == null)
+        myAudioSource.volume = TwoDGameState.Instance.settings.Volume;
+        if (bgms  == null)
         {
             BuildDictionary();
         }

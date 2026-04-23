@@ -15,6 +15,7 @@ public class SoundEffectManager : MonoBehaviour
             Instance = this;
         }
         myAudioSource = GetComponent<AudioSource>();
+        myAudioSource.volume = TwoDGameState.Instance.settings.Volume;
         if (soundEffects == null)
         {
             BuildDictionary();

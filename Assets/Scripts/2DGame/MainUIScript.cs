@@ -12,6 +12,8 @@ public class MainUIScript : MonoBehaviour
     public Image treasureChest0, treasureChest1, treasureChest2;
     public TextMeshProUGUI hpValue, atkValue, defValue;
     private InputAction pause;
+
+    public Slider volumeSlider;
     private void Awake()
     {
         instance = this;
@@ -171,7 +173,18 @@ public class MainUIScript : MonoBehaviour
                 player.GetComponent<SpritCharScript>().enabled = true;
             }
             Time.timeScale = 0f;
+            PopulateSettingsPanel();
         }
         
+    }
+    public void PopulateSettingsPanel()
+    {
+        volumeSlider.value = TwoDGameState.Instance.settings.Volume;
+    }
+    public void OnVolumeChange()
+    {
+        TwoDGameState.Instance.settings.Volume = volumeSlider.value;
+        BGMManager.Instance.myAudioSource.volume = volumeSlider.value;
+        SoundEffectManager.Instance.myAudioSource.volume = volumeSlider.value;
     }
 }
