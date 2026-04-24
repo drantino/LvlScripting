@@ -6,16 +6,20 @@ public class PortolOpener : MonoBehaviour, IInteractable
     public GameObject portolToOpen, objectToHide, interactText;
     public bool interactable;
     public int requiredObjective, objectiveToChange;
+    public string requireText;
     public void Interact(GameObject sentGameObject)
     {
         if (interactable && TwoDGameState.Instance.treasureChests[requiredObjective])
         {
             OpenPortol();
-            TwoDGameState.Instance.treasureChests[objectiveToChange] = true;
+            if (objectiveToChange <= 0)
+            {
+                TwoDGameState.Instance.treasureChests[objectiveToChange] = true;
+            }
         }
         else
         {
-            interactText.GetComponentInChildren<TextMeshProUGUI>().text = "Shovel Required";
+            interactText.GetComponentInChildren<TextMeshProUGUI>().text = requireText;
         }
     }
 
