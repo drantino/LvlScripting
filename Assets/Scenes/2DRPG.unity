@@ -4553,14 +4553,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.43137255}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -992706831, guid: 804614ab1d601ec4895807c1916570ff, type: 3}
+  m_Sprite: {fileID: -1200417615, guid: 804614ab1d601ec4895807c1916570ff, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7974,7 +7974,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1153956238
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9656,14 +9656,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.43137255}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -992706831, guid: 804614ab1d601ec4895807c1916570ff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aba6f9fcbe9535e49902b1b2b4729ed0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9831,7 +9831,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00018310547}
+  m_AnchoredPosition: {x: 0, y: -0.00024414062}
   m_SizeDelta: {x: -0.00012207, y: -0.00073242}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1617667299
@@ -12576,6 +12576,9 @@ MonoBehaviour:
   atkValue: {fileID: 504724150}
   defValue: {fileID: 2052292895}
   volumeSlider: {fileID: 1054078334}
+  testEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1976405173
 MonoBehaviour:
   m_ObjectHideFlags: 0

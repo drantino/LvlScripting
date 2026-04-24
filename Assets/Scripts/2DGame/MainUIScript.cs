@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class MainUIScript : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class MainUIScript : MonoBehaviour
     private InputAction pause;
 
     public Slider volumeSlider;
+    public UnityEvent testEvent;
     private void Awake()
     {
         instance = this;
@@ -85,7 +87,7 @@ public class MainUIScript : MonoBehaviour
     public void ResetChestsUI()
     {
         Color color = treasureChest0.color;
-        color.a = 0.43f;
+        color.a = 0f;
         treasureChest0.color = color;
         treasureChest1.color = color;
         treasureChest2.color = color;

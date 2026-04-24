@@ -1,8 +1,10 @@
 using UnityEngine;
 
-public class Treasure : MonoBehaviour, IInteractable, IDamagable, IExplode
+public class Treasure : MonoBehaviour, IInteractable
 {
     public int treasureIndex;
+    public GameObject interactText;
+    public bool interactable;
     private void Start()
     {
         if (TwoDGameState.Instance.treasureChests[treasureIndex])
@@ -10,26 +12,28 @@ public class Treasure : MonoBehaviour, IInteractable, IDamagable, IExplode
             gameObject.SetActive(false);
         }
     }
-    public void Explode()
-    {
-        
-    }
-
     public void Interact(GameObject sentObject)
     {
-        
-    }
-
-    public void TakeDamage(int incomeingDamage)
-    {
-        
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.CompareTag("Player"))
+        if (interactable)
         {
             TwoDGameState.Instance.TreasureGet(treasureIndex);
             gameObject.SetActive(false);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            interactable = true;
+            interactText.SetActive(true);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            interactable= false;
+            interactText.SetActive(true);
         }
     }
 }
