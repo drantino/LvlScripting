@@ -341,6 +341,11 @@ public class TwoDGameState : MonoBehaviour
             
         }
     }
+    public void TriggerEnd()
+    {
+        MainUIScript.instance.OpenEndPanel();
+        BGMManager.Instance.PlayBGMByName("EndMusicBGM");
+    }
 }
 
 [Serializable]

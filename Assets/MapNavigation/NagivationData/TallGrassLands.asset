@@ -18,3 +18,5 @@ MonoBehaviour:
   entryPoints:
   - engryPointID: 0
     cell: {x: -1, y: -4, z: 0}
+  - engryPointID: 1
+    cell: {x: -1, y: 3, z: 0}

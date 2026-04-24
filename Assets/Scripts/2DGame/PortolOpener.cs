@@ -12,7 +12,7 @@ public class PortolOpener : MonoBehaviour, IInteractable
         if (interactable && TwoDGameState.Instance.treasureChests[requiredObjective])
         {
             OpenPortol();
-            if (objectiveToChange <= 0)
+            if (objectiveToChange >= 0)
             {
                 TwoDGameState.Instance.treasureChests[objectiveToChange] = true;
             }
@@ -26,7 +26,7 @@ public class PortolOpener : MonoBehaviour, IInteractable
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if(TwoDGameState.Instance.treasureChests[objectiveToChange])
+        if(objectiveToChange >= 0 && TwoDGameState.Instance.treasureChests[objectiveToChange])
         {
             OpenPortol();
         }

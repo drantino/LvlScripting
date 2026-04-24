@@ -9,7 +9,7 @@ public class MainUIScript : MonoBehaviour
 {
     [SerializeField] TwoDGameState gameState;
     public static MainUIScript instance;
-    public GameObject noSaveDataText, mainMenuUI, savedText, gameOverPanel, inventoryPanel, containerUIPanel, player, gameMenuPanel, settingsPanel;
+    public GameObject noSaveDataText, mainMenuUI, savedText, gameOverPanel, inventoryPanel, containerUIPanel, player, gameMenuPanel, settingsPanel, endPanel;
     public Image treasureChest0, treasureChest1, treasureChest2;
     public TextMeshProUGUI hpValue, atkValue, defValue;
     private InputAction pause;
@@ -119,8 +119,9 @@ public class MainUIScript : MonoBehaviour
         mainMenuUI.SetActive(true);
         gameOverPanel.SetActive(false);
         gameMenuPanel.SetActive(false);
+        endPanel.SetActive(false);
         Time.timeScale = 1.0f;
-        BGMManager.Instance.PlayBGMByName("MainMenuBGM");
+        //BGMManager.Instance.PlayBGMByName("MainMenuBGM");
     }
     public void OpenGameOverPanel()
     {
@@ -188,5 +189,10 @@ public class MainUIScript : MonoBehaviour
         TwoDGameState.Instance.settings.Volume = volumeSlider.value;
         BGMManager.Instance.myAudioSource.volume = volumeSlider.value;
         SoundEffectManager.Instance.myAudioSource.volume = volumeSlider.value;
+    }
+    public void OpenEndPanel()
+    {
+        endPanel.SetActive(true);
+        
     }
 }
