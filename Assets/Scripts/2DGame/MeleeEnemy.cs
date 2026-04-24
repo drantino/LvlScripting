@@ -18,7 +18,7 @@ public class MeleeEnemy : Enemy
     {
         if(collision.CompareTag("Player"))
         {
-            collision.GetComponent<IDamagable>().TakeDamage(10);
+            collision.GetComponent<IDamagable>().TakeDamage(ATK);
         }
     }
 }

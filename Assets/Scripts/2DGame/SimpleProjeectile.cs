@@ -6,13 +6,15 @@ public class SimpleProjeectile : MonoBehaviour
     Rigidbody2D myRigidBody;
     public float speed;
     public float duration;
+    public int damage;
 
     private void Awake()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
     }
-    public void InstantiateProjectile(Vector2 direction_)
+    public void InstantiateProjectile(Vector2 direction_, int damage_)
     {   
+        damage = damage_;
         myRigidBody.AddForce (direction_ * speed);
         StartCoroutine(ProjectileTime());
     }
@@ -27,7 +29,7 @@ public class SimpleProjeectile : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            collision.GetComponent<IDamagable>().TakeDamage(10);
+            collision.GetComponent<IDamagable>().TakeDamage(damage);
         }
     }
 }
