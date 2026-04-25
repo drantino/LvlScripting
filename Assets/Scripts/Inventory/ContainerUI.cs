@@ -29,7 +29,7 @@ public class ContainerUI : MonoBehaviour
         containerUI.SetActive(true);
         Dictionary<InventoryItemSO, InventoryItemData> inventoryRef = targetInventory.inventory;
         Dictionary<InventoryItemSO, InventoryItemData> containerRef = container_.containerInventory;
-
+        TwoDGameState.Instance.player.GetComponent<SpritCharScript>().enabled = false;
 
         foreach (InventoryItemData item in inventoryRef.Values)
         {
@@ -77,5 +77,6 @@ public class ContainerUI : MonoBehaviour
         uiButtons.Clear();
         containerUI.SetActive(false);
         Time.timeScale = 1f;
+        TwoDGameState.Instance.player.GetComponent<SpritCharScript>().enabled = true;
     }
 }

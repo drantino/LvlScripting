@@ -8,6 +8,7 @@ public class ChestContainerIneractable : MonoBehaviour,IInteractable
     {
         MainUIScript.instance.containerUIPanel.GetComponent<ContainerUI>().InitalizeUI(container);
         container.playerInventoryManager = MainUIScript.instance.containerUIPanel.GetComponent<ContainerUI>().targetInventory;
+        Time.timeScale = 0f;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

@@ -39,6 +39,7 @@ public class MainUIScript : MonoBehaviour
     {
         gameState.StartNewGame();
         mainMenuUI.SetActive(false);
+        gameMenuPanel.SetActive(false);
         Time.timeScale = 1.0f;
     }
     public void ContinueGame()
@@ -46,6 +47,7 @@ public class MainUIScript : MonoBehaviour
         if (gameState.LoadSaveGame())
         {
             mainMenuUI.SetActive(false);
+            gameMenuPanel.SetActive(false);
             Time.timeScale = 1.0f;
         }
         else
