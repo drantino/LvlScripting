@@ -52,7 +52,7 @@ public class TwoDGameState : MonoBehaviour
         mainUIScript.ResetChestsUI();
 
         //reset all map treasurechests to default, just need to the toggle, might need to be higher
-
+        RestEnemies();
         InventoryManager.instance.inventory = new();
         EquipmentManager.instance.ClearInventory();
         BGMManager.Instance.PlayBGMByName("OverworldBGM");//This will later be changed over to map load for map dependent music

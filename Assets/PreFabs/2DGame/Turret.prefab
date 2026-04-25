@@ -158,7 +158,7 @@ MonoBehaviour:
   attackPivot: {fileID: 5524802165526382160}
   aimPivot: {fileID: 4278059456455710076}
   beamAttack: {fileID: 5870840049466672466}
-  aimSpeed: 0.01
+  aimSpeed: 0.005
   attackBuildUp: 0
   attackBuildUpMax: 2
   beamCDTime: 0
